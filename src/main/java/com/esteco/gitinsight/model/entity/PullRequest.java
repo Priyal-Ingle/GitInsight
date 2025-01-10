@@ -10,8 +10,32 @@ import static java.util.UUID.randomUUID;
 @Entity
 public class PullRequest {
     @Id
-
     private String id;
+
+    public List<Issue> getAssociatedIssues() {
+        return associatedIssues;
+    }
+
+    public void setAssociatedIssues(List<Issue> associatedIssues) {
+        this.associatedIssues = associatedIssues;
+    }
+
+    public Author getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(Author author) {
+        this.author = author;
+    }
+
+    public List<Commit> getCommits() {
+        return Commits;
+    }
+
+    public void setCommits(List<Commit> commits) {
+        Commits = commits;
+    }
+
     private String title;
     private String body;
     private String url;
@@ -23,10 +47,17 @@ public class PullRequest {
 
 
     @OneToMany(cascade = CascadeType.ALL)
-    private List<Commit> CommitId;
+    private List<Commit> Commits;
 
-    @OneToOne(cascade = CascadeType.ALL)
+    @ManyToOne(cascade = CascadeType.ALL)
     private Author author;
+
+    @ManyToMany()
+    private List<Issue> associatedIssues;
+
+
+
+
 
 
     public PullRequest() {

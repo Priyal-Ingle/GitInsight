@@ -1,7 +1,6 @@
 package com.esteco.gitinsight.model.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 import static java.util.UUID.randomUUID;
 
@@ -14,6 +13,10 @@ public class Language {
     private String name;
     private String color;
 
+    @ManyToOne(
+            fetch = FetchType.LAZY
+    )
+    private GitRepo gitRepo;
 
     public Language() {
         this(randomUUID().toString());

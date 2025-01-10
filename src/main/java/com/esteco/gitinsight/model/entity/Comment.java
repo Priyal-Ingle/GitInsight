@@ -1,7 +1,6 @@
 package com.esteco.gitinsight.model.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 import java.time.LocalDateTime;
 import java.util.UUID;
@@ -12,6 +11,9 @@ public class Comment {
     private String id;
     private String body;
     private LocalDateTime createdAt;
+
+    @ManyToOne(cascade = CascadeType.ALL)
+    private Issue issue;
 
     public String getId() {
         return id;

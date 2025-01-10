@@ -14,6 +14,13 @@ public class Issue {
     @Id
 
     private String id;
+    public Issue(){
+        this(randomUUID().toString());
+    }
+
+    public Issue(String id) {
+        this.id = id;
+    }
     private String title;
     private long totalComment;
     private String url;
@@ -30,24 +37,59 @@ public class Issue {
     @OneToMany(cascade = CascadeType.ALL)
     private List<Comment> comments;
 
+    @ManyToOne(cascade = CascadeType.ALL)
+    private GitRepo gitRepo;
 
-
-
-    @OneToOne(cascade = CascadeType.ALL)
+    @ManyToOne(cascade = CascadeType.ALL)
     private Author author;
 
-    @OneToMany(cascade = CascadeType.ALL)
+
+    @ManyToMany()
     private List<Author> assignees;
-//    Yet to connect to Pull Request
 
 
+    @ManyToMany()
+    private List<PullRequest> associatedPullRequests;
 
-    public Issue(){
-        this(randomUUID().toString());
+
+    public List<Comment> getComments() {
+        return comments;
     }
 
-    public Issue(String id) {
-        this.id = id;
+    public void setComments(List<Comment> comments) {
+        this.comments = comments;
+    }
+
+    public GitRepo getGitRepo() {
+        return gitRepo;
+    }
+
+    public void setGitRepo(GitRepo gitRepo) {
+        this.gitRepo = gitRepo;
+    }
+
+    public Author getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(Author author) {
+        this.author = author;
+    }
+
+    public List<Author> getAssignees() {
+        return assignees;
+    }
+
+    public void setAssignees(List<Author> assignees) {
+        this.assignees = assignees;
+    }
+
+    public List<PullRequest> getAssociatedPullRequests() {
+        return associatedPullRequests;
+    }
+
+    public void setAssociatedPullRequests(List<PullRequest> associatedPullRequests) {
+        this.associatedPullRequests = associatedPullRequests;
     }
 
     public String getId() {

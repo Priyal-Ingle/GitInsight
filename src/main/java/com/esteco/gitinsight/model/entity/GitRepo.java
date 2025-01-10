@@ -29,12 +29,34 @@ public class GitRepo {
             cascade = CascadeType.ALL,
             orphanRemoval = true
     )
-    @JoinColumn(name = "label_id", referencedColumnName = "id")
-    private List<Label> labels = new ArrayList<>();
+    private List<Label> labels;
 
     @OneToMany(cascade = CascadeType.ALL)
     private List<Language> languages;
 
+    @OneToMany(cascade = CascadeType.ALL)
+    private List<Issue> issues;
+
+
+    public void setLabels(List<Label> labels) {
+        this.labels = labels;
+    }
+
+    public List<Language> getLanguages() {
+        return languages;
+    }
+
+    public void setLanguages(List<Language> languages) {
+        this.languages = languages;
+    }
+
+    public List<Issue> getIssues() {
+        return issues;
+    }
+
+    public void setIssues(List<Issue> issues) {
+        this.issues = issues;
+    }
 
     public List<Label> getLabels() {
         return labels;
@@ -45,10 +67,6 @@ public class GitRepo {
         label.setGitRepo(null);
     }
 
-    public void setLabel(Label label) {
-        labels.add(label);
-        label.setGitRepo(this);
-    }
 
     public GitRepo() {
         this(UUID.randomUUID().toString());
