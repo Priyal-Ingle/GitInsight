@@ -1,0 +1,86 @@
+query {
+                repository(owner: "@owner-name", name: "@repo-name") {
+                  id
+                  url
+                  updatedAt
+                  createdAt
+                  forkCount
+                  isPrivate
+                  isLocked
+                  labels(first: 1) {
+                    edges {
+                      node {
+                        id
+                        name
+                        color
+                      }
+                    }
+                  }
+                  languages(first: 1) {
+                    edges {
+                      node {
+                        name
+                      }
+                    }
+                  }
+                  issues(first: 1, states: CLOSED) {
+                    edges {
+                      node {
+                        id
+                        title
+                        comments(first: 1) {
+                          edges {
+                            node {
+                              id
+                              body
+                            }
+                          }
+                        }
+                        url
+                        body
+                        closed
+                        closedAt
+                        closedByPullRequestsReferences(first: 1) {
+                          edges {
+                            node {
+                              id
+                              title
+                              body
+                              url
+                              changedFiles
+                              commits(first: 1) {
+                                edges {
+                                  node {
+                                    id
+                                    url
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                        createdAt
+                        labels(first: 1) {
+                          edges {
+                            node {
+                              id
+                              color
+                              name
+                            }
+                          }
+                        }
+                        author {
+                          login
+                        }
+                        assignees(first: 1) {
+                          edges {
+                            node {
+                              login
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
