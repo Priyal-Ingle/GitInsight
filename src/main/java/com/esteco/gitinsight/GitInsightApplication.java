@@ -13,7 +13,7 @@ public class GitInsightApplication {
 
         DefaultGitRepoService defaultGitRepoService = context.getBean(DefaultGitRepoService.class);
 
-        defaultGitRepoService.loadRepoAndLabelsData();
+//        defaultGitRepoService.loadRepoData();
     }
 
 }

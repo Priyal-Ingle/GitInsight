@@ -4,6 +4,7 @@ package com.esteco.gitinsight.model.entity;
 import jakarta.persistence.*;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
 
 import static java.util.UUID.randomUUID;
@@ -14,13 +15,6 @@ public class Issue {
     @Id
 
     private String id;
-    public Issue(){
-        this(randomUUID().toString());
-    }
-
-    public Issue(String id) {
-        this.id = id;
-    }
     private String title;
     private long totalComment;
     private String url;
@@ -31,25 +25,69 @@ public class Issue {
     private LocalDateTime createdAt;
     private long labelCount;
 
-    @OneToMany(cascade = CascadeType.ALL)
-    private List<Label> labels;
 
-    @OneToMany(cascade = CascadeType.ALL)
-    private List<Comment> comments;
+    @OneToMany(
+            cascade = CascadeType.ALL,
+            mappedBy = "issue",
+            orphanRemoval = true,
+            fetch = FetchType.LAZY
+    )
+    private List<Label> labels = new ArrayList<>();
 
-    @ManyToOne(cascade = CascadeType.ALL)
-    private GitRepo gitRepo;
+    @OneToMany(
+            cascade = CascadeType.ALL,
+            mappedBy = "issue",
+            orphanRemoval = true,
+            fetch = FetchType.LAZY
+    )
+    private List<Comment> comments = new ArrayList<>();
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "git_repo_id", nullable = false)
+    private GitRepo git_repo;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "author_username", nullable = false)
     private Author author;
 
 
-    @ManyToMany()
-    private List<Author> assignees;
+//    @ManyToMany()
+//    private List<Author> assignees;
+//
+//
+//    @ManyToMany()
+//    private List<PullRequest> associatedPullRequests;
 
 
-    @ManyToMany()
-    private List<PullRequest> associatedPullRequests;
+    public Issue(){
+        this(randomUUID().toString());
+    }
+
+    public Issue(String id) {
+        this.id = id;
+    }
+
+    public Issue(String title, long totalComment, String url, String body,
+                 LocalDateTime closedAt, long prCount, boolean closed,
+                 LocalDateTime createdAt, long labelCount, List<Label> labels, List<Comment> comments,
+                 GitRepo git_repo, Author author, List<Author> assignees, List<PullRequest> associatedPullRequests) {
+        this.title = title;
+        this.totalComment = totalComment;
+        this.url = url;
+        this.body = body;
+        this.closedAt = closedAt;
+        this.prCount = prCount;
+        this.closed = closed;
+        this.createdAt = createdAt;
+        this.labelCount = labelCount;
+        this.labels = labels;
+        this.comments = comments;
+        this.git_repo = git_repo;
+        this.author = author;
+//        this.assignees = assignees;
+//        this.associatedPullRequests = associatedPullRequests;
+    }
+
 
 
     public List<Comment> getComments() {
@@ -61,11 +99,11 @@ public class Issue {
     }
 
     public GitRepo getGitRepo() {
-        return gitRepo;
+        return git_repo;
     }
 
     public void setGitRepo(GitRepo gitRepo) {
-        this.gitRepo = gitRepo;
+        this.git_repo = gitRepo;
     }
 
     public Author getAuthor() {
@@ -76,21 +114,21 @@ public class Issue {
         this.author = author;
     }
 
-    public List<Author> getAssignees() {
-        return assignees;
-    }
-
-    public void setAssignees(List<Author> assignees) {
-        this.assignees = assignees;
-    }
-
-    public List<PullRequest> getAssociatedPullRequests() {
-        return associatedPullRequests;
-    }
-
-    public void setAssociatedPullRequests(List<PullRequest> associatedPullRequests) {
-        this.associatedPullRequests = associatedPullRequests;
-    }
+//    public List<Author> getAssignees() {
+//        return assignees;
+//    }
+//
+//    public void setAssignees(List<Author> assignees) {
+//        this.assignees = assignees;
+//    }
+//
+//    public List<PullRequest> getAssociatedPullRequests() {
+//        return associatedPullRequests;
+//    }
+//
+//    public void setAssociatedPullRequests(List<PullRequest> associatedPullRequests) {
+//        this.associatedPullRequests = associatedPullRequests;
+//    }
 
     public String getId() {
         return id;
@@ -168,11 +206,13 @@ public class Issue {
         this.labelCount = labelCount;
     }
 
+
+//**********************getter and setter for labels************************************
     public List<Label> getLabels() {
         return labels;
     }
 
     public void setLabels(List<Label> labels) {
-        this.labels = labels;
+        this.labels.addAll(labels);
     }
 }

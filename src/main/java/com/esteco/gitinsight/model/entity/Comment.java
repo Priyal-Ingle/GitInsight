@@ -7,12 +7,12 @@ import java.util.UUID;
 @Entity
 public class Comment {
     @Id
-
     private String id;
     private String body;
     private LocalDateTime createdAt;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "issue_id", nullable = false)
     private Issue issue;
 
     public String getId() {
@@ -41,5 +41,9 @@ public class Comment {
 
     public void setCreatedAt(LocalDateTime createdAt) {
         this.createdAt = createdAt;
+    }
+
+    public void setIssue(Issue issue) {
+        this.issue = issue;
     }
 }

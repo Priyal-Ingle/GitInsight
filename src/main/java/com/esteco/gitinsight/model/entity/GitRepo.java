@@ -1,6 +1,5 @@
 package com.esteco.gitinsight.model.entity;
 
-import com.esteco.gitinsight.model.repository.LabelRepository;
 import jakarta.persistence.*;
 
 import java.time.LocalDateTime;
@@ -11,61 +10,41 @@ import java.util.UUID;
 @Entity
 public class GitRepo {
     @Id
-//    @GeneratedValue(strategy = GenerationType.AUTO)
     private String id;
+
+
     private String url;
     private String repoOwner;
     private String repoName;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
-    private long forkedCount;
     private boolean privateRepository;
-    private long labelCount;
-    private long languageCount;
-    private long issuesCount;
 
 
     @OneToMany(
             cascade = CascadeType.ALL,
-            orphanRemoval = true
+            mappedBy = "git_repo",
+            orphanRemoval = true,
+            fetch = FetchType.LAZY
     )
-    private List<Label> labels;
+    private List<Label> labels = new ArrayList<>();
 
-    @OneToMany(cascade = CascadeType.ALL)
-    private List<Language> languages;
+    @OneToMany(
+            cascade = CascadeType.ALL,
+            mappedBy = "git_repo",
+            orphanRemoval = true,
+            fetch = FetchType.LAZY
+    )
+    private List<Language> languages = new ArrayList<>();
 
-    @OneToMany(cascade = CascadeType.ALL)
-    private List<Issue> issues;
+    @OneToMany(
+            cascade = CascadeType.ALL,
+            mappedBy = "git_repo",
+            orphanRemoval = true,
+            fetch = FetchType.LAZY
+    )
+    private List<Issue> issues = new ArrayList<>();
 
-
-    public void setLabels(List<Label> labels) {
-        this.labels = labels;
-    }
-
-    public List<Language> getLanguages() {
-        return languages;
-    }
-
-    public void setLanguages(List<Language> languages) {
-        this.languages = languages;
-    }
-
-    public List<Issue> getIssues() {
-        return issues;
-    }
-
-    public void setIssues(List<Issue> issues) {
-        this.issues = issues;
-    }
-
-    public List<Label> getLabels() {
-        return labels;
-    }
-
-    public void removeLabel(Label label) {
-        this.labels.remove(label);
-        label.setGitRepo(null);
-    }
 
 
     public GitRepo() {
@@ -74,6 +53,10 @@ public class GitRepo {
 
     public GitRepo(String id) {
         this.id = id;
+    }
+
+    public String getId() {
+        return id;
     }
 
     public String getUrl() {
@@ -116,13 +99,7 @@ public class GitRepo {
         this.updatedAt = updatedAt;
     }
 
-    public long getForkedCount() {
-        return forkedCount;
-    }
 
-    public void setForkedCount(long forkedCount) {
-        this.forkedCount = forkedCount;
-    }
 
     public boolean isPrivateRepository() {
         return privateRepository;
@@ -132,27 +109,60 @@ public class GitRepo {
         this.privateRepository = privateRepository;
     }
 
-    public long getLabelCount() {
-        return labelCount;
+//******************   Issues getter setter **************************
+
+    public List<Issue> getIssues() {
+        return issues;
     }
 
-    public void setLabelCount(long labelCount) {
-        this.labelCount = labelCount;
+    public void setIssues(List<Issue> issues) {
+        this.issues.addAll(issues);
     }
 
-    public long getLanguageCount() {
-        return languageCount;
+//******************   languages getter setter **************************
+    public List<Language> getLanguages() {
+        return languages;
     }
 
-    public void setLanguageCount(long languageCount) {
-        this.languageCount = languageCount;
+    public void setLanguages(List<Language> languages) {
+        this.languages.addAll(languages);
     }
 
-    public long getIssuesCount() {
-        return issuesCount;
+
+//******************   labels getter setter **************************
+    public List<Label> getLabels() {
+        return labels;
     }
 
-    public void setIssuesCount(long issuesCount) {
-        this.issuesCount = issuesCount;
+    public void setLabels(List<Label> labelsList) {
+        this.labels.addAll(labelsList);
     }
+
+    @Override
+    public String toString() {
+        String labelsInfo;
+        try {
+            // Attempt to access the labels list
+            labelsInfo = (labels == null || labels.isEmpty())
+                    ? "Labels not loaded or empty"
+                    : labels.toString();
+        } catch (org.hibernate.LazyInitializationException e) {
+            // Handle the case where labels are not initialized
+            labelsInfo = "Labels not initialized (LazyInitializationException)";
+        }
+
+        return "GitRepo{" +
+                "id='" + id + '\'' +
+                ", url='" + url + '\'' +
+                ", repoOwner='" + repoOwner + '\'' +
+                ", repoName='" + repoName + '\'' +
+                ", createdAt=" + createdAt +
+                ", updatedAt=" + updatedAt +
+                ", privateRepository=" + privateRepository +
+                ", labels=" + labelsInfo +
+                '}';
+    }
+
+
+
 }

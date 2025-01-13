@@ -2,6 +2,8 @@ package com.esteco.gitinsight.model.entity;
 
 import jakarta.persistence.*;
 
+import java.util.UUID;
+
 import static java.util.UUID.randomUUID;
 
 @Entity
@@ -16,10 +18,18 @@ public class Language {
     @ManyToOne(
             fetch = FetchType.LAZY
     )
-    private GitRepo gitRepo;
+    @JoinColumn(name = "git_repo_id", nullable = false)
+    private GitRepo git_repo;
 
     public Language() {
         this(randomUUID().toString());
+    }
+
+    public Language(String name, String color, GitRepo git_repo) {
+        this(UUID.randomUUID().toString());
+        this.name = name;
+        this.color = color;
+        this.git_repo = git_repo;
     }
 
     public Language(String id) {

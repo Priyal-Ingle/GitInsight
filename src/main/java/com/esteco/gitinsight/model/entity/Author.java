@@ -12,14 +12,18 @@ import static java.util.UUID.randomUUID;
 public class Author {
 
     @Id
-
     private String username;
     private String url;
 
     @OneToMany(cascade = CascadeType.ALL)
     private List<Label> labels;
 
-    @OneToMany(cascade = CascadeType.ALL)
+    @OneToMany(
+            cascade = CascadeType.ALL,
+            mappedBy = "author",
+            orphanRemoval = true,
+            fetch = FetchType.LAZY
+    )
     private List<Issue> createdIssues;
 
     @ManyToMany()
