@@ -11,9 +11,9 @@ public class Label {
     private String name;
     private String color;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+   /* @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "git_repo_id", nullable = false)
-    private GitRepo git_repo;
+    private GitRepo git_repo;*/
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "issue_id", nullable = false)
@@ -29,16 +29,12 @@ public class Label {
         this.issue = issue;
     }
 
-
-
-
-
-    public void setGit_repo(GitRepo git_repo) {
+    /*public void setGit_repo(GitRepo git_repo) {
         this.git_repo = git_repo;
     }
     public GitRepo getGit_repo() {
         return git_repo;
-    }
+    }*/
 
     public Label(String id) {
         this.id = id;
@@ -48,7 +44,7 @@ public class Label {
         this(UUID.randomUUID().toString());
         this.name = name;
         this.color = color;
-        this.git_repo = git_repo;
+//        this.git_repo = git_repo;
     }
 
     public Label() {

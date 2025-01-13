@@ -46,13 +46,23 @@ public class PullRequest {
     private boolean closed;
 
 
-    @OneToMany(cascade = CascadeType.ALL)
+    @OneToMany(cascade = CascadeType.ALL,
+            mappedBy = "pullRequest",
+            orphanRemoval = true,
+            fetch = FetchType.LAZY)
     private List<Commit> Commits;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "author_username", nullable = false)
     private Author author;
 
-    @ManyToMany()
+
+    @ManyToMany
+    @JoinTable(
+            name = "pull_request_issues",
+            joinColumns = @JoinColumn(name = "pull_request_id"),
+            inverseJoinColumns = @JoinColumn(name = "issue_id")
+    )
     private List<Issue> associatedIssues;
 
 

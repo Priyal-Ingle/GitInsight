@@ -1,25 +1,26 @@
 package com.esteco.gitinsight.model.entity;
 
-import com.esteco.gitinsight.model.repository.GitRepository;
-import com.esteco.gitinsight.model.repository.LabelRepository;
-import org.hibernate.Hibernate;
+import com.esteco.gitinsight.model.repository.*;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
-import java.io.Serializable;
 import java.time.LocalDateTime;
 import java.util.List;
-import java.util.Optional;
-import java.util.function.Consumer;
 
 @Component
 public class DbSeeder implements CommandLineRunner {
     private final GitRepository gitRepository;
     private final LabelRepository labelRepository;
+    private final IssueRepository issueRepository;
+    private final AuthorRepository authorRepository;
+    private final CommentRepository commentRepository;
 
-    public DbSeeder(GitRepository gitRepository, LabelRepository labelRepository) {
+    public DbSeeder(GitRepository gitRepository, LabelRepository labelRepository, IssueRepository issueRepository, AuthorRepository authorRepository, CommentRepository commentRepository) {
         this.gitRepository = gitRepository;
         this.labelRepository = labelRepository;
+        this.issueRepository = issueRepository;
+        this.authorRepository = authorRepository;
+        this.commentRepository = commentRepository;
     }
 
     @Override
@@ -30,22 +31,83 @@ public class DbSeeder implements CommandLineRunner {
         gitRepo.setRepoOwner("test-owner");
         gitRepo.setCreatedAt(LocalDateTime.from(LocalDateTime.now()));
         gitRepo.setUpdatedAt(LocalDateTime.from(LocalDateTime.now()));
-        Label label = new Label("test-label", "red", gitRepo);
-        Label label1 = new Label("test-label1", "pink", gitRepo);
-//        gitRepo.setLabels(List.of(label,label1));
+        /*Label label = new Label("test-label", "red", gitRepo);
+        Label label1 = new Label("test-label1", "pink", gitRepo);*/
 
-        Language language = new Language("test-language", "red", gitRepo);
+        gitRepository.save(gitRepo);
+
+        Author author = new Author("john");
+        authorRepository.save(author);
+
+        Issue issue = new Issue();
+        Issue issue1 = new Issue();
+        issue.setGitRepo(gitRepo);
+        issue.setAuthor(author);
+        issue1.setGitRepo(gitRepo);
+        issue1.setAuthor(author);
+        issueRepository.save(issue);
+        issueRepository.save(issue1);
+
+        Label label = new Label();
+        label.setName("test-label");
+        label.setColor("green");
+        label.setIssue(issue);
+        Label label1 = new Label();
+        label1.setName("test-label1");
+        label1.setColor("red");
+        label1.setIssue(issue1);
+        labelRepository.save(label);
+        labelRepository.save(label1);
+
+        Comment comment = new Comment();
+        comment.setBody("This is a comment");
+        comment.setIssue(issue);
+        Comment comment1 = new Comment();
+        comment1.setBody("This is a comment1");
+        comment1.setIssue(issue1);
+        commentRepository.save(comment);
+        commentRepository.save(comment1);
+
+
+        /*Language language = new Language("test-language", "red", gitRepo);
         gitRepo.setLanguages(List.of(language));
         Comment comment = new Comment();
         comment.setBody("This is a comment");
-        comment.setIssue();
         Comment comment1 = new Comment();
         comment1.setBody("This is a comment1");
         Author author = new Author();
         author.setUsername("test-author");
-        Issue issue = new Issue("test-title", 10, "test-url", "test-body", LocalDateTime.now(), 19, false, LocalDateTime.now(),
-                1, List.of(label, label1), List.of(comment, comment1), gitRepo, author, null, null);
-        gitRepo.setIssues(List.of(issue));
+        Author author1 = new Author();
+        author1.setUsername("test-author1");
+        PullRequest pullRequest = new PullRequest();
+        pullRequest.setAuthor(author);
+        Commit commit = new Commit();
+        commit.setAuthor(author1);
+        pullRequest.setCommits(List.of(commit));
+        Issue issue = new Issue();
+        issue.setTitle("test-title");
+        issue.setTotalComment(10);
+        issue.setUrl("test-url");
+        issue.setBody("test-body");
+        issue.setCreatedAt(LocalDateTime.now());
+        issue.setClosedAt(LocalDateTime.now());
+        issue.setClosed(false);
+        issue.setPrCount(19);
+        issue.setLabelCount(1);*/
+
+        /*label.setIssue(issue);
+        label1.setIssue(issue);
+        gitRepo.setLabels(List.of(label, label1));*/
+        /*comment.setIssue(issue);
+        comment1.setIssue(issue);*/
+
+        /*issue.setLabels(List.of(label, label1));
+        issue.setComments(List.of(comment, comment1));
+        issue.setGitRepo(gitRepo);
+        issue.setAuthor(author);
+        issue.setAssignees(List.of(author, author1));
+        issue.setAssociatedPullRequests(List.of(pullRequest));*/
+
 
         //:TODO create comment
         //:TODO create label
@@ -56,7 +118,7 @@ public class DbSeeder implements CommandLineRunner {
         //: TODO save gitRepo
 
 
-        gitRepository.save(gitRepo);
+//        gitRepository.save(gitRepo);
     }
 
     /*@Override

@@ -21,13 +21,13 @@ public class GitRepo {
     private boolean privateRepository;
 
 
-    @OneToMany(
+    /*@OneToMany(
             cascade = CascadeType.ALL,
             mappedBy = "git_repo",
             orphanRemoval = true,
             fetch = FetchType.LAZY
     )
-    private List<Label> labels = new ArrayList<>();
+    private List<Label> labels = new ArrayList<>();*/
 
     @OneToMany(
             cascade = CascadeType.ALL,
@@ -37,13 +37,13 @@ public class GitRepo {
     )
     private List<Language> languages = new ArrayList<>();
 
-    @OneToMany(
+    /*@OneToMany(
             cascade = CascadeType.ALL,
             mappedBy = "git_repo",
             orphanRemoval = true,
             fetch = FetchType.LAZY
     )
-    private List<Issue> issues = new ArrayList<>();
+    private List<Issue> issues = new ArrayList<>();*/
 
 
 
@@ -111,13 +111,13 @@ public class GitRepo {
 
 //******************   Issues getter setter **************************
 
-    public List<Issue> getIssues() {
+    /*public List<Issue> getIssues() {
         return issues;
     }
 
     public void setIssues(List<Issue> issues) {
         this.issues.addAll(issues);
-    }
+    }*/
 
 //******************   languages getter setter **************************
     public List<Language> getLanguages() {
@@ -130,15 +130,15 @@ public class GitRepo {
 
 
 //******************   labels getter setter **************************
-    public List<Label> getLabels() {
+    /*public List<Label> getLabels() {
         return labels;
     }
 
     public void setLabels(List<Label> labelsList) {
         this.labels.addAll(labelsList);
-    }
+    }*/
 
-    @Override
+    /*@Override
     public String toString() {
         String labelsInfo;
         try {
@@ -161,7 +161,7 @@ public class GitRepo {
                 ", privateRepository=" + privateRepository +
                 ", labels=" + labelsInfo +
                 '}';
-    }
+    }*/
 
 
 

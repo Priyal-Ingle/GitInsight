@@ -3,6 +3,7 @@ package com.esteco.gitinsight.model.entity;
 
 import jakarta.persistence.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import static java.util.UUID.randomUUID;
@@ -15,8 +16,6 @@ public class Author {
     private String username;
     private String url;
 
-    @OneToMany(cascade = CascadeType.ALL)
-    private List<Label> labels;
 
     @OneToMany(
             cascade = CascadeType.ALL,
@@ -26,8 +25,8 @@ public class Author {
     )
     private List<Issue> createdIssues;
 
-    @ManyToMany()
-    private List<Issue> assignedIssues;
+    @ManyToMany(mappedBy = "assignees")
+    private List<Issue> assignedIssues = new ArrayList<>();
 
     public List<PullRequest> getCreatedPullRequests() {
         return createdPullRequests;
@@ -61,13 +60,7 @@ public class Author {
         this.createdIssues = createdIssues;
     }
 
-    public List<Label> getLabels() {
-        return labels;
-    }
 
-    public void setLabels(List<Label> labels) {
-        this.labels = labels;
-    }
 
     public String getUsername() {
         return username;
@@ -77,10 +70,16 @@ public class Author {
         this.username = username;
     }
 
-    @OneToMany(cascade = CascadeType.ALL)
+    @OneToMany(cascade = CascadeType.ALL,
+            mappedBy = "author",
+            orphanRemoval = true,
+            fetch = FetchType.LAZY)
     private List<Commit> createdCommits;
 
-    @OneToMany(cascade = CascadeType.ALL)
+    @OneToMany(cascade = CascadeType.ALL,
+            mappedBy = "author",
+            orphanRemoval = true,
+            fetch = FetchType.LAZY)
     private List<PullRequest> createdPullRequests;
 
 

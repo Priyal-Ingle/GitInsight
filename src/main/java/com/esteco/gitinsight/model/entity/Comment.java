@@ -15,6 +15,7 @@ public class Comment {
     @JoinColumn(name = "issue_id", nullable = false)
     private Issue issue;
 
+//    *********************getter setter start ********************
     public String getId() {
         return id;
     }

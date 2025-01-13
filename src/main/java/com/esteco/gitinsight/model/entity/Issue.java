@@ -13,7 +13,6 @@ import static java.util.UUID.randomUUID;
 
 public class Issue {
     @Id
-
     private String id;
     private String title;
     private long totalComment;
@@ -50,13 +49,36 @@ public class Issue {
     @JoinColumn(name = "author_username", nullable = false)
     private Author author;
 
+    public List<Author> getAssignees() {
+        return assignees;
+    }
 
-//    @ManyToMany()
-//    private List<Author> assignees;
-//
-//
-//    @ManyToMany()
-//    private List<PullRequest> associatedPullRequests;
+    public void setAssignees(List<Author> assignees) {
+        this.assignees = assignees;
+    }
+
+    public List<PullRequest> getAssociatedPullRequests() {
+        return associatedPullRequests;
+    }
+
+    public void setAssociatedPullRequests(List<PullRequest> associatedPullRequests) {
+        this.associatedPullRequests = associatedPullRequests;
+    }
+
+    @ManyToMany
+    @JoinTable(
+            name = "issue_assignees",
+            joinColumns = @JoinColumn(name = "issue_id"),
+            inverseJoinColumns = @JoinColumn(name = "author_id")
+    )
+    private List<Author> assignees;
+
+
+    @ManyToMany(mappedBy = "associatedIssues")
+    private List<PullRequest> associatedPullRequests;
+
+
+//    *********************getter setter start ********************
 
 
     public Issue(){
@@ -67,7 +89,7 @@ public class Issue {
         this.id = id;
     }
 
-    public Issue(String title, long totalComment, String url, String body,
+/*    public Issue(String title, long totalComment, String url, String body,
                  LocalDateTime closedAt, long prCount, boolean closed,
                  LocalDateTime createdAt, long labelCount, List<Label> labels, List<Comment> comments,
                  GitRepo git_repo, Author author, List<Author> assignees, List<PullRequest> associatedPullRequests) {
@@ -86,25 +108,25 @@ public class Issue {
         this.author = author;
 //        this.assignees = assignees;
 //        this.associatedPullRequests = associatedPullRequests;
-    }
+    }*/
 
 
 
-    public List<Comment> getComments() {
+    /*public List<Comment> getComments() {
         return comments;
     }
 
     public void setComments(List<Comment> comments) {
         this.comments = comments;
-    }
+    }*/
 
-    public GitRepo getGitRepo() {
+    /*public GitRepo getGitRepo() {
         return git_repo;
     }
 
     public void setGitRepo(GitRepo gitRepo) {
         this.git_repo = gitRepo;
-    }
+    }*/
 
     public Author getAuthor() {
         return author;
@@ -214,5 +236,9 @@ public class Issue {
 
     public void setLabels(List<Label> labels) {
         this.labels.addAll(labels);
+    }
+
+    public void setGitRepo(GitRepo git_repo) {
+        this.git_repo = git_repo;
     }
 }

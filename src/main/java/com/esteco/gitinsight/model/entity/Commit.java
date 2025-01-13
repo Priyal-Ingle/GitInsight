@@ -30,10 +30,12 @@ public class Commit {
     private String url;
 
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "pull_request_id", nullable = false)
     private PullRequest pullRequest;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "author_username", nullable = false)
     private Author author;
 
     public Commit() {
