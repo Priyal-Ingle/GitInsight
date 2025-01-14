@@ -4,16 +4,13 @@ import jakarta.persistence.*;
 
 import java.time.LocalDateTime;
 import java.util.UUID;
+
 @Entity
 public class Comment {
     @Id
     private String id;
     private String body;
     private LocalDateTime createdAt;
-
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "issue_id", nullable = false)
-    private Issue issue;
 
 //    *********************getter setter start ********************
     public String getId() {
@@ -44,7 +41,4 @@ public class Comment {
         this.createdAt = createdAt;
     }
 
-    public void setIssue(Issue issue) {
-        this.issue = issue;
-    }
 }

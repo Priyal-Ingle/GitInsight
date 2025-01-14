@@ -69,7 +69,7 @@ query {
                             }
                           }
                         }
-                        author {
+                        user {
                           login
                         }
                         assignees(first: 1) {

@@ -81,7 +81,7 @@ public class TestConfig {
                             }
                           }
                         }
-                        author {
+                        user {
                           login
                         }
                         assignees(first: 1) {

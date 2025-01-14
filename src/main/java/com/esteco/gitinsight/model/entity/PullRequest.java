@@ -3,6 +3,7 @@ package com.esteco.gitinsight.model.entity;
 import jakarta.persistence.*;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
 
 import static java.util.UUID.randomUUID;
@@ -11,75 +12,35 @@ import static java.util.UUID.randomUUID;
 public class PullRequest {
     @Id
     private String id;
-
-    public List<Issue> getAssociatedIssues() {
-        return associatedIssues;
-    }
-
-    public void setAssociatedIssues(List<Issue> associatedIssues) {
-        this.associatedIssues = associatedIssues;
-    }
-
-    public Author getAuthor() {
-        return author;
-    }
-
-    public void setAuthor(Author author) {
-        this.author = author;
-    }
-
-    public List<Commit> getCommits() {
-        return Commits;
-    }
-
-    public void setCommits(List<Commit> commits) {
-        Commits = commits;
-    }
-
     private String title;
     private String body;
     private String url;
-    private long fileChangeCount;
-    private long commitCount;
     private LocalDateTime createdAt;
     private LocalDateTime closedAt;
-    private boolean closed;
-
-
-    @OneToMany(cascade = CascadeType.ALL,
-            mappedBy = "pullRequest",
+    @OneToMany(
+            cascade = CascadeType.ALL,
             orphanRemoval = true,
-            fetch = FetchType.LAZY)
-    private List<Commit> Commits;
-
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "author_username", nullable = false)
-    private Author author;
-
-
-    @ManyToMany
-    @JoinTable(
-            name = "pull_request_issues",
-            joinColumns = @JoinColumn(name = "pull_request_id"),
-            inverseJoinColumns = @JoinColumn(name = "issue_id")
+            fetch = FetchType.LAZY
     )
-    private List<Issue> associatedIssues;
+    private List<Commit> commits=new ArrayList<>();
 
 
 
+//    *********************getter setter start ********************
+    public String getId() {
+        return id;
+    }
 
-
+    public void setId(String id) {
+        this.id = id;
+    }
 
     public PullRequest() {
         this(randomUUID().toString());
     }
 
-
     public PullRequest(String id) {
         this.id= id;
-    }
-    public String getId() {
-        return id;
     }
 
     public String getTitle() {
@@ -106,22 +67,6 @@ public class PullRequest {
         this.url = url;
     }
 
-    public long getFileChangeCount() {
-        return fileChangeCount;
-    }
-
-    public void setFileChangeCount(long fileChangeCount) {
-        this.fileChangeCount = fileChangeCount;
-    }
-
-    public long getCommitCount() {
-        return commitCount;
-    }
-
-    public void setCommitCount(long commitCount) {
-        this.commitCount = commitCount;
-    }
-
     public LocalDateTime getCreatedAt() {
         return createdAt;
     }
@@ -138,11 +83,16 @@ public class PullRequest {
         this.closedAt = closedAt;
     }
 
-    public boolean isClosed() {
-        return closed;
+    public List<Commit> getCommits() {
+        return commits;
     }
 
-    public void setClosed(boolean closed) {
-        this.closed = closed;
+    public void setCommits(List<Commit> commits) {
+        this.commits = commits;
     }
+
+    public void setCommit(Commit commit) {
+        this.commits.add(commit);
+    }
+
 }

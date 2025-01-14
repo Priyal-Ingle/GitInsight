@@ -7,29 +7,25 @@ import java.util.UUID;
 import static java.util.UUID.randomUUID;
 
 @Entity
-
 public class Language {
     @Id
-
     private String id;
     private String name;
     private String color;
 
-    @ManyToOne(
-            fetch = FetchType.LAZY
-    )
-    @JoinColumn(name = "git_repo_id", nullable = false)
-    private GitRepo git_repo;
-
+//    *********************getter setter start ********************
     public Language() {
         this(randomUUID().toString());
     }
 
-    public Language(String name, String color, GitRepo git_repo) {
+    public Language(String name, String color) {
         this(UUID.randomUUID().toString());
         this.name = name;
         this.color = color;
-        this.git_repo = git_repo;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public Language(String id) {
@@ -39,7 +35,6 @@ public class Language {
     public String getId() {
         return id;
     }
-
 
     public String getName() {
         return name;

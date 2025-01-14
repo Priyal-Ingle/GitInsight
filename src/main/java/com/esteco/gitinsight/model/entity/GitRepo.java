@@ -11,42 +11,33 @@ import java.util.UUID;
 public class GitRepo {
     @Id
     private String id;
-
-
     private String url;
     private String repoOwner;
     private String repoName;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
     private boolean privateRepository;
-
-
-    /*@OneToMany(
+    @OneToMany(
             cascade = CascadeType.ALL,
-            mappedBy = "git_repo",
             orphanRemoval = true,
             fetch = FetchType.LAZY
     )
-    private List<Label> labels = new ArrayList<>();*/
-
+    private List<Label> labels = new ArrayList<>();
     @OneToMany(
             cascade = CascadeType.ALL,
-            mappedBy = "git_repo",
             orphanRemoval = true,
             fetch = FetchType.LAZY
     )
     private List<Language> languages = new ArrayList<>();
-
-    /*@OneToMany(
+    @OneToMany(
             cascade = CascadeType.ALL,
-            mappedBy = "git_repo",
             orphanRemoval = true,
             fetch = FetchType.LAZY
     )
-    private List<Issue> issues = new ArrayList<>();*/
+    private List<Issue> issues = new ArrayList<>();
 
 
-
+//    *********************getter setter start ********************
     public GitRepo() {
         this(UUID.randomUUID().toString());
     }
@@ -57,6 +48,10 @@ public class GitRepo {
 
     public String getId() {
         return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getUrl() {
@@ -99,8 +94,6 @@ public class GitRepo {
         this.updatedAt = updatedAt;
     }
 
-
-
     public boolean isPrivateRepository() {
         return privateRepository;
     }
@@ -109,60 +102,39 @@ public class GitRepo {
         this.privateRepository = privateRepository;
     }
 
-//******************   Issues getter setter **************************
-
-    /*public List<Issue> getIssues() {
-        return issues;
+    public List<Label> getLabels() {
+        return labels;
     }
 
-    public void setIssues(List<Issue> issues) {
-        this.issues.addAll(issues);
-    }*/
+    public void setLabels(List<Label> labels) {
+        this.labels = labels;
+    }
 
-//******************   languages getter setter **************************
+    public void setLabel(Label label) {
+        this.labels.add(label);
+    }
+
     public List<Language> getLanguages() {
         return languages;
     }
 
     public void setLanguages(List<Language> languages) {
-        this.languages.addAll(languages);
+        this.languages = languages;
     }
 
-
-//******************   labels getter setter **************************
-    /*public List<Label> getLabels() {
-        return labels;
+    public void setLanguage(Language language) {
+        this.languages.add(language);
     }
 
-    public void setLabels(List<Label> labelsList) {
-        this.labels.addAll(labelsList);
-    }*/
+    public List<Issue> getIssues() {
+        return issues;
+    }
 
-    /*@Override
-    public String toString() {
-        String labelsInfo;
-        try {
-            // Attempt to access the labels list
-            labelsInfo = (labels == null || labels.isEmpty())
-                    ? "Labels not loaded or empty"
-                    : labels.toString();
-        } catch (org.hibernate.LazyInitializationException e) {
-            // Handle the case where labels are not initialized
-            labelsInfo = "Labels not initialized (LazyInitializationException)";
-        }
+    public void setIssues(List<Issue> issues) {
+        this.issues = issues;
+    }
 
-        return "GitRepo{" +
-                "id='" + id + '\'' +
-                ", url='" + url + '\'' +
-                ", repoOwner='" + repoOwner + '\'' +
-                ", repoName='" + repoName + '\'' +
-                ", createdAt=" + createdAt +
-                ", updatedAt=" + updatedAt +
-                ", privateRepository=" + privateRepository +
-                ", labels=" + labelsInfo +
-                '}';
-    }*/
-
-
-
+    public void setIssue(Issue issue) {
+        this.issues.add(issue);
+    }
 }
