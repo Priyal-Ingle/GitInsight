@@ -31,13 +31,15 @@ public class Issue {
     )
     private List<Label> labels = new ArrayList<>();
     @OneToOne(
-            fetch = FetchType.LAZY
+            fetch = FetchType.LAZY,
+            cascade = CascadeType.ALL
     )
-    private User author;
+    private GitUser author;
     @OneToMany(
-            fetch = FetchType.LAZY
+            fetch = FetchType.LAZY,
+            cascade = CascadeType.ALL
     )
-    private List<User> assignees = new ArrayList<>();
+    private List<GitUser> assignees = new ArrayList<>();
     @OneToMany(
             cascade = CascadeType.ALL,
             orphanRemoval = true,
@@ -128,19 +130,19 @@ public class Issue {
         this.labels.add(label);
     }
 
-    public User getAuthor() {
+    public GitUser getAuthor() {
         return author;
     }
 
-    public void setAuthor(User author) {
+    public void setAuthor(GitUser author) {
         this.author = author;
     }
 
-    public List<User> getAssignees() {
+    public List<GitUser> getAssignees() {
         return assignees;
     }
 
-    public void setAssignees(List<User> assignees) {
+    public void setAssignees(List<GitUser> assignees) {
         this.assignees = assignees;
     }
 

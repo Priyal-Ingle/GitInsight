@@ -17,12 +17,12 @@ public class GitRepo {
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
     private boolean privateRepository;
-    @OneToMany(
-            cascade = CascadeType.ALL,
-            orphanRemoval = true,
-            fetch = FetchType.LAZY
-    )
-    private List<Label> labels = new ArrayList<>();
+//    @OneToMany(
+//            cascade = CascadeType.ALL,
+//            orphanRemoval = true,
+//            fetch = FetchType.LAZY
+//    )
+//    private List<Label> labels = new ArrayList<>();
     @OneToMany(
             cascade = CascadeType.ALL,
             orphanRemoval = true,
@@ -102,17 +102,17 @@ public class GitRepo {
         this.privateRepository = privateRepository;
     }
 
-    public List<Label> getLabels() {
-        return labels;
-    }
-
-    public void setLabels(List<Label> labels) {
-        this.labels = labels;
-    }
-
-    public void setLabel(Label label) {
-        this.labels.add(label);
-    }
+//    public List<Label> getLabels() {
+//        return labels;
+//    }
+//
+//    public void setLabels(List<Label> labels) {
+//        this.labels = labels;
+//    }
+//
+//    public void setLabel(Label label) {
+//        this.labels.add(label);
+//    }
 
     public List<Language> getLanguages() {
         return languages;
@@ -134,7 +134,4 @@ public class GitRepo {
         this.issues = issues;
     }
 
-    public void setIssue(Issue issue) {
-        this.issues.add(issue);
-    }
 }

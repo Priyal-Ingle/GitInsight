@@ -1,0 +1,549 @@
+{
+  "data": {
+    "repository": {
+      "id": "MDEwOlJlcG9zaXRvcnkxMzk5MTQ5MzI=",
+      "url": "https://github.com/quarkusio/quarkus",
+      "updatedAt": "2025-01-15T08:54:13Z",
+      "createdAt": "2018-07-06T00:44:20Z",
+      "isPrivate": false,
+      "isLocked": false,
+      "languages": {
+        "totalCount": 15,
+        "edges": [
+          {
+            "node": {
+              "id": "MDg6TGFuZ3VhZ2UxNTg=",
+              "color": "#b07219",
+              "name": "Java"
+            }
+          },
+          {
+            "node": {
+              "id": "MDjedhfgTGFuZ3VhZ2UxNTg=",
+              "color": "#b08919",
+              "name": "C++"
+            }
+          }
+        ]
+      },
+      "issues": {
+        "edges": [
+          {
+            "node": {
+              "id": "MDU6SXNzdWUzNTc3ODA3Njc=",
+              "title": "Allow application bytecode transformation over plain byte arrays",
+              "comments": {
+                "edges": [
+                  {
+                    "node": {
+                      "id": "MDEyOklzc3VlQ29tbWVudDQxOTIxNzk3NQ==",
+                      "author": {
+                        "login": "dmlloyd",
+                        "url": "https://github.com/dmlloyd"
+                      },
+                      "body": "I believe you could adapt it by returning a Function which returns a subclass of ClassWriter, which calls your transform at visitEnd and then uses a ClassReader initialized with the resultant class bytes to accept the passed-in ClassVisitor.",
+                      "createdAt": "2018-09-06T19:44:48Z"
+                    }
+                  }
+                ]
+              },
+              "url": "https://github.com/quarkusio/quarkus/issues/12",
+              "body": "\r\nWe need Hibernate ORM to apply its own bytecode transformation logic on the user's JPA model.\r\n\r\nThe API we have in ORM is this one:\r\n - https://github.com/hibernate/hibernate-orm/blob/159bc99a36d86988b61b88ba91eec82cac044e1c/hibernate-core/src/main/java/org/hibernate/bytecode/enhance/spi/Enhancer.java#L16-L29\r\n\r\nwhile Shamrock expects a `Function<String, Function<ClassVisitor, ClassVisitor>> function`; I don't see an easy way to adapt to this.\r\n\r\nWould be nice to also expose the option to register a processor which works on plain byte[] rather than ASM class visitors?",
+              "closed": true,
+              "closedAt": "2018-09-06T22:49:04Z",
+              "closedByPullRequestsReferences": {
+                "edges": [
+                  {
+                    "node": {
+                      "id": "MDExOlB1bGxSZXF1ZXN0MjE3MjM0NjU0",
+                      "title": "Arc - make it possible to get interceptor bindings from",
+                      "author": {
+                        "login": "mkouba"
+                      },
+                      "body": "InvocationContext\r\n\r\n- resolves #29 \r\n\r\nNOTE: Currently we only support array members with `Class` component type. It should be straightforward to support other component types.",
+                      "url": "https://github.com/quarkusio/quarkus/pull/30",
+                      "commits": {
+                        "edges": [
+                          {
+                            "node": {
+                              "id": "MDE3OlB1bGxSZXF1ZXN0Q29tbWl0MjE3MjM0NjU0OjQ4ZGY2Y2Y5NTJlZTZjYmY0YzhiYzdjMTUyZDMyYTQxNzhjMjcxNGQ=",
+                              "url": "https://github.com/quarkusio/quarkus/pull/30/commits/48df6cf952ee6cbf4c8bc7c152d32a4178c2714d"
+                            }
+                          }
+                        ]
+                      },
+                      "createdAt": "2018-09-21T10:07:35Z",
+                      "closed": true,
+                      "closedAt": "2018-09-21T11:42:55Z"
+                    }
+                  }
+                ]
+              },
+              "createdAt": "2018-09-06T18:50:35Z",
+              "labels": {
+                "edges": [
+                  {
+                    "node": {
+                      "id": "MDU6TGFiZWw5ODUzNDY2MjI=",
+                      "color": "a2eeef",
+                      "name": "kind/enhancement"
+                    }
+                  }
+                ]
+              },
+              "author": {
+                "login": "Sanne",
+                "url": "https://github.com/Sanne"
+              },
+              "assignees": {
+                "edges": []
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "MDU6SXNzdWUzNjAzNDQyODI=",
+              "title": "GraalVM rc7 removed method LocalizationSupport#addToCache",
+              "comments": {
+                "edges": [
+                  {
+                    "node": {
+                      "id": "MDEyOklzc3VlQ29tbWVudDQyMzA3MTMzMQ==",
+                      "author": {
+                        "login": "stuartwdouglas",
+                        "url": "https://github.com/stuartwdouglas"
+                      },
+                      "body": "This should actually be pretty easy to fix once RC7 is released, it looks like the method was just renamed. If we want something that works on both then I could add some reflection based thing but I think it might be easier to just wait.",
+                      "createdAt": "2018-09-20T07:28:11Z"
+                    }
+                  }
+                ]
+              },
+              "url": "https://github.com/quarkusio/quarkus/issues/20",
+              "body": "\r\nWe'll need to figure out a better alternative for Shamrock.\r\n\r\nIn the meantime when testing things with Graal \"master\" I've used this additional commit to restore compatibility:\r\n\r\nhttps://github.com/protean-project/graal/commit/581706eb9aaf417646eba6188dbf2eae92d308f0",
+              "closed": true,
+              "closedAt": "2018-10-04T01:02:40Z",
+              "closedByPullRequestsReferences": {
+                "edges": []
+              },
+              "createdAt": "2018-09-14T15:08:39Z",
+              "labels": {
+                "edges": []
+              },
+              "author": {
+                "login": "Sanne",
+                "url": "https://github.com/Sanne"
+              },
+              "assignees": {
+                "edges": []
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "MDU6SXNzdWUzNjI0NzgyMjY=",
+              "title": "Make it possible to get interceptor bindings from Arc InvocationContext",
+              "comments": {
+                "edges": []
+              },
+              "url": "https://github.com/quarkusio/quarkus/issues/29",
+              "body": "See also https://github.com/weld/api/blob/master/weld/src/main/java/org/jboss/weld/interceptor/WeldInvocationContext.java",
+              "closed": true,
+              "closedAt": "2018-09-21T11:42:54Z",
+              "closedByPullRequestsReferences": {
+                "edges": [
+                  {
+                    "node": {
+                      "id": "MDExOlB1bGxSZXF1ZXN0MjE3MjM0NjU1",
+                      "title": "Arc - make it possible to get interceptor bindings from",
+                      "author": {
+                        "login": "mkouba"
+                      },
+                      "body": "InvocationContext\r\n\r\n- resolves #29 \r\n\r\nNOTE: Currently we only support array members with `Class` component type. It should be straightforward to support other component types.",
+                      "url": "https://github.com/quarkusio/quarkus/pull/30",
+                      "commits": {
+                        "edges": [
+                          {
+                            "node": {
+                              "id": "MDE3OlB1bGxSZXF1ZXN0Q29tbWl0MjE3MjM0NjU0OjQ4ZGY2Y2Y5NTJlZTZjYmY0YzhiYzdjMTUyZDMyYTQxNzhjMjcxNGQ=",
+                              "url": "https://github.com/quarkusio/quarkus/pull/30/commits/48df6cf952ee6cbf4c8bc7c152d32a4178c2714d"
+                            }
+                          }
+                        ]
+                      },
+                      "createdAt": "2018-09-21T10:07:35Z",
+                      "closed": true,
+                      "closedAt": "2018-09-21T11:42:55Z"
+                    }
+                  }
+                ]
+              },
+              "createdAt": "2018-09-21T06:50:26Z",
+              "labels": {
+                "edges": []
+              },
+              "author": {
+                "login": "mkouba",
+                "url": "https://github.com/mkouba"
+              },
+              "assignees": {
+                "edges": []
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "MDU6SXNzdWUzNjQ1MTUyODY=",
+              "title": "Update README to specific mvn version",
+              "comments": {
+                "edges": [
+                  {
+                    "node": {
+                      "id": "MDEyOklzc3VlQ29tbWVudDQyNTEyMzI2OQ==",
+                      "author": {
+                        "login": "emmanuelbernard",
+                        "url": "https://github.com/emmanuelbernard"
+                      },
+                      "body": "On the other hands, 3.2.5 was released in 2014. https://maven.apache.org/docs/history.html",
+                      "createdAt": "2018-09-27T14:53:02Z"
+                    }
+                  }
+                ]
+              },
+              "url": "https://github.com/quarkusio/quarkus/issues/36",
+              "body": "Currently needs at least 3.2.5.",
+              "closed": true,
+              "closedAt": "2018-10-04T03:53:11Z",
+              "closedByPullRequestsReferences": {
+                "edges": []
+              },
+              "createdAt": "2018-09-27T14:51:22Z",
+              "labels": {
+                "edges": []
+              },
+              "author": {
+                "login": "nmcl",
+                "url": "https://github.com/nmcl"
+              },
+              "assignees": {
+                "edges": []
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "MDU6SXNzdWUzNjUzODQ4NDM=",
+              "title": "Arc - support initializer injection on superclasses",
+              "comments": {
+                "edges": []
+              },
+              "url": "https://github.com/quarkusio/quarkus/issues/38",
+              "body": "",
+              "closed": true,
+              "closedAt": "2018-10-02T13:14:06Z",
+              "closedByPullRequestsReferences": {
+                "edges": [
+                  {
+                    "node": {
+                      "id": "MDExOlB1bGxSZXF1ZXN0MjE5NjM4ODg3",
+                      "title": "Arc - support initializer injection on superclasses",
+                      "author": {
+                        "login": "mkouba"
+                      },
+                      "body": "- incl. superclasses located in a different package\r\n- resolves #38",
+                      "url": "https://github.com/quarkusio/quarkus/pull/42",
+                      "commits": {
+                        "edges": [
+                          {
+                            "node": {
+                              "id": "MDE3OlB1bGxSZXF1ZXN0Q29tbWl0MjE5NjM4ODg3OmMwNmMyZDFhZDg4ZmQ4ODUwZWE5ZjQ2MTZlNmRkZTZmYTIyNjFiNjU=",
+                              "url": "https://github.com/quarkusio/quarkus/pull/42/commits/c06c2d1ad88fd8850ea9f4616e6dde6fa2261b65"
+                            }
+                          }
+                        ]
+                      },
+                      "createdAt": "2018-10-02T09:28:08Z",
+                      "closed": true,
+                      "closedAt": "2018-10-02T13:14:06Z"
+                    }
+                  }
+                ]
+              },
+              "createdAt": "2018-10-01T09:48:46Z",
+              "labels": {
+                "edges": []
+              },
+              "author": {
+                "login": "mkouba",
+                "url": "https://github.com/mkouba"
+              },
+              "assignees": {
+                "edges": []
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "MDU6SXNzdWUzNjU4MTIzNTc=",
+              "title": "Arc - implement CDI inheritance rules properly",
+              "comments": {
+                "edges": [
+                  {
+                    "node": {
+                      "id": "MDEyOklzc3VlQ29tbWVudDQyNjIwODQwMA==",
+                      "author": {
+                        "login": "mkouba",
+                        "url": "https://github.com/mkouba"
+                      },
+                      "body": "Follows up #38 ",
+                      "createdAt": "2018-10-02T09:26:32Z"
+                    }
+                  }
+                ]
+              },
+              "url": "https://github.com/quarkusio/quarkus/issues/41",
+              "body": "See also http://docs.jboss.org/cdi/spec/2.0/cdi-spec.html#inheritance.",
+              "closed": true,
+              "closedAt": "2021-09-03T08:06:03Z",
+              "closedByPullRequestsReferences": {
+                "edges": [
+                  {
+                    "node": {
+                      "id": "MDExOlB1bGxSZXF1ZXN0NzIxOTM4NDMz",
+                      "title": "Implement inheritence for Stereotype and qualifier in arc",
+                      "author": {
+                        "login": "dufoli"
+                      },
+                      "body": "fix #41",
+                      "url": "https://github.com/quarkusio/quarkus/pull/19759",
+                      "commits": {
+                        "edges": [
+                          {
+                            "node": {
+                              "id": "MDE3OlB1bGxSZXF1ZXN0Q29tbWl0NzIxOTM4NDMzOjc1MDQ5NTMyOWUzMDY4MTU5MmEyYmRjMTczOWZhYzdjMzUyZDhhNGU=",
+                              "url": "https://github.com/quarkusio/quarkus/pull/19759/commits/750495329e30681592a2bdc1739fac7c352d8a4e"
+                            }
+                          }
+                        ]
+                      },
+                      "createdAt": "2021-08-29T11:56:05Z",
+                      "closed": true,
+                      "closedAt": "2021-09-03T08:06:03Z"
+                    }
+                  }
+                ]
+              },
+              "createdAt": "2018-10-02T09:25:43Z",
+              "labels": {
+                "edges": [
+                  {
+                    "node": {
+                      "id": "MDU6TGFiZWwxMjgyMTAyMzg5",
+                      "color": "0366d6",
+                      "name": "area/arc"
+                    }
+                  }
+                ]
+              },
+              "author": {
+                "login": "mkouba",
+                "url": "https://github.com/mkouba"
+              },
+              "assignees": {
+                "edges": []
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "MDU6SXNzdWUzNzA2MjUyMTM=",
+              "title": "Arc - add basic BeanManager support",
+              "comments": {
+                "edges": []
+              },
+              "url": "https://github.com/quarkusio/quarkus/issues/57",
+              "body": "Make it possible to use some methods at runtime, such as `getBeans()` or `getReference()`.",
+              "closed": true,
+              "closedAt": "2018-10-18T08:09:59Z",
+              "closedByPullRequestsReferences": {
+                "edges": [
+                  {
+                    "node": {
+                      "id": "MDExOlB1bGxSZXF1ZXN0MjIzNTczMTEy",
+                      "title": "Arc - add basic BeanManager support",
+                      "author": {
+                        "login": "mkouba"
+                      },
+                      "body": "- a lot of frameworks still rely on BeanManager's\r\ngetBeans()/createCreationalContext()/getReference() combo at runtime\r\n- resolves #57",
+                      "url": "https://github.com/quarkusio/quarkus/pull/59",
+                      "commits": {
+                        "edges": [
+                          {
+                            "node": {
+                              "id": "MDE3OlB1bGxSZXF1ZXN0Q29tbWl0MjIzNTczMTEyOmQwYWQxYjBjOTlmOTY2MGFkMzdlMDFlMzM3ODE4ZDA4N2IwMjE4MDk=",
+                              "url": "https://github.com/quarkusio/quarkus/pull/59/commits/d0ad1b0c99f9660ad37e01e337818d087b021809"
+                            }
+                          }
+                        ]
+                      },
+                      "createdAt": "2018-10-17T11:53:48Z",
+                      "closed": true,
+                      "closedAt": "2018-10-18T08:09:59Z"
+                    }
+                  }
+                ]
+              },
+              "createdAt": "2018-10-16T13:55:54Z",
+              "labels": {
+                "edges": []
+              },
+              "author": {
+                "login": "mkouba",
+                "url": "https://github.com/mkouba"
+              },
+              "assignees": {
+                "edges": []
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "MDU6SXNzdWUzNzk1NjM1OTA=",
+              "title": "org.jboss.builder.BasicTests hangs intermittently",
+              "comments": {
+                "edges": [
+                  {
+                    "node": {
+                      "id": "MDEyOklzc3VlQ29tbWVudDQzOTA4MzIxMQ==",
+                      "author": {
+                        "login": "dmlloyd",
+                        "url": "https://github.com/dmlloyd"
+                      },
+                      "body": "I think this was fixed by https://issues.jboss.org/browse/JBTHR-63 in the lastest alpha tag.  If not, reopen!",
+                      "createdAt": "2018-11-15T15:38:12Z"
+                    }
+                  }
+                ]
+              },
+              "url": "https://github.com/quarkusio/quarkus/issues/76",
+              "body": "",
+              "closed": true,
+              "closedAt": "2018-11-15T15:38:12Z",
+              "closedByPullRequestsReferences": {
+                "edges": []
+              },
+              "createdAt": "2018-11-11T21:09:48Z",
+              "labels": {
+                "edges": []
+              },
+              "author": {
+                "login": "stuartwdouglas",
+                "url": "https://github.com/stuartwdouglas"
+              },
+              "assignees": {
+                "edges": [
+                  {
+                    "node": {
+                      "login": "dmlloyd"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "MDU6SXNzdWUzODMzMDc1NTA=",
+              "title": "Producer method with erased generic return type causes NPE",
+              "comments": {
+                "edges": [
+                  {
+                    "node": {
+                      "id": "MDEyOklzc3VlQ29tbWVudDQ0NDQ4NzA0OA==",
+                      "author": {
+                        "login": "stuartwdouglas",
+                        "url": "https://github.com/stuartwdouglas"
+                      },
+                      "body": "@mkouba is this fixed now?",
+                      "createdAt": "2018-12-05T13:35:53Z"
+                    }
+                  }
+                ]
+              },
+              "url": "https://github.com/quarkusio/quarkus/issues/120",
+              "body": "A producer method with \r\n\r\n```java\r\n    @Produces\r\n    @Claim(\"\")\r\n    @Named(\"RawClaimTypeProducer#getOptionalValue\")\r\n    public Optional getOptionalValue(InjectionPoint ip) {\r\n        log.debugf(\"getOptionalValue(%s)\", ip);\r\n        String name = getName(ip);\r\n        ClaimValue<Optional<Object>> cv = MPJWTProducer.generalClaimValueProducer(name);\r\n        Optional<Object> value = cv.getValue();\r\n        return value;\r\n    }\r\n```\r\n\r\ncauses the following NPE with ARC:\r\n```\r\n\tSuppressed: java.lang.NullPointerException\r\n\t\tat org.jboss.protean.arc.processor.Types.getTypeHandle(Types.java:39)\r\n\t\tat org.jboss.protean.arc.processor.Types.getTypeHandle(Types.java:64)\r\n\t\tat org.jboss.protean.arc.processor.BeanGenerator.initConstructor(BeanGenerator.java:535)\r\n\t\tat org.jboss.protean.arc.processor.BeanGenerator.createConstructor(BeanGenerator.java:439)\r\n\t\tat org.jboss.protean.arc.processor.BeanGenerator.generateProducerMethodBean(BeanGenerator.java:312)\r\n\t\tat org.jboss.protean.arc.processor.BeanGenerator.generate(BeanGenerator.java:102)\r\n\t\tat org.jboss.protean.arc.processor.BeanProcessor.process(BeanProcessor.java:162)\r\n\t\tat org.jboss.shamrock.arc.deployment.ArcAnnotationProcessor.build(ArcAnnotationProcessor.java:208)\r\n\t\tat org.jboss.shamrock.arc.deployment.ArcAnnotationProcessorBuildStep0.execute(Unknown Source)\r\n\t\tat org.jboss.builder.BuildContext.run(BuildContext.java:403)\r\n\t\tat org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)\r\n\t\tat org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1934)\r\n\t\tat org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1463)\r\n\t\tat org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1354)\r\n\t\tat java.lang.Thread.run(Thread.java:748)\r\n\t\tat org.jboss.threads.JBossThread.run(JBossThread.java:479)\r\n```\r\n\r\nThere are two places I can see this can be handled. I'll create a pull request for the more general location, and @mkouba can decide if that is the best way to do so.\r\n",
+              "closed": true,
+              "closedAt": "2018-12-07T17:42:12Z",
+              "closedByPullRequestsReferences": {
+                "edges": []
+              },
+              "createdAt": "2018-11-21T22:03:37Z",
+              "labels": {
+                "edges": []
+              },
+              "author": {
+                "login": "starksm64",
+                "url": "https://github.com/starksm64"
+              },
+              "assignees": {
+                "edges": []
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "MDU6SXNzdWUzODM0MTc1OTg=",
+              "title": "Pick up a CDI producer even if the declaring class is not annotate with a bean defining annotation",
+              "comments": {
+                "edges": []
+              },
+              "url": "https://github.com/quarkusio/quarkus/issues/124",
+              "body": "Currently, we follow the rules of \"annotation\" bean discovery mode and thus for example this producer is not registered:\r\n```java\r\nclass Foo {\r\n  @Produces\r\n  String produceString() { return \"foo\"; }\r\n}\r\n```",
+              "closed": true,
+              "closedAt": "2018-11-23T12:31:37Z",
+              "closedByPullRequestsReferences": {
+                "edges": [
+                  {
+                    "node": {
+                      "id": "MDExOlB1bGxSZXF1ZXN0MjMzMDE1NTU0",
+                      "title": "Pick up CDI producer even if declaring class not annotated with BDA",
+                      "author": {
+                        "login": "mkouba"
+                      },
+                      "body": "- resolves #124",
+                      "url": "https://github.com/quarkusio/quarkus/pull/127",
+                      "commits": {
+                        "edges": [
+                          {
+                            "node": {
+                              "id": "MDE3OlB1bGxSZXF1ZXN0Q29tbWl0MjMzMDE1NTU0OmE4OGY3MGY3M2IyYmM1N2IzOTZjYzI3OTY1YTZmMmUwMzAwYTkxMTk=",
+                              "url": "https://github.com/quarkusio/quarkus/pull/127/commits/a88f70f73b2bc57b396cc27965a6f2e0300a9119"
+                            }
+                          }
+                        ]
+                      },
+                      "createdAt": "2018-11-22T15:28:11Z",
+                      "closed": true,
+                      "closedAt": "2018-11-23T12:31:37Z"
+                    }
+                  }
+                ]
+              },
+              "createdAt": "2018-11-22T07:56:06Z",
+              "labels": {
+                "edges": []
+              },
+              "author": {
+                "login": "mkouba",
+                "url": "https://github.com/mkouba"
+              },
+              "assignees": {
+                "edges": []
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

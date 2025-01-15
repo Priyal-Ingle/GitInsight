@@ -11,6 +11,9 @@ public class Comment {
     private String id;
     private String body;
     private LocalDateTime createdAt;
+//    :TODO add comment associated user
+//    @OneToOne(cascade = CascadeType.ALL)
+//    private GitUser gitUser;
 
 //    *********************getter setter start ********************
     public String getId() {

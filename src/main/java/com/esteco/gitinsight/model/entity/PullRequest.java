@@ -23,6 +23,9 @@ public class PullRequest {
             fetch = FetchType.LAZY
     )
     private List<Commit> commits=new ArrayList<>();
+    //    :TODO add comment associated user
+//    @OneToOne(cascade = CascadeType.ALL)
+//    private GitUser gitUser;
 
 
 
@@ -91,8 +94,5 @@ public class PullRequest {
         this.commits = commits;
     }
 
-    public void setCommit(Commit commit) {
-        this.commits.add(commit);
-    }
 
 }

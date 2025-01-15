@@ -1,16 +1,13 @@
 package com.esteco.gitinsight.model.entity;
 
 
-import jakarta.persistence.*;
-
-import java.util.ArrayList;
-import java.util.List;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 
 import static java.util.UUID.randomUUID;
 
 @Entity
-public class User {
-
+public class GitUser {
     @Id
     private String id;
     private String username;
@@ -26,16 +23,15 @@ public class User {
     }
 
     public String getLogin() {
-
         return username;
     }
 
-    public User() {
+    public GitUser() {
         this(randomUUID().toString());
     }
 
-    public User(String username) {
-        this.username= username;
+    public GitUser(String id) {
+        this.id= id;
     }
 
     public String getUrl() {
@@ -44,5 +40,9 @@ public class User {
 
     public void setUrl(String url) {
         this.url = url;
+    }
+
+    public String getId() {
+        return id;
     }
 }

@@ -16,7 +16,7 @@ query {
                       }
                     }
                   }
-                  languages(first: 1) {
+                  codeLanguage(first: 1) {
                     edges {
                       node {
                         name
