@@ -3,10 +3,12 @@ package com.esteco.gitinsight.model.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 import static java.util.UUID.randomUUID;
 
 @Entity
+@Table(name = "GITUSER")
 public class GitUser {
     @Id
     private String id;
@@ -24,6 +26,10 @@ public class GitUser {
 
     public String getLogin() {
         return username;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public GitUser() {

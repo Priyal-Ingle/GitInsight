@@ -2,13 +2,10 @@ package com.esteco.gitinsight.github.service;
 
 import com.esteco.gitinsight.github.dto.Repository;
 import org.junit.jupiter.api.Test;
-import reactor.core.publisher.Mono;
-
-import java.net.MalformedURLException;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.containsString;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 class GithubServiceTest {
 

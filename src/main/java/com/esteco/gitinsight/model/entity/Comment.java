@@ -6,6 +6,7 @@ import java.time.LocalDateTime;
 import java.util.UUID;
 
 @Entity
+@Table(name = "COMMENT")
 public class Comment {
     @Id
     private String id;
@@ -18,6 +19,10 @@ public class Comment {
 //    *********************getter setter start ********************
     public String getId() {
         return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public Comment() {

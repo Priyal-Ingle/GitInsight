@@ -58,7 +58,8 @@
                       "id": "MDExOlB1bGxSZXF1ZXN0MjE3MjM0NjU0",
                       "title": "Arc - make it possible to get interceptor bindings from",
                       "author": {
-                        "login": "mkouba"
+                        "login": "mkouba",
+                        "url": "https://github.com/mkouba"
                       },
                       "body": "InvocationContext\r\n\r\n- resolves #29 \r\n\r\nNOTE: Currently we only support array members with `Class` component type. It should be straightforward to support other component types.",
                       "url": "https://github.com/quarkusio/quarkus/pull/30",
@@ -96,7 +97,14 @@
                 "url": "https://github.com/Sanne"
               },
               "assignees": {
-                "edges": []
+                "edges": [
+                  {
+                    "node": {
+                      "login": "dmlloyd",
+                      "url": "https://github.com/dmlloyd"
+                    }
+                  }
+                ]
               }
             }
           },
@@ -157,7 +165,9 @@
                       "id": "MDExOlB1bGxSZXF1ZXN0MjE3MjM0NjU1",
                       "title": "Arc - make it possible to get interceptor bindings from",
                       "author": {
-                        "login": "mkouba"
+                        "login": "mkouba",
+                        "url": "https://github.com/mkouba"
+
                       },
                       "body": "InvocationContext\r\n\r\n- resolves #29 \r\n\r\nNOTE: Currently we only support array members with `Class` component type. It should be straightforward to support other component types.",
                       "url": "https://github.com/quarkusio/quarkus/pull/30",
@@ -248,7 +258,8 @@
                       "id": "MDExOlB1bGxSZXF1ZXN0MjE5NjM4ODg3",
                       "title": "Arc - support initializer injection on superclasses",
                       "author": {
-                        "login": "mkouba"
+                        "login": "mkouba",
+                        "url": "https://github.com/mkouba"
                       },
                       "body": "- incl. superclasses located in a different package\r\n- resolves #38",
                       "url": "https://github.com/quarkusio/quarkus/pull/42",
@@ -312,7 +323,9 @@
                       "id": "MDExOlB1bGxSZXF1ZXN0NzIxOTM4NDMz",
                       "title": "Implement inheritence for Stereotype and qualifier in arc",
                       "author": {
-                        "login": "dufoli"
+                        "login": "dufoli",
+                        "url": "https://github.com/dufoli"
+
                       },
                       "body": "fix #41",
                       "url": "https://github.com/quarkusio/quarkus/pull/19759",
@@ -372,7 +385,9 @@
                       "id": "MDExOlB1bGxSZXF1ZXN0MjIzNTczMTEy",
                       "title": "Arc - add basic BeanManager support",
                       "author": {
-                        "login": "mkouba"
+                        "login": "mkouba",
+                        "url": "https://github.com/mkouba"
+
                       },
                       "body": "- a lot of frameworks still rely on BeanManager's\r\ngetBeans()/createCreationalContext()/getReference() combo at runtime\r\n- resolves #57",
                       "url": "https://github.com/quarkusio/quarkus/pull/59",
@@ -444,7 +459,9 @@
                 "edges": [
                   {
                     "node": {
-                      "login": "dmlloyd"
+                      "login": "dmlloyd",
+                      "url": "https://github.com/dmlloyd"
+
                     }
                   }
                 ]
@@ -460,6 +477,28 @@
                   {
                     "node": {
                       "id": "MDEyOklzc3VlQ29tbWVudDQ0NDQ4NzA0OA==",
+                      "author": {
+                        "login": "stuartwdouglas",
+                        "url": "https://github.com/stuartwdouglas"
+                      },
+                      "body": "@mkouba is this fixed now?",
+                      "createdAt": "2018-12-05T13:35:53Z"
+                    }
+                  },
+                  {
+                    "node": {
+                      "id": "MDEyOklzc3VlQ29tb9754udDQ0NDQ4NzA0OA==",
+                      "author": {
+                        "login": "stuartwdouglas",
+                        "url": "https://github.com/stuartwdouglas"
+                      },
+                      "body": "@mkouba is this fixed now duplicate comment?",
+                      "createdAt": "2018-12-05T13:35:53Z"
+                    }
+                  },
+                  {
+                    "node": {
+                      "id": "MDEyOklzc3VlQ29tbWVudDQ0NDQ4NzA0864e5",
                       "author": {
                         "login": "stuartwdouglas",
                         "url": "https://github.com/stuartwdouglas"
@@ -508,7 +547,9 @@
                       "id": "MDExOlB1bGxSZXF1ZXN0MjMzMDE1NTU0",
                       "title": "Pick up CDI producer even if declaring class not annotated with BDA",
                       "author": {
-                        "login": "mkouba"
+                        "login": "mkouba",
+                        "url": "https://github.com/mkouba"
+
                       },
                       "body": "- resolves #124",
                       "url": "https://github.com/quarkusio/quarkus/pull/127",

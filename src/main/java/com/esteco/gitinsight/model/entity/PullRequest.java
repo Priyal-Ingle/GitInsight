@@ -9,6 +9,7 @@ import java.util.List;
 import static java.util.UUID.randomUUID;
 
 @Entity
+@Table(name = "PULLREQUEST")
 public class PullRequest {
     @Id
     private String id;
@@ -22,14 +23,13 @@ public class PullRequest {
             orphanRemoval = true,
             fetch = FetchType.LAZY
     )
-    private List<Commit> commits=new ArrayList<>();
+    private List<Commit> commits = new ArrayList<>();
     //    :TODO add comment associated user
 //    @OneToOne(cascade = CascadeType.ALL)
 //    private GitUser gitUser;
 
 
-
-//    *********************getter setter start ********************
+    //    *********************getter setter start ********************
     public String getId() {
         return id;
     }
@@ -43,7 +43,7 @@ public class PullRequest {
     }
 
     public PullRequest(String id) {
-        this.id= id;
+        this.id = id;
     }
 
     public String getTitle() {

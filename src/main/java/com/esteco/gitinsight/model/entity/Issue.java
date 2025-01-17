@@ -10,6 +10,7 @@ import java.util.List;
 import static java.util.UUID.randomUUID;
 
 @Entity
+@Table(name = "ISSUE")
 public class Issue {
     @Id
     private String id;
@@ -154,8 +155,5 @@ public class Issue {
         this.comments = comments;
     }
 
-    public void setComment(Comment comment) {
-        this.comments.add(comment);
-    }
 
 }
