@@ -1,6 +1,7 @@
 package com.esteco.gitinsight.model.entity;
 
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
@@ -12,6 +13,7 @@ import static java.util.UUID.randomUUID;
 public class GitUser {
     @Id
     private String id;
+    @Column(unique=true)
     private String username;
     private String url;
 
@@ -39,6 +41,8 @@ public class GitUser {
     public GitUser(String id) {
         this.id= id;
     }
+
+
 
     public String getUrl() {
         return url;

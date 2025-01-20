@@ -7,7 +7,9 @@ import java.util.UUID;
 import static java.util.UUID.randomUUID;
 
 @Entity
-@Table(name = "LANGUAGE")
+@Table(name = "LANGUAGE", uniqueConstraints = {
+        @UniqueConstraint(columnNames = "name")
+})
 public class Language {
     @Id
     private String id;

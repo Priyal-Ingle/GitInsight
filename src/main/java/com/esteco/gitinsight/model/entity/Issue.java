@@ -16,6 +16,8 @@ public class Issue {
     private String id;
     private String title;
     private String url;
+
+    @Column(length = 10000)
     private String body;
     private LocalDateTime createdAt;
     private LocalDateTime closedAt; //null = not closed yet
@@ -25,9 +27,8 @@ public class Issue {
             fetch = FetchType.LAZY
     )
     private List<PullRequest> pullRequests = new ArrayList<>();
-    @OneToMany(
+    @ManyToMany(
             cascade = CascadeType.ALL,
-            orphanRemoval = true,
             fetch = FetchType.LAZY
     )
     private List<Label> labels = new ArrayList<>();
@@ -36,7 +37,7 @@ public class Issue {
             cascade = CascadeType.ALL
     )
     private GitUser author;
-    @OneToMany(
+    @ManyToMany(
             fetch = FetchType.LAZY,
             cascade = CascadeType.ALL
     )

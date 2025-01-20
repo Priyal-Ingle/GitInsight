@@ -10,13 +10,22 @@ import java.util.UUID;
 public class Comment {
     @Id
     private String id;
+    @Column(length = 10000)
     private String body;
     private LocalDateTime createdAt;
 //    :TODO add comment associated user
-//    @OneToOne(cascade = CascadeType.ALL)
-//    private GitUser gitUser;
+    @ManyToOne(cascade = CascadeType.ALL)
+    private GitUser commentAuthor;
 
-//    *********************getter setter start ********************
+    public GitUser getCommentAuthor() {
+        return commentAuthor;
+    }
+
+    public void setCommentAuthor(GitUser gitUser) {
+        this.commentAuthor = gitUser;
+    }
+
+    //    *********************getter setter start ********************
     public String getId() {
         return id;
     }

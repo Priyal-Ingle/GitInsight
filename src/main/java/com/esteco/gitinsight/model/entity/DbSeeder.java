@@ -8,7 +8,7 @@ import java.time.LocalDateTime;
 import java.util.Arrays;
 import java.util.List;
 
-@Component
+//@Component
 public class DbSeeder implements CommandLineRunner {
     private final GitRepository gitRepository;
     private final LabelRepository labelRepository;

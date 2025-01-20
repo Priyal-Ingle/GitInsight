@@ -11,20 +11,26 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 
 public class PersistResponse {
+
     private final LanguageRepository languageRepository;
     private final CommentRepository commentRepository;
     private final IssueRepository issueRepository;
     private final PullRequestRepository pullRequestRepository;
     private final GitRepository gitRepository;
+    private final AuthorRepository authorRepository;
+    private final LabelRepository labelRepository;
 
-    public PersistResponse(GitRepository gitRepository, LanguageRepository languageRepository, CommentRepository commentRepository, IssueRepository issueRepository, PullRequestRepository pullRequestRepository) {
+    public PersistResponse(GitRepository gitRepository, LanguageRepository languageRepository, CommentRepository commentRepository, IssueRepository issueRepository, PullRequestRepository pullRequestRepository, AuthorRepository authorRepository, LabelRepository labelRepository) {
         this.gitRepository = gitRepository;
         this.languageRepository = languageRepository;
         this.commentRepository = commentRepository;
         this.issueRepository = issueRepository;
         this.pullRequestRepository = pullRequestRepository;
+        this.authorRepository = authorRepository;
+        this.labelRepository = labelRepository;
     }
 
     public void storeLanguages(File file) throws IOException {
@@ -41,8 +47,13 @@ public class PersistResponse {
         List<CodeLanguage> languageList = codeLanguages.get(repositoryData.id());
         List<Language> storedLanguages = new ArrayList<>();
         for (CodeLanguage codeLanguage : languageList) {
-            Language language = storeLanguage(codeLanguage);
-            storedLanguages.add(language);
+            Optional<Language> fetchedLanguage = languageRepository.findById(codeLanguage.id());
+            if(fetchedLanguage.isEmpty()) {
+                Language language = storeLanguage(codeLanguage);
+                storedLanguages.add(language);
+            }else{
+                storedLanguages.add(fetchedLanguage.get());
+            }
         }
         gitRepo.setLanguages(storedLanguages);
         gitRepository.save(gitRepo);
@@ -68,11 +79,15 @@ public class PersistResponse {
     }
 
     private void storeComment(Comment comment, List<com.esteco.gitinsight.model.entity.Comment> comments) {
-        com.esteco.gitinsight.model.entity.Comment entityComment = new com.esteco.gitinsight.model.entity.Comment(comment.id());
-        entityComment.setBody(comment.body());
-        entityComment.setCreatedAt(comment.createdAt());
-        commentRepository.save(entityComment);
-        comments.add(entityComment);
+
+        Optional<com.esteco.gitinsight.model.entity.Comment> byId = commentRepository.findById(comment.id());
+        if (byId.isPresent()) {
+            com.esteco.gitinsight.model.entity.Comment entityComment = byId.get();
+            entityComment.setBody(comment.body());
+            entityComment.setCreatedAt(comment.createdAt());
+            commentRepository.save(entityComment);
+            comments.add(entityComment);
+        }
     }
 
     public void storeIssueAuthor(File file) throws IOException {
@@ -91,11 +106,17 @@ public class PersistResponse {
     public void storeCommentAuthor(File file) throws IOException {
         Map<String, GitUser> issueCommentAuthor = new ResponseJson().getIssueCommentAuthor(file);
         issueCommentAuthor.forEach((commentId, value) -> {
+            Optional<com.esteco.gitinsight.model.entity.GitUser> byUsername = authorRepository.findByUsername(value.login());
             com.esteco.gitinsight.model.entity.Comment comment = new com.esteco.gitinsight.model.entity.Comment();
             comment.setId(commentId);
-            com.esteco.gitinsight.model.entity.GitUser creator = new com.esteco.gitinsight.model.entity.GitUser();
-            creator.setUsername(value.login());
-            creator.setUrl(value.url());
+            if (byUsername.isEmpty()) {
+                com.esteco.gitinsight.model.entity.GitUser creator = new com.esteco.gitinsight.model.entity.GitUser();
+                creator.setUsername(value.login());
+                creator.setUrl(value.url());
+                comment.setCommentAuthor(creator);
+            }else{
+                comment.setCommentAuthor(byUsername.get());
+            }
             commentRepository.save(comment);
 
         });
@@ -124,17 +145,24 @@ public class PersistResponse {
             Issue issue = new Issue(issueId);
             List<PullRequest> pullRequests = new ArrayList<>();
             value.forEach(pullRequest -> {
-                PullRequest PR = new PullRequest(pullRequest.id());
-                PR.setUrl(pullRequest.url());
-                PR.setBody(pullRequest.body());
-                PR.setCreatedAt(pullRequest.createdAt());
-                PR.setClosedAt(pullRequest.closedAt());
-                PR.setTitle(pullRequest.title());
-                pullRequests.add(PR);
+                Optional<PullRequest> byId = pullRequestRepository.findById(pullRequest.id());
+                if (byId.isEmpty()) {
+                    PullRequest PR = new PullRequest(pullRequest.id());
+                    PR.setUrl(pullRequest.url());
+                    PR.setBody(pullRequest.body());
+                    PR.setCreatedAt(pullRequest.createdAt());
+                    PR.setClosedAt(pullRequest.closedAt());
+                    PR.setTitle(pullRequest.title());
+                    pullRequests.add(PR);
+                }
+                else{
+                    PullRequest PR = byId.get();
+                    pullRequests.add(PR);
+                }
             });
             issue.setPullRequests(pullRequests);
             issueRepository.save(issue);
-            
+
         });
     }
 
@@ -144,10 +172,16 @@ public class PersistResponse {
             Issue issue = new Issue(issueId);
             List<com.esteco.gitinsight.model.entity.GitUser> assignees = new ArrayList<>();
             value.forEach(assignee -> {
-                com.esteco.gitinsight.model.entity.GitUser assignee1 = new com.esteco.gitinsight.model.entity.GitUser();
-                assignee1.setUsername(assignee.login());
-                assignee1.setUrl(assignee.url());
-                assignees.add(assignee1);
+                Optional<com.esteco.gitinsight.model.entity.GitUser> byUsername = authorRepository.findByUsername(assignee.login());
+                if (byUsername.isEmpty()) {
+                    com.esteco.gitinsight.model.entity.GitUser assignee1 = new com.esteco.gitinsight.model.entity.GitUser();
+                    assignee1.setUsername(assignee.login());
+                    assignee1.setUrl(assignee.url());
+                    assignees.add(assignee1);
+                }
+                else{
+                    assignees.add(byUsername.get());
+                }
             });
             issue.setAssignees(assignees);
             issueRepository.save(issue);
@@ -160,10 +194,16 @@ public class PersistResponse {
             Issue issue = new Issue(issueId);
             List<Label> entityLabels = new ArrayList<>();
             value.forEach(entityLabel -> {
-                Label label = new Label(entityLabel.id());
-                label.setName(entityLabel.name());
-                label.setColor(entityLabel.color());
-                entityLabels.add(label);
+                Optional<Label> byId = labelRepository.findById(entityLabel.id());
+                if (byId.isEmpty()) {
+                    Label label = new Label(entityLabel.id());
+                    label.setName(entityLabel.name());
+                    label.setColor(entityLabel.color());
+                    entityLabels.add(label);
+                }
+                else{
+                    entityLabels.add(byId.get());
+                }
             });
             issue.setLabels(entityLabels);
             issueRepository.save(issue);

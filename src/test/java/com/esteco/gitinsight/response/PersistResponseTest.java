@@ -5,6 +5,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
 
 import java.io.File;
 import java.io.IOException;
@@ -13,7 +15,6 @@ import java.net.URL;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.*;
-
 public class PersistResponseTest {
     private PersistResponse persistResponse;
 
@@ -30,13 +31,19 @@ public class PersistResponseTest {
     private LanguageRepository languageRepository;
 
     @Mock
+    private LabelRepository labelRepository;
+
+    @Mock
+    private AuthorRepository authorRepository;
+
+    @Mock
     private IssueRepository issueRepository;
     private File file;
 
     @BeforeEach
     void setUp() throws Exception {
         MockitoAnnotations.openMocks(this);
-        persistResponse = new PersistResponse(gitRepository, languageRepository, commentRepository, issueRepository, pullRequestRepository);
+        persistResponse = new PersistResponse(gitRepository, languageRepository, commentRepository, issueRepository, pullRequestRepository, authorRepository, labelRepository);
         URL queryUrl = PersistResponseTest.class.getResource("GraphQLResponse.json");
         file = new File(queryUrl.toURI());
     }

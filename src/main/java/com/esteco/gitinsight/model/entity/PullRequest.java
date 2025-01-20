@@ -14,6 +14,7 @@ public class PullRequest {
     @Id
     private String id;
     private String title;
+    @Column(length = 10000)
     private String body;
     private String url;
     private LocalDateTime createdAt;
