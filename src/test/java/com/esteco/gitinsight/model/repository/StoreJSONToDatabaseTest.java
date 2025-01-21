@@ -1,9 +1,12 @@
 package com.esteco.gitinsight.model.repository;
 
 import com.esteco.gitinsight.response.PersistResponse;
+import com.esteco.gitinsight.response.PersistResponseTest;
 import jakarta.transaction.Transactional;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.annotation.Rollback;
@@ -21,23 +24,35 @@ import static org.mockito.Mockito.*;
 //@Transactional
 //@Rollback(false)
 public class StoreJSONToDatabaseTest {
-    @Autowired
+    @Mock
     private GitRepository gitRepository;
 
-    @Autowired
+    @Mock
     private CommentRepository commentRepository;
 
-    @Autowired
+    @Mock
     private PullRequestRepository pullRequestRepository;
 
-    @Autowired
+    @Mock
     private LanguageRepository languageRepository;
 
-    @Autowired
+    @Mock
     private IssueRepository issueRepository;
 
-    @Autowired
+    @Mock
+    private AuthorRepository authorRepository;
+
+    @Mock
+    private LabelRepository labelRepository;
+
     private StoreJSONInDatabase storeJSONInDatabase;
+
+    @BeforeEach
+    void setUp() throws Exception {
+        MockitoAnnotations.openMocks(this);
+        storeJSONInDatabase = new StoreJSONInDatabase(gitRepository, languageRepository, commentRepository, issueRepository, pullRequestRepository, authorRepository, labelRepository);
+
+    }
 
     @Test
     void testStoreFromJSONInDatabase() throws URISyntaxException, IOException {
@@ -47,11 +62,11 @@ public class StoreJSONToDatabaseTest {
 
         storeJSONInDatabase.persistFileInDB(file);
 
-//        verify(pullRequestRepository, times(1)).save(any());
-//        verify(issueRepository, times(1)).save(any());
-//        verify(commentRepository, times(1)).save(any());
-//        verify(languageRepository, times(1)).save(any());
-//        verify(gitRepository, times(1)).save(any());
+        verify(pullRequestRepository, times(6)).save(any());
+        verify(issueRepository, times(10)).save(any());
+        verify(commentRepository, times(8)).save(any());
+        verify(languageRepository, times(2)).save(any());
+        verify(gitRepository, times(3)).save(any());
 
 
 

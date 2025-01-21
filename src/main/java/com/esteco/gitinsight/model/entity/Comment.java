@@ -7,7 +7,8 @@ import java.util.UUID;
 
 @Entity
 @Table(name = "COMMENT")
-public class Comment {
+public class
+Comment {
     @Id
     private String id;
     @Column(length = 10000)

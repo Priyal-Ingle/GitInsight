@@ -32,7 +32,7 @@ public class Issue {
             fetch = FetchType.LAZY
     )
     private List<Label> labels = new ArrayList<>();
-    @OneToOne(
+    @ManyToOne(
             fetch = FetchType.LAZY,
             cascade = CascadeType.ALL
     )
@@ -48,7 +48,6 @@ public class Issue {
             fetch = FetchType.LAZY
     )
     private List<Comment> comments = new ArrayList<>();
-
 
 
 //    *********************getter setter start ********************
