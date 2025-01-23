@@ -1,0 +1,99 @@
+{
+  repository(owner: "@owner-name", name: "@repo-name") {
+    id
+    url
+    updatedAt
+    createdAt
+    isPrivate
+    isLocked
+    languages(first: 50) {
+      totalCount
+      edges {
+        node {
+          id
+          color
+          name
+        }
+      }
+    }
+    issues(first: 100, after:"@end-cursor", states: CLOSED) {
+      totalCount
+      pageInfo {
+        hasNextPage
+        endCursor
+      }
+      edges {
+        node {
+          id
+          title
+          comments(first: 10) {
+            edges {
+              node {
+                id
+                author {
+                  login
+                  url
+                }
+                body
+                createdAt
+              }
+            }
+          }
+          url
+          body
+          closed
+          closedAt
+          closedByPullRequestsReferences(first: 10) {
+            edges {
+              node {
+                id
+                title
+                author {
+                  login
+                  url
+                }
+                body
+                url
+                commits(first: 10) {
+                  edges {
+                    node {
+                    commit{
+                        url
+                      }
+                      id
+                      resourcePath
+                    }
+                  }
+                }
+                createdAt
+                closed
+                closedAt
+              }
+            }
+          }
+          createdAt
+          labels(first: 10) {
+            edges {
+              node {
+                id
+                color
+                name
+              }
+            }
+          }
+          author {
+            login
+            url
+          }
+          assignees(first: 10) {
+            edges {
+              node {
+                login
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

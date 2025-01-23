@@ -1,0 +1,674 @@
+{
+  "data": {
+    "repository": {
+      "id": "R_kgDONXxB9w",
+      "url": "https://github.com/PathOfBuildingCommunity/PathOfBuilding-PoE2",
+      "updatedAt": "2025-01-22T09:54:49Z",
+      "createdAt": "2024-12-02T13:05:35Z",
+      "isPrivate": false,
+      "isLocked": false,
+      "languages": {
+        "totalCount": 4,
+        "edges": [
+          {
+            "node": {
+              "id": "MDg6TGFuZ3VhZ2UxNDU=",
+              "color": "#3572A5",
+              "name": "Python"
+            }
+          },
+          {
+            "node": {
+              "id": "MDg6TGFuZ3VhZ2UxNjQ=",
+              "color": "#000080",
+              "name": "Lua"
+            }
+          },
+          {
+            "node": {
+              "id": "MDg6TGFuZ3VhZ2UxNDQ=",
+              "color": "#1e4aec",
+              "name": "Scheme"
+            }
+          },
+          {
+            "node": {
+              "id": "MDg6TGFuZ3VhZ2U1MzU=",
+              "color": "#384d54",
+              "name": "Dockerfile"
+            }
+          }
+        ]
+      },
+      "issues": {
+        "totalCount": 212,
+        "pageInfo": {
+          "hasNextPage": false,
+          "endCursor": "Y3Vyc29yOnYyOpK5MjAyNS0wMS0yMlQwOTo1MDo0NCswNTozMM6nF33e"
+        },
+        "edges": [
+          {
+            "node": {
+              "id": "I_kwDONXxB986m50lz",
+              "title": "Projectile Damage modifiers do not apply to Bonestorm",
+              "comments": {
+                "edges": []
+              },
+              "url": "https://github.com/PathOfBuildingCommunity/PathOfBuilding-PoE2/issues/470",
+              "body": "### Check version\n\n- [x] I'm running the latest version of Path of Building and I've verified this by checking the [changelog](https://github.com/PathOfBuildingCommunity/PathOfBuilding-PoE2/blob/master/CHANGELOG.md)\n\n### Check for duplicates\n\n- [x] I've checked for duplicate open **and closed** issues by using the search function of the [issue tracker](https://github.com/PathOfBuildingCommunity/PathOfBuilding-PoE2/issues?q=is%3Aissue)\n\n### Check for support\n\n- [x] I've checked that the calculation is supposed to be supported. If it isn't please open a feature request instead (Red text is a feature request).\n\n### What platform are you running Path of Building on?\n\nWindows\n\n### What is the value from the calculation in-game?\n\nIn-game, projectile damage modifiers apply to Bonestorm.\n\n### What is the value from the calculation in Path of Building?\n\nIn Path of Building, projectile damage modifiers do not apply to Bonestorm.\n\n### How to reproduce the issue\n\n_No response_\n\n### Character build code\n\n```shell\neNqlWt1z2roSf27_Co9n7mOCIaRJzpCeIZA0mckHF9L2nKeOYgvQjWxxLJmE89ffXck2hiIjkzy0xtrffkm72l3o_fkec29JU8lEcum3jwPfo0koIpbMLv3vzzdH5_6fXz_3RkTNn6ZXGeO40vn6-VNPf_A4XVIOQN8LOZHykcT00h-TZEZT3yMypEk0WC88ioT6niLpjKofhdDgF6LnJCWhouk9MuxnSjyICBAqzQARE5ZMRPhK1bdUZAstb8nom6G5exg9jZ99UOpTb8TJiqYTRZQn4Z9Lvw_GkRm9ZQoghGdAf3J-3A2-XJycBEGn0z7xW7XIqyyVakhieGzKYbKgNCpB7eOT6p8NNErp9XRKQ8WWdJAyNZiTJFyLbp_agI2JHzKu2IIz3Koc0LHR3_7OOwhsxM9CET4cTUra0_ZxJ7jodLvgr4vTdj1OrHfKKuEnU_MrDt49QApi72YJU_RA8EgwKZIP2FeFWk0cZJxDrDnRjqmk6ZIotqmWnbeIX1hykPceSEIGQjrsEVKOaAopQDUCTGgoIGtUIV8uHITshlql3bMpdadsZEgOaKrNYXZcT1zpGjM-TKExZEo3yonIuCOlWueoMxvRkL47ZL67RO1nNab_VOk6wald6FJg3O23QUf_9e2oGnFB9zToBm0IvLMv1gthvpIsJPyBvLM4iyETP5NXuhb45cx-qGZzlUASsUG7VugNS2lz1EDw6ADUnAh5iHVT6kAGl3D4B9LeJWFJfl7H9HuS6nxaubvrtRhDdGCx8MKpI2ItIo8xl2vViJrRJJe3cksr95SG829QQY2Jom5ZeL1p57VuRdqqW2uZ7nCrnf0moIGTELjbSe3j2lukoZsmC5YyJ40M5Q7rG2AaOOA6oelsNZkzyiOHJF-hLjw2IAsX-2H_q2inc7AprtFRrkIb7hXeSE2lLYmsZvWTPY4w5G6xQKFwBUBEtyrqwN4SiP9hQ8CbwfppLLLUcSsNsZMBxYVkmqIxjbLQ7QYs-5orDs2cqxklCvTkvBG0rxQJX4cimjk7TQtphNjUb5ItFhC1eBpcGeBdCxU8qxRCR10H6ic4yk6xiteyu4A1tbOAstBwl7IFcbcFi4UtMS7EzgLK7XyAVBFD0tVd_IOo5G3r1kDL5tR_aULHPnAk3kDzOc5MZDNqKKnW-cuqSkqTf1fO_DfInQRcJ1GWYiA4y9hG7BJzlU2n0guhjyXqHrb30ve9F3hXPIdZKmn-wSCeWQyJV8ohUcSL8qr9B0kZSVRHT5QkJWk4R9AN4fwFMgdyWr_FT1vAdnEaei09D8Onu3ghUuXRd_xvRFK1uvSnhEtqCPUb4CMVS3THDmmKc9-bzMVbP1qi3c9CcFmAPLJY0CTa4PGcUuqRIumEqIS2ET94MZEK7jhzjiUqXZnD3UXoeC8RoAB0INB_XKCJ2N2RdNXfJEwY6KVA1tasbs0IpX7qfR_f64dPc6UW8o9W6-3t7XhB1FxM6TvcWsewT60FgEDfI_nKOD9Crq0-_F3N-vpPM2oVnHpm2idb5hMGb8pAZSOmB3k9ZS-ZosUC-PP90djkeyxR5bNUafGc82ptMOu10Gd6A9Gp-PAolFnDl8WH3gTVlp6EPf1GY3m1guC9wVpka5qS7wpST6gy56qKKUaaEZ2SjOP7_2aEMzwkQfXtvRmsJiKNy9YPWMEhwRvGcHxeLdCy_v19vv25VI9FxZHIX-oJan-t2oDwUGrlWBLyLILmKE9e-a5z8oLicRqMbU1UncRW-JRiPvVAn5z4GxcvhHcKSD4i7gT-xnq7WF-aUMIDdSUSiAswGSxF9hvvTJ7wvX8q_prRGGkeqCIRxHXrToGfW6BKS6sHDxWWCYnzcKm83LIvFFmiyhSPxwP55Ccld68-LeY84KP2paa4SxaZ0mIu_ZjJ8BdmJJxR63OoR-rXNzfXg-e7H9d5VqpCtMm_kix-QTPN_-vbZkJ1leXJ7EWax0v_B6NvWpEhOIBxifpzThaSlvlCn4Vccw64Gm6aChrwYti9m9eawM7p-p2mkN5mPyF1poxa9SrX9yhlBGLpjlncxg0nx3ZGphYcQHI0TYPFU3pkb-eCc3OrObhYg4WLgXCr5Hx1jycUhjycYTZlIV6Z9VuOCcJQ1fglhLuShKua_c4LWTsPPYq3MTCLdrAZp9vQ-WqNV_Uo3-pVs2qHD2lIrLabRTu47ENFor9g2s2lpKrh9CgSfcghaPqMY9lp3dlrTksSO8MnNadpXgPYOD1AjipIagPHXLZWPhWKGl_pcZ3FQ7hmh5qRlMUGXKsJmnxMY4t2Vh-ym8MUy35UaeysTBti9WHe0tRsQ97NW7bArNZYUgw0LEbkyzWBonNwfylYZNpaS8hskdUlDajxPs5G9-ofZ7PdvH-c4w2Uya_W_c5X7fDvimGZs4OLqVScmGBgfYwDxtfHOGAXFx-MHm-XImvsuL4IKfvNneBitS728zb0YA6mWT4Yrnv5g9H6AhjSKQULam-AkqYmOFSWDMEZqiYwHFlptXZnkbV1jXiZu3CnpY05mujOv4GqSwCGZA8juMxva8pFN07lPOqWEo4_PhD8Ywx_-6btI8xwop4tSBIV7J52FenrfXD0nlASeOqRyhAH9x_1YULj1Q5Gdr16raKt08MWbLTySdBEpdgX_ytE_Pelf3TaOT4NTs_Ogi_4d2YW8ua9HeQdO5TgQwb7mOrzV8hFyr-AxVm3e9w-ubhodw0LLV93svk0AZ_LYYKdXyap-Z7-JyULkWgENvOm0TQ8rESbMwMulAd1czx6-T6-R3NNhwqd-xJDDJfMAKhVDzBCvHYDiL4RGiH6ccapagDQN5J30hjR3IxOc181gVxRrg7YDW_yhpNwZ9wYElkzvUS08oqCtbEDDlKv3Xg3mxh0S-GSUY08INTvgdJr5WGoM4wOcT1BEsmUzfJgNx_ycNeg8s1GjFYnR2EmlYgfRCTXk6Z2EPwHp3spJZDrvEX5HaIXVcY3evwe0rngEU1zbhSzZf7bxWIKdRYEewAbX8wUsH2g8lugYuZUTr2CTmefwMrvHQvY6R5M9au2ErPXMnhzgH4o6wCYvjvWiPOunT4uf8CJP0uE2yCa6BkXzjAnlE8rck8dbGzsmHL3RlhGFLATV1TzjcAjtu3SbnCxB1a2vqVP65w6mUNbqv0ofxvCWkVsfiXe7BjDG1f_TUKhK5BmyuXf00PZo3-YXQ3qPcgihZeSOucXNRjJZow_TXXfAkrq5stVSYzmbe-dBA4h5uq7wRxn4LtdB9VekWNN7ac_ff3ca_32w_f_A-IzTMU=\n```\n\n### Screenshots\n\n![Image](https://github.com/user-attachments/assets/4c377994-2fb3-43eb-be73-ae8ed51d6765)\n![Image](https://github.com/user-attachments/assets/aa19609e-0280-4b2c-888d-a66024825731)",
+              "closed": true,
+              "closedAt": "2025-01-20T21:58:10Z",
+              "closedByPullRequestsReferences": {
+                "edges": [
+                  {
+                    "node": {
+                      "id": "PR_kwDONXxB986IaKyi",
+                      "title": "Fix projectile scaling for Bonestorm and Gas Arrow",
+                      "author": {
+                        "login": "Peechey",
+                        "url": "https://github.com/Peechey"
+                      },
+                      "body": "Fixes #470\r\nFixes #464\r\n\r\n### Description of the problem being solved:\r\nAdd projectile flag to parts\r\n\r\n### Link to a build that showcases this PR:\r\n<pre>eNrdW1lv4zgSfu78CkHAArtAJz4S54LTAyd2jkEOt510dp8ajETb3FCiW6KSeBb737eK1GW3KVPO285DWhbrq4usIquo6f7xEXDnjUYxE-GZ29prug4NPeGzcHrmPj1e7h67f3zb6Q6JnD1MzhPGcaT9bedLV_1wOH2j_Mw9cB2Pkzi-JwE9c0cknNLIdUjs0dC_KAbuRUhdR5JoSuWPTGjzZwvQMxIRT9LoFhn2EinuhA8IGSWACAgLx8J7pfIqEskcFHWdN0bfNc3N3fBh9OiCUl-6Q04WNBpLIp0Y_py5PTCOTGmfBPAXUIQnAGnu7R-1T5rH7Y7bqMSdJ1Esa4PHc0r9nL611zYRDiM6mEyoJ9kbvYiYvJiR0CskGQWsoW3uHVaS3yVcsjlnODEpxKjW9W_cW_sm2kchCe8PxyVFDg6ODo5PTqoRQhYIE-Uzk7NzDr6sxR9RN9OQSVobNhQsFuFW1iyBjBORcA4BZEU7ojGN3ohkKwoZeYvghYU1fdWLKHmY6DU4Ij5L4jsqIxqXFu-xCXtHQnIh4mIej9tVpEMaQTqQS4jmBsCYegIySBlycrx3YCFmPdgo75ZNqD1lLVNSQF1ttrNjMLalq814O4VGkDntKMci4ZaUsshhRyaiPv0oFnHHHGS_yoTtppHyJpSbhQK7Ml0Fuz59Exjam61VCWZwPSyF2V6z0zmEPajdOW63jHvLbBEzj_A78sGCJICc_kheaSGw1Tw0r7_pTIaQqEzYIyP0kkW0PupCcH8L1IyIeAvz7uA4cU1Cv-d5CZw6FoVnD6oi0oY17PzeKRLfhF7BtorrUxipRF8-MFTNzISOIPzwdPLCqS2kEJJGcQnYrJY1pWEqcGGXuG4p9WZX4OIRkdQu0-dUh81KxyJt2bGVTNc49tASUMNJCFzvpHb1PlXTTeM5g0OcjUaacu2yssbUcMAgpNF0MZ4xyn2LbaREnXnsgsxt7If5L6Ot1sGyuFpLuQytOVe459WV9kbi8m6wf1LtCE1uFwsUTtAA8OlqxWCuSsS_sSbh9WC9KBBJZDmVmtjKgGwj02XYiPqJZ7dz5qXVOYfi0daMHAV6cl4L2pOSeK994U-tnaaE1EIs6zdO5nOIWlwNtgxwi4bigpWOWrsHFtQPsJStYhV3c3sBBbW1gPx8Yi9lBWJvC54xVsTYEFsLyKfzDlJFAElXNQ_uRClvG6cGqkmr0lARWpaoQ_EOms-wRxPXo4aTWJG_jKpENPxrYc1_idxKwCD04VAHgWAtYxWxTsx5MpnEjgclNpG3ML1nruu8wLvsGQ6SMU1_aMQjCyDxxnGfSOL46Wn_B4kYCWVbdbBiSiJvhqBLwvkLZA7kVLxVv1TX65JxSaM-vEM10ZRVjq1smXQbqjGHTzfBXETSoR_4z5BEcnHmTgiPqSZUb4BPLFmougyQvzh3nfFMvPf8N5T0KASPM5BD5nMa-ks8HiNKHZJlIw-VUMbjDycgMWi90As8RmtKDcEbX5kRClDgzO0cHnZaXw-Pjk--dpoHnZOv-532_gE6AytNEi16y8iQgaIShK90EQvOqMaX7tPoVj18mUk5j08bjff39705kTMxoR-wv-3BjDbmAAIDduNXxvkucm304L_zKfw5ad1eiec_BTwrho2MY1f3I-OG_oXhHjGwRYvrwk4QsZdE0mwAHP1xr411HRbK_DmWUfac8mosMes20JlqZtHb-HAvpB7Dl9mP7hjVj2HFRPKKBvH5AsL9Ek8vK62hdLqQekylXollTNZ09emEJBzff08IZ7h6muW3t7r1G4ooyItMYAWrB_ckzfFxMUfLere36bpIpTrMz9ZK-lL1eHuFaheEe7FSjoUeT3woqNJ0l69HTl5QAexYYy3kl7vFJU65oC9d0EjFPGhwE8KEpAtJ46-4eCG8nXFJO9vt5vJ4Kxt_04GHq-2KxL0oEu9gPQosv9LJxnV-lVw4pQGS3FFJfEgOjRsJrm-Abg2lLzwUDEMSpJEF75z05Yq9nkjCdB5LtqUORAO19eDo0rAzhZQnqa-j83eFmfZPuveU0IpvHRbtjEUXbUyXuLL0_2T6z0UISRTCoDT_-bvtFkCJZbECSi_rroDGqtvTRyBVmUXnDnxUIEVxE84TqcSfuQGLvZ-43-GNi8pZ6oJocHk5uHi8-TFI97wyRLniZ5gEL2i-_re4chhTdYZ34uQl1o9n7g9G35UifXAM4zHaxTmZxzTfdFTeSDXngKvgpqiuWX55s55XQWDmNPigEeyR02fYmCNGjXrl4xuU0gKxMMQzgokbXpCYGelK4wJ2WF2SGjyl7qHMXPBeyGgODlZg4XRBuFFyOrrBExK3B1jbbMI8TC_VU46biaaq8Eve0jPOd1ommXmoGycTAz1oBusbJBM6Ha3wqrq3MnpVj5rhfeoRo-160AzOuxwivMZW03ouOVUFp3sRqkUOQdNjHIsa48wOOM1JzAwf5IxG6UHSxOkOclRGUhk4-mBm5FOiqPCV6gcbPIRjZqhueBpswLGKoEmbgKZoZ9Uhu9yqM8xHmcbMShe5Rh-mBXPFNKS9IsMU6NEKS7J2mcGIdLgiUFQO7r0J5uumiSFkVsiqkgbUA59nozpBn2ez2hr6PMdLKK1ejfOdjprhT5Lh8WcNF32CsWKCgfU5Dhhfn-OAPYJga_Ro9ShSYEfVh5C8m7EWnI1WxX7a5Niag27FbA1XnaKt0WoD6NMJBQsqd4CcpiI4ZBL2wRmyIjAsWSm11meRwrpavPReuNbS2hx1dKfXolUJQJNsYASb-XXFcdGOU97tvKaE4_c2gn-O4W_Xv59hhvc1yZyEfsbuYd0hvZgHS-8JGQNP1Zfr47XQZ30Y0mCxhpFZr24jK-tUxw4LrbTPOJZQlM3VfY_r_CVE8C_sou-d6B-3-dd9qq0DZ-8-gwmM1MLLBCLhP6H4TPuPqphNm0z4nPeYzBySmOpPSp4pmYtQIbRXdFUJXMoNoxGU3nJx6jzd33x_Guw8M1-8z6Bg3LmIEp865-J9J-1YnTrt5g6UIpx5sHJPnebOfyL8NvG0udf5799bneZuu9P8x9-wxxBRAk50XkQI2sTOlGC_zJlEInAGvxI2n8Ov7wnYFKlKGupg9ZWjo_jhh1YdN9VRT5wq6nP1seVltnK5G8aFdOCUHwxfnka32N_Q9fQVh4oRJhyHdIuzUQ3QYpxWAWltgqj9q4zYKKQXJJzKGgC1fzr7tRF1lNJmtOv7qg7knHK5xWw443e8FbLGjSDt1tNL-AsnO17XdsBW6rVqz2Ydg64pbImylgeE_D1QdETqhhemQeJDOGIKfKZ4NRjrPKmyl-qDiXDCpmke0z_STKbw-RtHMskpFteqL74cy0NOPDoT3KdRqhvF3J1-Hpz1xI6auUkGwNIlZAbbBMpvPLMOWAZsNdvtTQJL3xdnsM4GTPlaOcdstAzebKEfytoCpvazApF97rWOPsg_l8bvgmHD8seq44ad1jHlk5LcjoWNtR2Tz94QDzUZbN8WVX8icImtuvSgeWIxEbU0XP6Yo_aiRCjkqtcQ6lo1IXGpt2yz2GyVHc-gnl-V0Kqg94Q6TlkDlEbpJy1whlOniXJO2IDMMnwuqX180rRw4Krf9ytAMZsy_jBRlRtYpspPW8vyDk0ebFXRdjHDlv5658HhNUu2-iirfn3b6TZ--79S_gel6oCD</pre>\r\n\r\n### After screenshot:\r\n![image](https://github.com/user-attachments/assets/087ac82c-4949-44eb-b615-bd8f93c28bba)\r\n![image](https://github.com/user-attachments/assets/5a3c4bbe-8d7b-4f22-8b08-2be8866fddbd)\r\n![image](https://github.com/user-attachments/assets/5f8131f5-c382-4c5e-ba8b-09785abc331d)\r\n![image](https://github.com/user-attachments/assets/a1271f7b-fe00-434e-8f78-266ac5953549)\r\n\r\n",
+                      "url": "https://github.com/PathOfBuildingCommunity/PathOfBuilding-PoE2/pull/476",
+                      "commits": {
+                        "edges": [
+                          {
+                            "node": {
+                              "commit": {
+                                "url": "https://github.com/PathOfBuildingCommunity/PathOfBuilding-PoE2/commit/4edf5f8be77d4ea569d8d2f2a4fd1f26e9febfc2"
+                              },
+                              "id": "PURC_lADONXxB986IaKyi2gAoNGVkZjVmOGJlNzdkNGVhNTY5ZDhkMmYyYTRmZDFmMjZlOWZlYmZjMg",
+                              "resourcePath": "/PathOfBuildingCommunity/PathOfBuilding-PoE2/pull/476/commits/4edf5f8be77d4ea569d8d2f2a4fd1f26e9febfc2"
+                            }
+                          },
+                          {
+                            "node": {
+                              "commit": {
+                                "url": "https://github.com/PathOfBuildingCommunity/PathOfBuilding-PoE2/commit/2797a38a95c84bdf33320dbcfb2d889cf25ddc25"
+                              },
+                              "id": "PURC_lADONXxB986IaKyi2gAoMjc5N2EzOGE5NWM4NGJkZjMzMzIwZGJjZmIyZDg4OWNmMjVkZGMyNQ",
+                              "resourcePath": "/PathOfBuildingCommunity/PathOfBuilding-PoE2/pull/476/commits/2797a38a95c84bdf33320dbcfb2d889cf25ddc25"
+                            }
+                          },
+                          {
+                            "node": {
+                              "commit": {
+                                "url": "https://github.com/PathOfBuildingCommunity/PathOfBuilding-PoE2/commit/ffca3c8f11c75fa795b7b086b935802aa83f3d5e"
+                              },
+                              "id": "PURC_lADONXxB986IaKyi2gAoZmZjYTNjOGYxMWM3NWZhNzk1YjdiMDg2YjkzNTgwMmFhODNmM2Q1ZQ",
+                              "resourcePath": "/PathOfBuildingCommunity/PathOfBuilding-PoE2/pull/476/commits/ffca3c8f11c75fa795b7b086b935802aa83f3d5e"
+                            }
+                          }
+                        ]
+                      },
+                      "createdAt": "2025-01-20T20:50:45Z",
+                      "closed": true,
+                      "closedAt": "2025-01-20T21:58:09Z"
+                    }
+                  }
+                ]
+              },
+              "createdAt": "2025-01-20T19:48:32Z",
+              "labels": {
+                "edges": []
+              },
+              "author": {
+                "login": "azbk",
+                "url": "https://github.com/azbk"
+              },
+              "assignees": {
+                "edges": [
+                  {
+                    "node": {
+                      "login": "HeavyGravy",
+                      "url": "https://github.com/HeavyGravy"
+                    }
+                  }
+
+                ]
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "I_kwDONXxB986m5_bU",
+              "title": "Missing Bleed Chance in calculations",
+              "comments": {
+                "edges": [
+                  {
+                    "node": {
+                      "id": "IC_kwDONXxB986bKdES",
+                      "author": {
+                        "login": "Skrath",
+                        "url": "https://github.com/Skrath"
+                      },
+                      "body": "<img width=\"176\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/e7418cdc-1dbd-441b-a7ec-d4220aa5bd44\" />\nFrom your build...",
+                      "createdAt": "2025-01-20T20:47:34Z"
+                    }
+                  },
+                  {
+                    "node": {
+                      "id": "IC_kwDONXxB986bKvn1",
+                      "author": {
+                        "login": "LocalIdentity",
+                        "url": "https://github.com/LocalIdentity"
+                      },
+                      "body": "![Image](https://github.com/user-attachments/assets/16c6d4fa-9aee-4196-8c0b-5025bf5fcbfb)",
+                      "createdAt": "2025-01-20T22:02:32Z"
+                    }
+                  }
+                ]
+              },
+              "url": "https://github.com/PathOfBuildingCommunity/PathOfBuilding-PoE2/issues/473",
+              "body": "### Check version\n\n- [x] I'm running the latest version of Path of Building and I've verified this by checking the [changelog](https://github.com/PathOfBuildingCommunity/PathOfBuilding-PoE2/blob/master/CHANGELOG.md)\n\n### Check for duplicates\n\n- [x] I've checked for duplicate open **and closed** issues by using the search function of the [issue tracker](https://github.com/PathOfBuildingCommunity/PathOfBuilding-PoE2/issues?q=is%3Aissue)\n\n### Check for support\n\n- [x] I've checked that the behaviour is supposed to be supported. If it isn't please open a feature request instead (Red text is a feature request).\n\n### What platform are you running Path of Building on?\n\nWindows\n\n### What is the behaviour in-game?\n\nIn game there is % chance to bleed. This is not represented anywhere in PoB2\n\n### What is the behaviour in Path of Building?\n\nMissing Bleed Chance.\n\n### How to reproduce the issue\n\nAdd any bleed damage, this is displayed but chance to bleed is not.\n\n### Character build code\n\n```shell\neNq9O1tT47jSz8OvcKXqVH1fnQz4fqFgT3Ens2TIJpkB9mVK2EriwbGDLwRma__76ZZsxwmR44RTuw-sI_Vd3a1WS3P0n9dpIL3QOPGj8Lil7MstiYZu5Pnh-Lj1bXj52W7957e9ox5JJ7ej08wPcEb9be_TEfshBfSFBsctU29JbkCS5CuZ0uPWHYljP4pbEklcGnpnSzOPMZCgMJmSeEzT7wVz-YcCRCYkJm5K4xskfJKlUTfyAC-NM9qSpsQPB5H7RNOrOMpmIHBLevHpnMN0ur3b_rAFwn066gXkjcaDlKRSAn-OWyegJBnTczKFv4BFggxQFEtWnX1FkRVb02ytdVCLfJrFSbobhcGMUq9EkvdNXbd0Q1MNwzE1R4TVi-nFaETd1H-hZ7Gfnk1I6C54yyK8bWG7WZD6s8DHVdkEf_2OtCILgYdRSoLz3qAC61jOvq45iu3YslqPF6WbxTkNwLBVDrrtKPuO4WhgXM22RHh3fjp5h6sYtqXsa45tqKqmK3W4nXHop3QH1RC5F_lJFH7ALjsofJYFAQReFVNo1D5NaPxCUn9ZSLEPRdNHP9zJlmdRFHjRPFzg7RuGEPokpuR2xGOiTzw_S7o0jWlSYqv7QgN0SUjOoqSBTyFkj8aQutKtEAbUjSDbVVEUVW3AZT2ukN2NP6LNIbfSJEfYVprd9LgYNIXbmvBuAvUhszeDHERZ0BAyXSRVxTbEIfdchVRlIeQ5fa24lwiqEy5ks8SkXiIM8s1asMRzcd2rcJbVfceydF2xFbGwvclb4rsk6JJXf5pNYfMYkidaiXbdNsWONZ6kIeQsEbItznaXfkx3QDuDZLQL2oREiVBF1bRFiLej0TUJvRPXzaDseVssv-7UhVsj2lByuIcI3QndhRJ1ZL-FMUv8lUqljgGi9CG6sDh6DGhjnAWbPEqbVBKc2ZiGOceFrcx9rQ7phlJ3cgWFY5-ktFkqL6E0sTzMughctW4t1TXWraG_jLGFoRBxvaGU2q1oSzsNZj4Ujk0E4pDrfKs5zhb6X4Q0Hr8NJj4NvAY7RQW6MNgZmTXRH9a_it3ID5bZrVukRqhbrhVua9tyeyFJdWNQTa3eEhy-agRV7KIUCm_A8GjTQ0ovjn7iMSjYDu0knkZZZVM1TLNWCw5fVcLcuLPx82Cfepm7tJWK1S-PdKcBnGVXdNG0fUPfiAnSBsE6dLEp0pS4T-eRN25sPcZkK4xl-QbZbAYBjH7RlABu23D48CuF1We9AfQteHWjsMUNvjmDBXRjBmXR0pzLCkpzXbDqWGHTBLgxg3I5u5A1ppB_WRejG1UbGY64BIMDZ6PTIwNcPtOKE0E0B-En2DlKtoOG8mwRZEJRYhr-emtMfwm8EYOL0INKD2KhMY9VjHVsTrPRKJFcOIWT9AZW-LjVkh5hrPiG6jKh-Q-OMfSnkIST5JykRPLyY8B3EvskTFXWV0soid0JIl2SIHiE5IGUFqP4awVRQUSkf3TAuoP41ZnOojiV6Cv-r0fi9O24NSJBQjkgGwE6SeqHrN8AmQrUbUmDSTQ_8V5Q8WEUBUmBJZHZjIbeEpFhTKlEisTjohRMSfwhTUmSwpbHfTlBqStNyQ4QUltSGIEE8KU4ttrWHdOw2obuOHJbM01Nb2uO47RNRYcBxTZVp63qtqK1VRNmYVIz27qlWUrbNGBOg3MCDGiWZbdVy1LNtmGomgKkDFWFv7ajt6F8sdS2amuW3NZ1WbHammFpgGuZito2NVvR27oty2ZbVQ1NA2FkkAA-Lb1tqIpqtOFTgRFHU-22osgmcFFUgFFMxbTbumLqMGIpQN5QLVTDcNqODXqphqMZbQ1YqG1FN0AMDeR12pYJeIauILSlmSCvISsGGEOzgYisgZKGrmpqG1RS2oZtySiKDEiqrDloL1ux25oKrEF0C8Y1TQG6DlimrWiqBdKqjgWSWwCPtNDUumXCiKMjD0UGK-nYRAVhQC0VbCIjJ6Rro0KKpoPqumXJQEAzbDCYpgI_UzPAzGAGYAVc8S-KLss6LBLU2KCv4sgarI8GS6CDjMBOU2VgZ1ior24AI0OHFYM1csB-tokrYykgL9I2cGXgr2rpKLvpAAETKFhtGDUwKrDHQOK3k2XXCv2gJaXgnStN7mKe--mno2_9G_bxaZKms-Tw4GA-n-_PSDqJRvQVip59CO2DGSCBh39Onvwg-IxUD07gv9Pxxdm9ck_no_DuV2STc-PHvPv08_LhVom-zJ1x9kfy5_jPkfs8_5IMU_rj5_PzH9e-9_CY_h7bD9njU_bL6MfZ1d3J_fCb2qVvhtZXtN__-P1X3Hn4ZUfRs343nFy9_PzVnY7vvvdub9_u3T5YVf3ctx9-Xs9vB97T197DtR8G37rp09DU7jqhOX6Jzk6fBg9fuo7z54tj9ZST50yjk4fogs68V617f3oT3M8e1a_XV-a9d_l97J7rX_zEG99fnN4ar_Gdp9jhD_t5Rp6jef968vQUP6TJ6-8vE_PL_M_uhLz9oMOX9PpqZIMVjo-ZIQ8KSx7xa4LkgP_CLS_2Ici5mY-gGor9xyylxQSkoNevPAu0JD9My-8kjfNvvvg8O3CH5n7HHYS5LM8R3DXfRyvPDDyKuLdzt-RxsRS5zAt5SPFI4Rkg90sMaR4dPGHwRMITAIu6Vq72wZLeRweYEFl6xoyJH1-jlM_hYPHjaIAelkgJZOwrOk1O32BrvsRzx0qnN0-5CD2gKd81qjjFtY1HRyQLcPyPjAQ-bgEsMhbjN_waKYziadkrAmKwB2ARyWkO32a4DCc3N3l2z_lKfiWS2CC7JzpZCHdGAjdh4vmhG2Qe7YR5cZILEpBHZI93X9jJ8Kr3TRU6JZtPRyAP25-BfycE38kJcfyrIHokgVpQye_IVHl5XinmX_juiQmBH-_4Tg_6I9PVYV4gtKTnwpRId0ynCNelKfFgRz_opLAGB7gQB0xy-FomHZJpvlfycamYWLGAG2VhutAbDFxRWhpDYZJSj--t68X0uXXy1gM6IchSMWKdxZTNBjuLQmwMxKQUI3eYqvX4yHvQd6bcYMnSFd-Tqlq0OisV0yK7HvzvbHEaZylTRGiCEmJnzUsKVYUrg_-AmvwsOYzY7Z14tatQO6t7Q1wasx7LQtvF2D-gbCd0Y0oS6lVvvoRKr4XeWfkuGYf-yF_n4uXUP-nfxVVh2WupCfUVyJ1t0AnHNMxW_L0yWK_2Ec--m7cmtnls2pySKItdfOcAgh4qh1_pXMLPtnTxOqNwxhqkUUilIZ55paL_uSJfEkR4BU3JLAolddMGt7JeXJr65VrZsliLap3xF8bsEz-hInlzeyLndxbNP2EzYiUNL1rwk9mUQXTCWZYyXsetqZ-4P_BQjI9FWF3H3rhcXF5enA073y_yg3EVhSnzI8ymjyg-_3-5uEcDylxLSrLHhH8et777dM4EOQev8oMENQgCMktoeWJl5UoueYChI6bGoK798snJeloLADGli1dwEND3Dk7vsU-FcpXzG4TiDLGXjI0EETV8wCEmxDuSZ3A8511sgaXYwxkxFXy-IlQHJ2twO9MZCYSc89kNlkixKgVHhmzoYm1Uv-RYw3KoGruUl4HC9c7bqWIabNcTEeCTYmT-OkWEnc_WWJW9jBFalc-K0c-pS4S680kxcnkxEoXXeDu1nkoJVUPpaxQyJ4egOfEDbH4KV_YioCWImOBtOqFx3oUSUepCjipAagOHH16FdCoQNbZiF8kCC-GcGJVfkgp0wLmaoMnvDUXR7teH7PLtnmA9qjBiUrwZLrRh3livWYb8ckmwBHy2RpPihk2gRD5dEygsB5-8RL7HL1cEIbMCVpc0YLP-OBl2Y_RxMqtXSB-neBmQ5Em43vmsGP1b6mP5soYKr1UaEcHA-hgFjK-PUcAD-nRn7P5qKbLA7dcXIeWVx1rkYrYu9vObkJ0p8PuandHZddLO2GwDOKcjChrU7gAlTE1wpFl4DsZIawKjISkm1vosstBuK1p8L1yr6dYUeXTnD6rqEgAH2UAINvPrmnKxGaXyVvSakgDf8kbBxwi-ezj2EWL4xCObkdAryN2uK9IX69DQelGaAE12q3eOL0k-asOQTt_WEBLLdXRQHOvYdR8etPLLyEEKh7JHXvD-iqLpA162W_K-adi2Jhu2Yxt8Im8yW3ljGcrwcx_WMmY-WPBGwHugYKr7pm4ppunIppU_4j1iLYK87Y3fZddbTC9LKH-Byg_dDAOPs_ywCTSq7es-gern7VDqn_Qv9orz_Z7weL_Hi4xDSTE0Y-8sJqOUeocSMt7rxXTkvx5Kf0HGHNND5e-byCVB2SASvF6BkxjEiCJ_CD1_rGX_EFDhUp-EHmax4QT290kUeObeAA7nCA2lN635kd8hHEqqvJff8hxKA2mw189Ceih1YvA1_Hz3m61_nz4fSpaxB6e7wHd9xFX3_oIlgyNV-vdfMQD-rcv_wmYMV1Xi4ralvCKTIA4kXmIWy5CrJ-8bf19hRzyR2GHvUGIcpf9TPqvy_0vVRsfev1XDlNIoJ76nGOp7lnv_VjQGhHaSSkOxNkg38vrIVGKs8SGG0co9KW-UCCHUjRDaRgh9I0Txboq11Upnx-saUUQs3-MEUSrBQXHae_zWv8HuF2_JXAXRC-4pOIVtJrkQRISQ97qULVBYCbQVxsk0C2i6BQIrwSRta4y1QrEY6HgAzh4y4CR7t1CgfqFz8MJ8qEq6kR3U7Y1dQVE2oZzSIG2oFHtWsKxUPrSFUoU_SIM5PoFqrFofEtt6W6yRlL2jWJY0H9pC0tPIe5OKQ-bWS7CTfsrWDrmNd1xTKAy3iZLTKErfxzpPKUXbl23JrOsbhSN_nG_O_Ee-PTOkcmQpzVS7vZiSfNzFWHHCmmRgk5b0CAUeJWG-oeci9wLiUszGsBlzdIpY-T_zK1rFlixvQFh6w1egbUIqHwwWjeGyNS2r6iaGlX8aWKAZG3CqrzJLnI2awcgO8iGvHdDYTrvAsHUx_LT8x474T_GgXIM6BBvReNUwoMGowtdooOPWhilXr4e1foGmNcXafiHQxVZNqsvOBrSyP1XatM6ogwmkQWbH5N1NiZDFchW5nRvDSFP7DdyIHRO2Ey4vbeFswgqcalBvwCxydslJtZ0anMQf-8HtiDUXQEjWIWkqJEbzqvU0uUGINbXd2QQvqtabDo5kRVLlBzT267e9o4N3_1z8vz088qU=\n```\n\n### Screenshots\n\n_No response_",
+              "closed": true,
+              "closedAt": "2025-01-20T22:02:32Z",
+              "closedByPullRequestsReferences": {
+                "edges": []
+              },
+              "createdAt": "2025-01-20T20:23:59Z",
+              "labels": {
+                "edges": [
+                  {
+                    "node": {
+                      "id": "LA_kwDONXxB988AAAAB0pbE-w",
+                      "color": "e4e669",
+                      "name": "invalid"
+                    }
+                  }
+                ]
+              },
+              "author": {
+                "login": "JoshuaPHolden",
+                "url": "https://github.com/JoshuaPHolden"
+              },
+              "assignees": {
+                "edges": []
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "I_kwDONXxB986m6NwT",
+              "title": "Shattering Concoction Gem Level not Correctly Calculating above 20",
+              "comments": {
+                "edges": [
+                  {
+                    "node": {
+                      "id": "IC_kwDONXxB986bLD18",
+                      "author": {
+                        "login": "LocalIdentity",
+                        "url": "https://github.com/LocalIdentity"
+                      },
+                      "body": "Fixed in 0.3.0",
+                      "createdAt": "2025-01-20T23:42:25Z"
+                    }
+                  }
+                ]
+              },
+              "url": "https://github.com/PathOfBuildingCommunity/PathOfBuilding-PoE2/issues/479",
+              "body": "### Check version\n\n- [x] I'm running the latest version of Path of Building and I've verified this by checking the [changelog](https://github.com/PathOfBuildingCommunity/PathOfBuilding-PoE2/blob/master/CHANGELOG.md)\n\n### Check for duplicates\n\n- [x] I've checked for duplicate open **and closed** issues by using the search function of the [issue tracker](https://github.com/PathOfBuildingCommunity/PathOfBuilding-PoE2/issues?q=is%3Aissue)\n\n### Check for support\n\n- [x] I've checked that the behaviour is supposed to be supported. If it isn't please open a feature request instead (Red text is a feature request).\n\n### What platform are you running Path of Building on?\n\nWindows\n\n### What is the behaviour in-game?\n\nWhen increasing the skill level of Shattering Concoction it should go up as its increased.  I expect to see the skill Gem increased from +skill on neck and quiver(increased from widow hail).  Ingame my shattered concoction is 34 with my current gear.\n\nPossibly a combo of things happening here due to the widowhail increaseing quiver bonuses\n\n### What is the behaviour in Path of Building?\n\nShattering concoction shows level 20.  As I increase the level it does the following\nlevel 21 (-1)\nlevel 22 (-2)\nlevel 23 (-3)\nlevel 24 (-4)\nlevel 25 (-5)\nlevel 26 (+14)\nlevel 27 (+13)\nlevel 28 (+12)\nlevel 29 (+11)\nlevel 30 (+10)\nlevel 31 (+9)\n\n\n### How to reproduce the issue\n\nadd Shattering Concoction\nincrease skill beyond level 20\n\n\n### Character build code\n\n```shell\nhttps://pobb.in/2BnEondhbMyR\n```\n\n### Screenshots\n\n![Image](https://github.com/user-attachments/assets/94b142ee-b917-48d6-860c-4320273c9ae8)\n![Image](https://github.com/user-attachments/assets/cb8a7402-dcd2-4328-916f-cef6c7ccaf1f)",
+              "closed": true,
+              "closedAt": "2025-01-20T23:42:25Z",
+              "closedByPullRequestsReferences": {
+                "edges": []
+              },
+              "createdAt": "2025-01-20T21:13:47Z",
+              "labels": {
+                "edges": []
+              },
+              "author": {
+                "login": "searsay",
+                "url": "https://github.com/searsay"
+              },
+              "assignees": {
+                "edges": []
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "I_kwDONXxB986m8w_J",
+              "title": "Beastial Skin",
+              "comments": {
+                "edges": [
+                  {
+                    "node": {
+                      "id": "IC_kwDONXxB986bN-5i",
+                      "author": {
+                        "login": "Edvinas-Smita",
+                        "url": "https://github.com/Edvinas-Smita"
+                      },
+                      "body": "Your configuration is missing Wind Dancer stacks. At 4 stacks (76% more evasion rating) the values in PoB exactly match Your in-game ones.",
+                      "createdAt": "2025-01-21T09:21:42Z"
+                    }
+                  },
+                  {
+                    "node": {
+                      "id": "IC_kwDONXxB986bT5CS",
+                      "author": {
+                        "login": "HeavyGravy",
+                        "url": "https://github.com/HeavyGravy"
+                      },
+                      "body": "Apology for the oversight, thank you for clarification!",
+                      "createdAt": "2025-01-21T20:33:47Z"
+                    }
+                  }
+                ]
+              },
+              "url": "https://github.com/PathOfBuildingCommunity/PathOfBuilding-PoE2/issues/500",
+              "body": "### Check version\n\n- [x] I'm running the latest version of Path of Building and I've verified this by checking the [changelog](https://github.com/PathOfBuildingCommunity/PathOfBuilding-PoE2/blob/master/CHANGELOG.md)\n\n### Check for duplicates\n\n- [x] I've checked for duplicate open **and closed** issues by using the search function of the [issue tracker](https://github.com/PathOfBuildingCommunity/PathOfBuilding-PoE2/issues?q=is%3Aissue)\n\n### Check for support\n\n- [x] I've checked that the calculation is supposed to be supported. If it isn't please open a feature request instead (Red text is a feature request).\n\n### What platform are you running Path of Building on?\n\nWindows\n\n### What is the value from the calculation in-game?\n\nThe Beastial Skin node is supposed to apply 100% Increased Evasion Rating from Equipped Body Armour. I have a body armour with a 1651 evasion rating. I have two Iron Runes socketed that also give me 40% increased evasion. I'm not sure where the calculation is going wrong here, but something isn't right. May not necessarily be an issue with this node, but more so with some other calculation.\n\nIn game, my total Evasion Rating increases from 4422 to 5297 in game when this node is activated.\n\nWhen removing my body armour in game, my evasion rating drops from 5297 to 1875.\n\n### What is the value from the calculation in Path of Building?\n\nIn PoB, my total evasion rating increases from 2503 to 2998 when this node is activated.\n\nWhen removing my body armour in PoB, my evasion rating drops from 2998 to 1062.\n\n### How to reproduce the issue\n\n*Side note* \nMaybe some nodes aren't activating correctly when selected? To my count I have 110 nodes activated in game, but in PoB it says I only have 106 activated. I've tripled checked this count to make sure it's accurate on my end.\n\n### Character build code\n\n```shell\neNrtPWlz2ziyn0e_AqWqqXqvoti8j5QzW_IZZ-zYsexkZr6kaBGyOOGh8PCRrf3vrxvgAcokRcn7prSz2drKyEB3A2j0CRDA3j8eA5_c0zjxovDtUN6RhoSG08j1wru3w5vr49fW8B-_DPYunXR-MdvPPB9rlF8GP-2xP4hP76n_dmhZQzL1nST54AT07fDKCe9oPCROMqWhe1BVfIhCOiSpE9_R9FPRqvRFBuy5EzvTlMZnSHGcpdF55ALGzPETQAkcL5xE0680PYmjbPF2qAzJvUcfONDp-eXF1fUQuvXT3qXvPNF4kjopSeCft8MxDM-5o4dOAP8CluNngKKohirtqLptaIZimMPdTuT9LE7SzShMFpS6FdKOqlhtoJcxPZrN6DT17ulB7KUHcyecVg1q8o6ttyI3IUg7imkbnSjnmZ96C9_D6SrQdkyjDeXds0bsVtjrKHX8w8tJCarrkizvaKap6IYu2d14UVriSW2Qn710vu8Dfzdo5fQu9FJaQ9R2JNMyTdOQTcuSuxptQNYlQ9_RdUNSNVlplYbLyEuiUESULW3HsC3FUkxLtq2uVp8j67psGzuyqeuqrdjyKo6KqIpq7cBYJeiwbVutk3iQ-T6ovIjZOh1XNKHxvZN69U62wh9Ewa0XLs-eooPY6poqG3b77I1j6lzMuLZcOa6XJec0jWkiKJrWhnvuhM5BlFTyJWtGF-wljcGMpTUUaQXChE4jsHwiiqraO5Zl9WipGb-1yTNvRvtDrjWaHGHd3mw2jqNJX7i1CW_WoSsw9_0gJ1Hm94RMK0NrtUId0kdBUTsU7psICWar1dqFgri3WxkgWINsJ3hI7yNU9NUjZsbn6N1lCWmgpZQU3TJkXTL1VlM5f0q8qeOfO49ekAXgea6dr7RqEMy71S6Ed_M0BLvVhmxp7T7u2ItpK55p2u3mzHfb8ExFacebO1HShqja7Q2eQ1D0zgnd8XSaQfD0VM0bWNEu_RQAFbkjcJm-QejTcFqNv4vsTRgzDyDEO10NIMoVqCOGWLc-7Y1TNZOrdYUpSd2N3dEwb_FJjJLMLqwzSqfzE2D1lZPSfg5A6JCtdfIXoUX-dpJt4m9HA3WUNXiFiM28MrVut7omryYLD0LQSqMVvRuygQFSX4zl8bd7i5DGd0-TuUf9qhlbNfvAFww7cBZ9UJkIiPiiKBhSvxab5qkX6pqTdSUmP51QzX1qtUhH904iehLFbndQnGMcQWSW3O5LzylkCIDi0uX0SG1PxKI_MQ3z18Qbx0GUVf5dkdXOcXDwXupfOEOeg15RN5vWvG87c4uEct-H9HlpJNJKLOin76-FOk5TZ_r1MHLvaF8U1shaGPX-TbLFAtQcZaIvAfTxkK54QsjWHolUwBcg0aJuy1JXMLDUgGGvBl5uQFoZ4SyPQuuJ0bslFp4staL3ge7dQjmb52AxAjDSbM3kPBLc3I6qtdqEY0hRxRTSknRT2tFNRVIsW9U60frkxDn9yVfP90mC_146MRAYkgTUd0rZrzqLyTiOo4cVSxL96Z44PiXHUSxItqya4IwtXTYgtDS0F3T1SuSzpFrqjm6YNrCi9Mb9qe47AFGSFiymtqNaumXb8vqDP3qiJJqRz16YCotUqg0Zvgn5g2xqurZ-Ty_iW6Q6SaM4SIQcHTIT1ZTXIPhsznNO0CQlfMGGrF7ueVkzfDWKbLCWdRk9gI7OcT026eGEBGjIVyqutapYTMPvT73p18B7NXAUupD5gMXv3cYyRlMz-9lslpBpFNw66RkYMpyHWyjjvw-cMPRuHd9LghE58B2IMp9G5B0kMb6LInU6peKf1_MsdGk8IqdhyFbHoLYmfCPyyYMMmVEBIXfJIXYPJB2SuoTmbUYh8_j3AJV38toLILBJkkMndYibZ-OfoDdOmCogZyAh1ImncyRwDGp5C16ZCVRZysUL19SPPR906xDKsGnk3jJFGSliw3u7bOEff50GiyhOCX3E_6C8PhXL9QyQlQCdJPVCtiYIsYHvD8lkHj2M3Xts6TqK_KRc43cWCxq6NRrXMaXEKTz9FDvBBo9_kMBJoNdP3HskOBphv-HUZcMII-gARmKarY80UAh1pOiWMlJV1TBGhqRL-kjVbUkeqZpmqSNVkeFfBVdxR7KhGdLIAKs9wjRLGym2aoxUWbGMkS6bkjlSLAmKVc1QAF8xDcBUAVGxLFUfGYpmwG9JASTNkmVAglLAtqWRrBm6BQ0bNnRCNqB5Q7aBiAwpEHZCsgERWh4pmmJhO7atYGu6BO0b0ENNlWAUumZjny1FhlFYumpCX1R5pEOT8K-l2ubIAOsI4Ig70iVNt0eyDJYdwTVs1YL-6jb4SiiRNRyApEH_ZICFxjXopKlZ2shQLcsa6Yahy1AsmdgPGRijq0BXAZcJIzOBJLDUVJGlMnBa1m17pALToFEFzBFyDRqFYZuMigX9Mm1gtA2To-uKCYi4fA6jkGQskW0VWpZVBQBVE2gBNMyACX0cgQNUNOCDiSXQcxikbQM7FUO3odcSjB76a2nIQxuYDY4SOonuF-hbGlCGYcNQVRvsIzACegWjMbFnhgxzq8kwZ0hBtZCr0JYMhOA3TqcMkjTSTWA8mwPsB-uGaQAfoPcm6hkuNDrx07gulKEHOpCCXC_tf1VCixL-097N1Rn78dM8TRfJm93dh4eHnYWTzqMZfYTMZAfs0-4CkEA3XjOX8Rqp7o7hf_t347HjX6r30c2vx9H7z-ZxcH75u_N9duv6ydf985Pw47eHcarRP2_fv1aU8_l3-cvrh690-uulND6yzrMvHw-Ov793Lm5-PZteHswtyIPUj0_vb84_UVU9Ht_-8d58MOa_ygn9dKU77w8_z849-tH9sv86_DDRHv1IffQy_9S_tJ3xwfeHgz8OJreXwUf1JqX7YXh0fOYnFzefX5vXr9__8fH3L8H06_1ZErmePH3v_Dr9tm_d_2aozvH8w5ffgpkzXfye3VwsTrQPfzx908L4_YP0GOrhXFXv7Pns6_H-l68Xn3-j_jSwwvv4w-nZH7PszxtbO5nPPz5Id8cfI_23uerenh5dLqzj66sZsOgtY_JuweU9vrmYcJbnfzHrgXPCZHBIwMkG-KeSe5cGQNSnCrCIdp4DMtkTAM02QKbuAqDWCoj2RwDUW_uIGioAWq0U0SIKgHk8DFwTmbWHYX7sgZnNqUACGHu3WUqLCvABjx-4HebWj9kVrj3c4AmWlpkIaDRMcxRuebjp5laAGzCu-Vzncwue226m_8y0cpPGrTy3AtyGclvALRBT5dweM_1lxgfjqzjvATfezG1wS8eNMlP8kiU1LgCHwEExb4keDH98iFJeh4XFH3ss4EvAC8fpCQ2S_SeI4Y5xbWZpcyx3gQg9oSnb_a7hvB2mcUbRa8-czMfyjxkLKXJfXpSe8e36EOKOcmEdSIFHxhyaU7x-WuCox2dnua_NWyWeWwQBQmHqpT7F7QDHpRCon42HDE7JrRiPaHH3flwN4cDxpwkLUbxw6mcgbWEeAJexgO_cYkfxawRcG3aLAS5RKju0QUuc4BoN5fINLGKxJIz-FCK7x9ykc_wTP4LQUCmpc36DjtXq5aL-nkdXqF5lgF_E99js8woe0A7Jt2J-wRiRO66h5zR1XAgHd09BZZNdlI5d1nuc-SXyoRPkIdWzzGKJE9MoC1MeUAqjzjmLQ999AWNW8-WYRXl8VSkXUoE5eYkI9IxDKxhUCv45BKye419TiGtFBuXlJK_YNvbEByxR6eBNDrExY86i8A5sRFqTmrJsu_jxmTqLKDzy2TpSsV7ayptG6I35dBl7YFbHYFsDttNQcYvXkKpqu5j2js7a5Qcr12KJwBHEFfnA_96uwY-D2yyZtw6fV28sExxd5EFRshkX9rhF_5v5PLYG-dzjQfF6_u65u2OUm5wdq9guScy_xaPV9lPSKpYNsBvL6GTqpOA-l018rXi7OHUQhbiZGzspdfn6TyujnoNuzKfnpER2ibWkqN4yts35qttkHnUEUzWolzCr3KSsMaks3TLe-FFCV4RSAszmfKlo1BiDxaQo3y7WlEbzkoYUBRymr5VHTcCbR54NxJrNeQ3gh2sd8g2Ii1m-_SDM01LNpgnlswbEKG9p82PrQj7XpS5uuq9ID5bgXmAL8dOeWZY8s4bApqpiu5h04jtTr1vXK5CNWVOREBkjlm4XV06ndN9L20Umr9-YHzm-yAwoIrxsS93COd-IW-0ScsCXu4OcULMrKCv_7m7A7O8GTvHTkWcuAEpfav4Z4SbTzyq2THeLHfh27S0gNl3wKAnUFLgq3EI_WCpOH2e4BPxyTW5yi5Uqb6tvPA2nMXUS6ornkDqkqgH6BcvUd6E385pS0LJqW_NPdkKi21kIMC-KtxpcBAu3fngHYT6AFxchy_OFiUDeCjWbeogacWESoJhEIckr_koB7ZE24QeMwveLJU9q5ZtyZIl4xZPlzya3zdglC29F1i_AbB76VjTq3lMo3jLOBAuaZu2LtHn9xsEER68xoyjaMr05eqIXs-IT3ZINQummOlMjXPFh6aPgHws--EHzxaz4nLmcAaF00xmoEa5mYOkD6q1b6PbCrgVub3MzxbBrHo0XbNlekhM6x9iFLkaIQBvz4zgK02jGjz1WTMFSlA9evl28wTNqK3kjAr2QN_zk3HPe8PIftmuIn70XX72X81AVbrgHLFKtmF_7xH675HLfh761CiSr3VgSGXYt5uQF22a1vKDDWnnBC7JmL6inyvj3lnmt6mRJu--qYDb3YBWNemYmFP_IjocnsRccUycRZ6EsWzOmz02SQFLY7IBCkpdu2544O93UsR_O6l-wF87w6_vgedF2caI4otXKigJgY14UBERmVGU_goT6GbiK_2LxxktVNdLPv1a530KJPMDTgS7ehtcRM4hAm65CiDRqzGHlpKjYQu6s-jKsgtlYa99RXLWjIXUZtfpWWFFF8roti7WimB5mbet6DbWbfxeNJ90SYEV9r7BW_GIDl_8EUHbuhp-swZ8MiUGchossZR14Owy8ZPoFD_XiDZLstA-78vLo-Pjo4Pr001F-zkVEYbz5EmbBLcso2H-FEzGUfdZGkuw24T_RftMH1pFD4I_nJzgu33cWCS2PubLTMnnPfdyyaafGoN555T2UzbQqgHZKR480TmG8n514Gnu0tV9l_YpO8Qbxuhc8ldxGDa90bCfED2_g7gC_jqaFU-w2zXYqeKVl63CwsgP3NFg4fmvLee0KTqR4eAqk25t5Uzx13j3leNSKQ3Xwpbzcq3W-80tP2mmwOzLbCPDKdmR-iUEbdl7bwVV2OUErV3ltO_ohnTqtY-eV7cjlDUdR-A7vmWqmUkJ1UPoQhUzI8QCV5-MZjtaZPfJpCdJO8CKd0zg_ut5G6RxsVAHSqTj8vGUrHQGig1fsXrgWDmFdOypf42sZA9Z1KE1-A1ibtnvdKlu_q6tlPkSYdlL8zppWHuYX4HRMQ373U8sU8NqOkRSXYLUMIq_uUBRmg8f3kefyK5BaVGYJrMtosA3al5Jh9zq9nMzyRU8vp3jsO8nX1vnOa9vRb1IPo6AGKjyC6UUEFetlFNgS_oso4EUowcbYV8uhSIV71R2ElFe2NCIXtV26n9_ksjEFft_MxujsOpyNsZkDOKQzDH87PUAJ06EcaRYWwfoLSbFuNVuRanRr0eK-sHGka1Pk2p3fkNplADjICkLgzN91hIv9KJWXl72jjo93dEf-ywg-uwn2JcTwFsZs4YRuQe6iKUiv5qEn96I0AZrsJqBDvOzxpTwMafDUQKi9X3u7RVrH7gjCRCu_2WiSxrha9T2Kgt_fDtUd2TBsy5AtSTUMhZfntyDISn71AUTghx5MY8zEr2gWIX97O3wt67q0I1mGKeuKnt92v8fy3PxaBvzNbmWQO-llCeWXT_NDxwyDc4pnmkAlv2KBpbZXbB30DbkaXx0NPkEiTR_JGMY3yO9OcskfIHBRSvajhwFDZsN6QyxtkF_-8IYo0iC_q-MNmZDJ4CoLKfyKMp8cQILPjmh4U-fW6ahhZK_otzfEUAaQBfne1EN6yuCfMD5IPdJ__TMG7H-9UrSfSRoRTLPwrkrCJw06GGZJBazoP-NiI_8ikhQXW-bAA0vtqh27bkIMbESWCV7LWKuwWIUmVZ9SFdWvtB3VqHcOFILwxGkAHCQ8_UzIDIkqxHFdD2WTHdqOo4dkgAkCsWSCLpssaEyY0JJfIY2j7gB4FmeLFH7hqsR55LInMEiM_74dSjv6ULw-owNCWQmhroTQVkLoKyGMlRDmSojidju2KlQXcqVByPdxCwRmLE4Hn8Ad4Jfk5GMGChbX5NuURZHURJGUB4oiik_DZJNZFBeTzaVGRrHQVEFoXC63UFwAyjWyuVw_eOkctY_wtaaBatZEtzyYS9iixeCVghRZ11G78JM_EYbTUOR1-s9kUjHYRxbPZfK_TRKb5ExtkLPzKL71XHKSObHrOWFlUPfxEhvguhdPfZoOeOJIeOb4hqiqWrezSoudzW3paQxeDn8K4qrLnRZUkcTZ5znjiOS5HwGPS2p9qtBfKTYKF8-XB690ZiIDHkgs4chSrZF6pVoTP841dpiDubsZrvQPZG2FiA5eobqgrcXvrXnizMsVlZfjHbFixQ_ruZ711Bqk-pAGICOX1AfBfQRbkBJ8tGnm4flLmAkHirkcgZk0UA5FUZZWhQyVMLcLt6F3Cre2pnCjsMR40TVAT_zogZ3yjXC7gInkIb1l13QC7u9RBjJnmShbBb0rBxe4B3bNcC9VvtJNQWtQ-Yr2yhUzkNJvGYQEbDlv8Erlgs0iD0F-FX1H54EBu_qc8kyMWWR-DeAPCV9TwvW6hN98OP14czTAxy74Z7-JGwVMZsYshRgcZzGG4uRzDKlDJemGtGzFlfWMeD0gdqYwsaI5XxEQm83mrgTLA4ni7DqFYASE8LnZ1JDMIX1MKbIDCiQsOA1T6vveHWYZg1rYzOMDHncwKVR0Ab2KeuTnobIQ9TBMAKm183cV5CYhNJrMLKr-GXXuMlrY2TOHBQ8RJMWCjbXtfia2l6CtMK0rBa1IzYTrbyootWaYizvYi6hVM8VYAo0c2FpJEwsx_ETbuCSleca1bCxfqVZjdPDDRK5nIs0G6WQXxV9FiRODmuP-NBkHGcaytQTKFiWrLSId-340ZTYJl4we5tQPUG4m4Bi_ogiozHWmMQ3v0nkh2-R_Ks8JY8KziHHyv28IWKyfl-SsOTp9JRtWg2jVots-eZRsrgxSwSYCHUSv9sf-SiHcMhHrgLDbhdBqEMJjkBpyncXhYB_4P52TKwy2WiWwnhPJg3z9kxQi5SVEB-kpJUw46C9KGMIwz8YEU5c783nVFsXj2XKR0iMNeiXbPxcCVF4gKNgziBZ1ud3o_vdauyYxshvEiJ0sAu-BT8m2ShK41TZbtlqS-HngZiFiGbRmcS_VIEBGzb4gUC476N1Wyo5iPAvg0ET-kJZe0iJLTauHPjIOPZKzGBxG2S04g33Mhtn-JmaQXChqdsgS7ZC9tJRYC6k5lXxbj9w5eDUzzBl3gzyZxbjIfh4saU2xktUcGmlS88KJ_GPhpI9cLG2dnI9PTg8GlxQMM64hpFFI83kEfUznkHjhk9NsnX9pjdkwq2hdtDCqWZeRGxQNiI1C8hRl5BZy_QBCkDQLUTrOnCRNiLKjS4Rv_GB4ESZZAAIEwTL0wZJKiYpC3CAaHGQxRFSp_0TmTiLUD_Ln1IiaLzSwRrH5AfqhYt2ioIaZG5LbmJNKEydrNxze-KkXoKdn3WHfCRRsxYdEcAl6iaf1DEgw25LIVKkYKuSoup6Plg_9ORtNbNLUu7lY1Q-Mmt8fB_iVKcnbA1ZilrQRK3uLfiOz1f7MZiv9NWZ_orEL8Xqd1fq6rNZlndNu47Qsrctqo5PVuHWREGlHkWqc5u3-fzK7ae30k8fa9tleE-6Ovz6LkpQcBew2o-WAg783DSl7ALFfnZ-siFzyVznyXAS4QDgKxIpJRO6gtylROgPQDemwGSweXiSzOAq4rCSDD1GK31f3IqmtswW1DuFaTnaLu8KlK-WdPfqWeYsF_JVv-_1VTq1RUPQGQTmLnHRODrJ00CIbNWmo7xpyreWfi5Dia52BvNaGXx16aR8SqutL7PmXw_lytwBnrTsR_5lxRuO0Go0ry2McPag8c19O_DWkSSJYgkPPCdAuLS0dF5bgDA3Y4MwLPDTWacTizM3sguCBjmNKv9NSVNDiQpSxlsaxDWIgifslXFjASB89gld5bnP-PTPbyPOmpapzh_pJisL2PnraQJ1WqorUCC1-kyLAF0zI76_LeepSwFAa9v7rGsSu3Uozl63d5m_-YTzohTPofbpFOtM4O01rOO-eFmEEHCOTyHcg0ahUYeIsFnPIW9q8IteFWpRcLUMb9SXimwWIqQu2J5dcTH8Zen99kdvy8I0dU9Ni4TrErJVy93cyp3aX8BwCF4J-ui137NPKa0UkwP8pLwVxyrUR_g_QA_Pv4PcaP6dqWhE5zCDeOPHZEbv_5KjW4blDfpkMYcd1YEb-nQq-cUir_4eEtPhUV_sHqOJ3p3u4UsYefbu8vbk6w29p-fHHEx_SiqR6D65czGlD4M0QWXhCbhUKj5FFjHLAfMf01AX45ef2OO57-kB9IrzAV9Be0SbfIauaNFch8CUk4WU8qR-GOKyenBAeHZTVnvwWHypchYILpEITUiez-buBNWZXTwn2ZHYhE2TygC-D9-YgLvyLI7O7epq_mSj2VHhGsWdP9yP3iRSHuopmta5m8zcdxWaFZx7XY5DSyqCm8fKHGmvjrd5uXG64aWr5-5a1qa2evOzZczZFgoxb_bRCWUMK3lE_EFVV7eQKfxCzxpXqjczeUhClgs2rfSzCj5rjAQSIYSfs8MFnduY_4ScU2I4PO4EehTPvLj8twP_Izwsw_LKkekyRvddYN8uXGIfPIcClcd43ih_78gPR5Wl0UyqZ2ILA9hDy04wl2iqkpWufhdPvkqKsajAuTyiXaPoKHNwYWe6jvnJk5UMNa_UP29oAjUVOFUb1FOhz-IC_1eTR-LOHR6KoO2Fn3TGsmVB_JrSr9xjj2owRX1Gp0NS-WOtPBIrYMks1ye4xEWv1sDgdsqFQIiqYW7bWwyYkqUgofYStb2f5c0tLLcgd8NOIHWTqjcB6xLlwFfk-CwxFm7ACs_ByZUv4Sm8PBi7zXe1ASrw7z7-YsTOTMDJ28LPvyMqz0aWydWnbwRwv02hm3t5uaWz5ITL21y-DvV38WPpixk60gcgrvwz-D4Ghd10=\n```\n\n### Screenshots\n\n_No response_",
+              "closed": true,
+              "closedAt": "2025-01-21T11:55:47Z",
+              "closedByPullRequestsReferences": {
+                "edges": []
+              },
+              "createdAt": "2025-01-21T07:45:53Z",
+              "labels": {
+                "edges": [
+                  {
+                    "node": {
+                      "id": "LA_kwDONXxB988AAAAB0pbE-w",
+                      "color": "e4e669",
+                      "name": "invalid"
+                    }
+                  }
+                ]
+              },
+              "author": {
+                "login": "HeavyGravy",
+                "url": "https://github.com/HeavyGravy"
+              },
+              "assignees": {
+                "edges": []
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "I_kwDONXxB986nBiJs",
+              "title": "Ice Bite is applied regardless of freezing an enemy or not",
+              "comments": {
+                "edges": []
+              },
+              "url": "https://github.com/PathOfBuildingCommunity/PathOfBuilding-PoE2/issues/507",
+              "body": "### Check version\n\n- [x] I'm running the latest version of Path of Building and I've verified this by checking the [changelog](https://github.com/PathOfBuildingCommunity/PathOfBuilding-PoE2/blob/master/CHANGELOG.md)\n\n### Check for duplicates\n\n- [x] I've checked for duplicate open **and closed** issues by using the search function of the [issue tracker](https://github.com/PathOfBuildingCommunity/PathOfBuilding-PoE2/issues?q=is%3Aissue)\n\n### Check for support\n\n- [x] I've checked that the behaviour is supposed to be supported. If it isn't please open a feature request instead (Red text is a feature request).\n\n### What platform are you running Path of Building on?\n\nWindows\n\n### What is the behaviour in-game?\n\nWhen adding the support gem `Ice Bite` to one skill, the 35% Cold Damage Gained is only applied when an enemy if frozen with this supported skill.\n\n### What is the behaviour in Path of Building?\n\nWhen adding the support gem `Ice Bite` to one skill, the 35% Cold Damage Gained is applied regardless of whether an enemy has been frozen recently or not. Also, there is not configuration for having frozen an enemy recently affecting the damage.\n\n### How to reproduce the issue\n\n1. Add a Skill with support gem Ice Bite\n2. Go to calcs tab\n3. Hover over cold damage calculation\n\nThe 35% gain is always active.\n\n### Character build code\n\n```shell\nhttps://maxroll.gg/poe2/pob/uvfcq0y9\n```\n\n### Screenshots\n\n![image](https://github.com/user-attachments/assets/84104ae6-61d8-4cc1-8fb2-ede28a1e8fcf)\n![image](https://github.com/user-attachments/assets/003febc7-1ca1-4e2b-90d4-1a119ae0f837)",
+              "closed": true,
+              "closedAt": "2025-01-21T15:58:47Z",
+              "closedByPullRequestsReferences": {
+                "edges": [
+                  {
+                    "node": {
+                      "id": "PR_kwDONXxB986Ig0Cx",
+                      "title": "Make Ice Bite work as intended",
+                      "author": {
+                        "login": "xspirus",
+                        "url": "https://github.com/xspirus"
+                      },
+                      "body": "This commit also makes Innervate work similarly to Ice Bite in terms of how the stat map is written.\r\n\r\nFixes #507 .\r\n\r\n### Description of the problem being solved:\r\n\r\nWhen adding the support gem `Ice Bite` to one skill, the 35% Cold Damage Gained is applied regardless of whether an enemy has been frozen recently or not.\r\n\r\n### Steps taken to verify a working solution:\r\n- Check mod and damage gained\r\n\r\n### Link to a build that showcases this PR:\r\n\r\nhttps://maxroll.gg/poe2/pob/uvfcq0y9\r\n\r\n### Before screenshot:\r\n\r\n![image](https://github.com/user-attachments/assets/84104ae6-61d8-4cc1-8fb2-ede28a1e8fcf)\r\n![image](https://github.com/user-attachments/assets/003febc7-1ca1-4e2b-90d4-1a119ae0f837)\r\n\r\n### After screenshot:\r\n\r\n![image](https://github.com/user-attachments/assets/5363424e-424e-48b0-8b21-a6f63efe5298)\r\n![image](https://github.com/user-attachments/assets/1da11597-613c-4c32-8087-3bbe895246f9)\r\n",
+                      "url": "https://github.com/PathOfBuildingCommunity/PathOfBuilding-PoE2/pull/508",
+                      "commits": {
+                        "edges": [
+                          {
+                            "node": {
+                              "commit": {
+                                "url": "https://github.com/PathOfBuildingCommunity/PathOfBuilding-PoE2/commit/66f5855f55278e4c71f2b06146dd5b92fb290b07"
+                              },
+                              "id": "PURC_lADONXxB986Ig0Cx2gAoNjZmNTg1NWY1NTI3OGU0YzcxZjJiMDYxNDZkZDViOTJmYjI5MGIwNw",
+                              "resourcePath": "/PathOfBuildingCommunity/PathOfBuilding-PoE2/pull/508/commits/66f5855f55278e4c71f2b06146dd5b92fb290b07"
+                            }
+                          }
+                        ]
+                      },
+                      "createdAt": "2025-01-21T15:44:32Z",
+                      "closed": true,
+                      "closedAt": "2025-01-21T15:58:46Z"
+                    }
+                  }
+                ]
+              },
+              "createdAt": "2025-01-21T15:43:35Z",
+              "labels": {
+                "edges": []
+              },
+              "author": {
+                "login": "xspirus",
+                "url": "https://github.com/xspirus"
+              },
+              "assignees": {
+                "edges": []
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "I_kwDONXxB986nDgwG",
+              "title": "Mahuxotl's Machination Omen Crest Shield incorrect mana calculation",
+              "comments": {
+                "edges": [
+                  {
+                    "node": {
+                      "id": "IC_kwDONXxB986bTxtN",
+                      "author": {
+                        "login": "TannerBragg",
+                        "url": "https://github.com/TannerBragg"
+                      },
+                      "body": "I was able to debug this in the calcs tab.  The 6% value from the soul cores is not being multiplied by the 643% affix.  It merely applies a 6% increase to total mana rather than the compounded calculation.  6% vs 38.58%.",
+                      "createdAt": "2025-01-21T20:16:29Z"
+                    }
+                  },
+                  {
+                    "node": {
+                      "id": "IC_kwDONXxB986bUUFA",
+                      "author": {
+                        "login": "LocalIdentity",
+                        "url": "https://github.com/LocalIdentity"
+                      },
+                      "body": "Duplicate of https://github.com/PathOfBuildingCommunity/PathOfBuilding-PoE2/issues/304",
+                      "createdAt": "2025-01-21T21:39:34Z"
+                    }
+                  }
+                ]
+              },
+              "url": "https://github.com/PathOfBuildingCommunity/PathOfBuilding-PoE2/issues/515",
+              "body": "### Check version\n\n- [x] I'm running the latest version of Path of Building and I've verified this by checking the [changelog](https://github.com/PathOfBuildingCommunity/PathOfBuilding-PoE2/blob/master/CHANGELOG.md)\n\n### Check for duplicates\n\n- [x] I've checked for duplicate open **and closed** issues by using the search function of the [issue tracker](https://github.com/PathOfBuildingCommunity/PathOfBuilding-PoE2/issues?q=is%3Aissue)\n\n### Check for support\n\n- [x] I've checked that the calculation is supposed to be supported. If it isn't please open a feature request instead (Red text is a feature request).\n\n### What platform are you running Path of Building on?\n\nWindows\n\n### What is the value from the calculation in-game?\n\nTotal Mana: 7128\n\n### What is the value from the calculation in Path of Building?\n\nTotal Mana: 5935\n\n### How to reproduce the issue\n\nEquip Mahuxotl's Machination Omen Crest Shield with 3 Soul Core Sockets.  6% increased maximum mana.  Total mana calculation is incorrect.\n\nBuild also uses Ingenuity with a Dream Fragments which may be an area of interest in combination with this Mahuxotl's.\n\n### Character build code\n\n```shell\neNrtXetz4kiS_zz8FQpH3MVdGNsqvdXnng3AL9pv41f3lw5ZFCBbSLQetvHG_u-XWSWBBJIQ7tke7-7MRNCgysyqysr8ZdZL3v3b69gVnmkQOr73eYNsixsC9Wy_73jDzxs31wdbxsbffm_sXljR6HzQjh0XS6TfG7_tsh-CS5-p-3nD1DYE27XC8Mwa088bPT-waUDDcEOwQpt6_U6mLPKD8Qu1oNINIbKCIY1u0_rF7wTkjKzAsiManKDsVhz5p34fGKMgphvC2HK8nm8_0egw8OMJtHlDeHboC6fpnl6cX11vQPt-271wrSkNepEVCSF8fN5oQZXWkB45EbBYbgz0smhK4raysVPJ0Y6DMNqzxvC1LmdvQml_Rqxsm5Kh6kThn2VMFwHdHwyoHTnPtBM4UWdkefa8SrGMb13a09iNnInr4Aisoj9aEk3EUuJrP7LcvYvenFaVZFMuVxNn8KPV7bhzolHbBaWuIx6ZukPPiei6XBe-E_ree7qS5Skfhdh1wZFq0V7RkAbPVuTk21Mu2x8_ON56ijq1PKvjh_NxUFWxivaCgoN7UY5lFUOP2j4gQZZF0om4PXMLuUaNxXJKqz5xBrQ-5Vq9ShjWbc37-rHfq0u3tuD3NegKsLAeZc-P3ZqU0RyPZKPcHX7kCPUywj36OjfnUtvqehlzVJSKWnOUolpe7bOPvrq6vwwx9o8u5l4qK6axrUmGBv4glYeJ0TR0bMs9tV6dcTwGhL62nui8Qk0kRrkJDkeRB9BTxiwRWSvlPnAC-i7Gju_238c4svywjNPxBlWuNtdrRZS2PyFp17Nn1EaVzBsvYHCcCe6kiv4KfAqTiAeX1mOYV5A4Zp24y2saUi-pbjp3D2W7sj8nlNqjQ8iprqyI1oPyuVOZhlSpWaTOalZSq-QWqLaqhjzLGspCxmJlEUPUt7UqvjXV1Zs4QSbbJNoKygIV1GdZVIGsb5fqe9-jwXDaGznU7dcIEhnqVGkda1Kn_2AFWe6sNcg16ysaqVqsaw4WhrR1a3u2wizUy0StVgWnz2qh3EwpZLvA0Kd1U_uLwH_EyYO7HlsrGPtxJqCqZmUfOHmtLqSBik-drmg_tnORsTQoz2ZBbRemegsdKUeRGRs01HWLeMuVEEWW_bTn94e19cYqWYsj375ePJngHBk0UlcAxl-YDjiZbEpXVxOfgzVn_ZXoVXG6dgVz4qUKtJX5R-1aFjiWqiKVqcNCNUSsQb1YxerxPAW8GAP2sln_qZ_JDbYlo9SdDmASuM4kjdEXTzATUb0nx3WFED8vrABYNoQQnNWm7FtitVbwVLvKC_8FdDHCVZqwhr9nqCFnW-3nBwH13qa15efIa1Ww7_XjAH2rdh2LHEXVtOPBIBRsmGdb0QkYDGr3AZ7x763AHvGlIjsOQpoQcM5rZwywHoZ7VmQJ_WSmcGsFjuVFElvLCqkF_Mh0YLnuA4ASG7vZUz6muP514LgRDfbgGTYXu7QokaS55u4OW63Db93xxA8igb7iP2gk088bA8sNKSdkT0BOGDkeW3KA_rjuhtAb-S-t_jPWdO37bpgyCdZkQr1-TsZ1QKlgpUBnA2LzBTn8IYytEFo95a4TYm8yK4TdPtOB50MD0LU1XWpKsq4pTUJ0WWtKpqSITdWQJbOpKoqiN-GbSpqqqUEpEYlMmhIxDaWpGKoKvCZRjKYmabre1Igiyk1FN3UNPmWzKSuSjA8IFMIMxADBkozCFFUi8FxXzSZRYTYGYlRRQkrNaOqmBoS6SuSmKhJRAbmipDdVFWpvgrPrapNAy7SmDv81VUKgMbohmk3DAKnE0FQkk6ADkg4Na6qypGnYOGLCJzGhkxqR1aYuSU1NM7DIkKH_CrRVklToGbQSWqDBXBF6D42FSngHmroiqlAugyhZk6HJsmqY2FsQD89NYjQNVYOaJVAStELRkdwwQIRoEKwZ9aLIhimjAB36D8oHYaoGNRATOqQYoA9ZUkC3oBOQrRFVbxJNUuG7ommMRcZ6YKAkzYQGEV2EtkEjFei5qmoqiJKARBF10IgMFZGmJiqGjJSSAhpRQcWyiZUqmgpdBlZJxAaoIrROhKGWTQnGCwwEBgBEwriohgg9IIbE7EDFRqsw3tAYsCEZRgA0KRuaDFXB7Bo1h6NhgPpkU5ShCwYYAsiCKQAoV0S1QpvgU8dxkxUD-yPDwBBTVKBJokyYlUErZBVMSiY69Ew1VdlAd8WVFCuYtvK27TngShG4x8KKd1quMEf5bffm6oR9-W0URZPw087Oy8vL9sSKRv6AvkJ-tw3YszMBJnCxLQb3Wyh1pwX_tYeX7b4jfb0_u4yko66imONWtPUoflHPbpUTybf7byKh3x9iadgbKndqvD--3D99_U4uxtrjm3hqv2nKZdv4qhx7e_G5-kjeyOvJ2yg-Gh8dGW2t3fVuu2CIB9ZWcLkffw_0l9fxwctJ73CkvzrDu2-dU-0liF76g-l-p32p-kfn0mtbkc8f9xz1e3BGu_fu3VQy9PBNPhwejt5-yHfnh2_3X_aoaWhXJ_be8WT0ElydXSideHB996N7-zo5vDlpTUfkUb73D4fke3gpHrfEa8d61O-tq9ar8fZjaI_vW9HtmSsqP1pHXYc-Oz-2rr5_OY-37gfR3uX0rfdN-jq4eepLg--Wbt8QpS91D1tPg9740u-NTqZnlyPjgDo9UOFnNgg76Sjs8v2GcIf_wvQgcACh-BDtQuoYOA9xRNMCgM_XMw5hG4LjRcn3BLaYPVXDEwcQ7jEcjbhFck_iPsG9gTt4zg_QAhOv5ojFoIPZO8cXDpOILxwMGKZyl-RmznGNGTRmDcFZFo65t0gmtLQpARqAzWsmugXzPE0B1wXHBmeWTcNA7FFVLIRn4CgKga7oOgFXkhjgMV9UdYQqA9oJEjUA9QSTFQKersi6kmSTMCQ53e_uYESpCi2RE7kQGSEzEraEO8vr7_RsOolw36M06vB4w7XCsZRHmuUYw-CWj1s2lugSDp4mIzXDCh5K-BDyUJLEDAQcUwIcIaBJIxMmsuGAYytHeobyfHj42CEgLaM2hzsO2KqEuMShWdY0oOR2lQ64LEI3ITKYCfpyG5OABixTJjLEPQhiJLW3DO5mAZZDqwJhTcxCawKqDEi5bXHEZJbEQ3qC7SyMJ3Ex4xWZcM0DpcpiIA_X8BisSsJNBFAbRAserXmEZvGYh98k0Co6GCtYqGkuhliO-rgJkTgUN3IeaXn85W4lyzL0ijuvoioG4fGQB0GwAyw0dTWNmKYkKkn0ZSGTpw087sqSCKPNvIbFSh7XeOzjEYUH0iRi8mi4FDF5UOfBnqcEHB3AHDF6s2yDIw6PxQmaMKTgAZyjEg-ZHHc4dsAQYexG7OBeynMbHmYlIonGLGmQQBiHmiSxSIYIu23oaEEyKIlHTJYVQdtMkkRM8HeYIf3pEdN1327sR-e1nUbK9lukm_FB_DD6crSv2_v7k6fYh8hxf7qlj087bdo_Pz0d0mHvC9G3np_39rZaEPHOrdNzpXv_9OVISiKbeh4Pzr3zI0s1H1-_Hx9BBBsN3lpfbo5bl2H7xryw7HCvb7xN3JeT295xoB4ZW_fUPR1ixCJfjiBSOe1hz4CIftIf7e91O_LD0-2rfHF9yyK42eq9tbXL_ZPHk7uTr44PEfzo9fH-wh68QIS-fb1pv30b2R1x5FNpYJwcf31RxkfSS_B8eKx9Oe5cPkh-aD315JOrM--b17l_kZ_HvZ76fTj9oRy7z-ey-KU97Y7uj4e2eD0knb27H19NyXpUzgb6_vnbvS-fy22whx93J72z55F89_SNXHjf-odHHcV88gLIHMI30r68vPumX0ImsXU8vIkeIfJbdrzfvpu-PJ4_Gtr9dXvPP9736ddvV96gfW8eXLZaC1H4jloT3-vRiKRQncAzA2aOwAw9OVZmsJHjIce3LF5xBOLAwiGBezJ31iVXTJJ35kjcG9Ca09g0a56UNo_HAI7wHHo5rHJA5WDJsZEDH8c2jmdZtOI4lGAPAxkOHjzHZq7InXDJ55ijpQ1Mspgka-G_WFPRjxA0IVmJ6JhFw2Q1ZpmOoeGcUBLLCBnKZSTqpYQYSzOEWnnVEBQzhGYZIQPIDKExSx-yKlgrj-M6zWZhPAbyEM11zfOleb6XTF_5lJWFD47EPIVYNUElbPY4zwCzuM5jMUfxErRmQRgDHAfmXHrHED_JHBnis1yCpRW5fA9jE4uEK9Kv3R2c8eOXMz_iZfgw_bHLVqVCIfSD6JCOw_YU8rEDXKBfOKuQLBkgNbgRLhvkedIjQH06sGIXn1_GluvgCoYkZh-f8ENJnh-MZ7ukIGvkv-CaKxd5PZ1gJ1snJ8niRFKt4PTnO3SzhxWJJNJLSRTi6294RKk170vHcu2QZZiOZ7sx2KiXLNelHXKtB2xvsjRHPdwt7GcPPGWkoaDEYKEXbNEKGtj1wFaTaMn5D13_wXKlWRVcJZKeLydp-TNfMUJ_SZrBguTsN18n2xB-ZDU-5A52SiOrb0XWThc8LtzB8dphbYVviTDPGidrQcWdtP3Yi_j6V6ZDieawVzvv7zNZ3eWuF06cgK13JRaS7T9_kqFZUsYKXcyMLiMjq5Pc44-lmQM2p-rAZ6li5iTv1ksrsC2PXtPxxM_qhT8WkucfUTHzLbdwhX4ylO9Xk21Tly7bT_75x9LTqR_QvbjMtwpK362dC5whgKrZTtpcObnHH0s3Hd-LAt-FBu1RiLt8d7TUjgqp362tQmlZvc0JhBzF-1S4yyPCHxEm5_sr_8xIianmqvGbt2Q2Vumj9eLlLFzOJeZQsLi_v171Hb-XaUWyA_TL1Y6h5tzrjSCZz0IJaDVT8t6EJSc84w3wWPA9ISn4hThSJ2Wb7ZGD0_ZjJwsei0Xv1ctyFXPlzMqEWeEHy-_GExrF5SE6KV_Xaed5HefP5XTpo4-lCcylAM1jPw5ZWlWqkkXCte1mppwrJwTTSORlVcQLhFnJx9LUvsuOdFjugW9XmE6e7P1aysvJqmlWIiRFH0xP7MTdFYUMqzJ9WaB7t68tyMlpihUJmbKfjpjJVyBlCx18KQO_MiZG0fUmccRa8Xlj7IT2dzwKgteR2GIKu0i1f3Cw37nu3u4n6wpZFqan7148fkB18H8zKxCUpV1CGD-E_OvnjVuHvrCG7IGeHDfEfrmuNQkzQRlXJZKWu8BXIY1RHTmz-03FsuYE5ZL2X2kQQX_vrMAOHFrarln5ikbxCvEoJh6bKZOGt4fKBfFzfRi9-SHQEk2x21rlUvDSVGl3sLCCFwKB5ZbWnJSu0ESEi1Vg4s7AsfGsUvWQ49IWp6rQi23DtMueVox3ciixXAa7jlUmgBeWM_MLVmXcSWmFVtmtrlKt8tJy9j1qW6V954XlzLNzxb7H7hIWS5lRVUg68z1m5OA0LcdFlC8dWYgCM5JygefRiAbJBniZpFPAqJSk0nH4anipnAxFha7YPYwSDWFZOSu_a1DSByyrcJrk3H2ZtzvVLps_HV8yHlmaclH8RGmpDpPjqRXDkBzOLhkCXlrRk_SAekknkuIKR2EY3Hr2nT4_olziMgtkVaDBJlA_K4adu_55MYsHsX9e4oFrhU-l452UlrPfRA6mQwVSeAZTSwg61s9JQP_6OQl4fHb8bu6rxVRkzntVnYTMDvoWMqelVb6fnP99twR-Svnd7OwQ9bu5WQDYowNc7qyMADOaCueIYi9dnP1JUaxZxSgy791asngsLOzp2hK5dyd3C6sAgJOsEATB_KgiXawnaXa14IhaLl5H992fE7h0h_JnhOENqXhief1U3HlRkj4fh5ra86MQZLKj6nt4EetndejR8bRAUHm7dnfSaR07xI4TreTofS8K8EDhm--Pv37eMERlWzcMVVUkiagmf57sOhvJTjMk4HsOjGLArC-tFQnvP29syYq6rYqGrplE1RR-lGGXTXeTbXD8PtsFL5cXh5Rf254dP0kVxSeaIIXvUCeLslcwcY-mn4Sr1tV-4zBwxkLPBg-3Rw1I52KP9tnudoPxsQ59EgzSSPbZPwmS2GBPr-iPT4JuNGD64jo2WPsnQWxgsivI4n8J_kDgmhWsUNh_jQJLmC8R8pIGIUDoeHZALRgUgQXitGxTEYXIF8bcZAUMRo1NFR-xylG-BdRzmZybT84bspIVzBZu2fyuoevZAptNb1AoW9Nl836YtV9ZHrQ7wM_PG-K2upE9EFBBIa2kkFdSKCsp1JUU6c0rtnaStwGiFNgAqJxf9AA1h1GjM3LGTKORNRjkzEBRSsxAIXkz0MzSgdW0bNGSTWxK6vK4K3XHXdJLxl1SswUoVWD3PJMdUwFXBv4Thj8_-jdn3cub_capNYpf_cj9b4CP8P9CUI89Sq7-NM4hxAodSI1Bk2yi0-ATjk-CrJqNZLWNl3wSiKznYUPK2Uty9OqT0MP_G1eANfDdj12h4wcUh_ab5VqR-66SuTHKWtYYSePvgJbg6NE__h4A9z9y9pezM8XMmS3vqABYKOT62dAUOUtHWZzGpvAOosWnDQwb8BnEE3j4y8yraOC1Are_8ykgfdBv7L9OaBAJB9TCtAqaf-1YgbU4uLJIcoOrmyWDmwxSN0C_gq_ZcKFWDo0kLuu_KSQz1IKB2FT1LFjkC-XcYC4wKjlGnCw1NokqL0OPDEMND_EircBn6hgy4LnOnuP91_xziT2f41Om8Nebwq9BmgoKfSWFUW60RbHqyHr2beGLBdE6MdtjGo0Avx2cCyzarCblbdYQSwFpyWorrFjMWrG0aMXKmlasKDVi06Yhlpu6IVWYusYY-YJXAz0swEv42LJ08Q6q-xGDgbOVxZkJL5q8TLYJ85R862AMkpP7f1l1LavWC6z6wrWGMRXYgkmjF0FGYwVCaxy7NMpjrpYxQ63MDFuu69tgNKFwEFhvby4AzibDO8yc5ku2qSsI_8NsDvriDBwahP_7SdgEO2nI5dm5pBQF0QWjLI2zm_JSPpfL4jaJUtBaeVv_k83vgxlXBYVZbn5qgfldWZMoBm-_G_mB22jDmNkAqRC9FrO5jPEtRPJkbUFIbcoJBRVsqMLEsDifli9PBmQNDSHdqEIkxEZtSrpWEKlJeeQ160As260RzG0kBrNM31wi8P3DzHSW1feT1vZvAWVS4XRiD9Q8RugZ8oDSsyaTEQsmixYF6eDcoohUAmeSXCc-SmZhQrYC44qBjA2watSo9qsfC7bleX4kPCB-O-ywpB9A9_036v3KlK-2vRRODMXCoeyCAC-GJ41kU0JoUxdXCCBOCT3X576fAwklM6SqWjKkm-j4BTmGxFeO2N6AkL6DCd8v4Tqg1q6HZJE7bei5hOfB9-IQot3QwnskwiDwIRZBRjOZwC80uo8yCyMLDnPaOux2Gj1nPKZ4SES4cSNnDGbF4xzXAqgDZmVCb-o-W15O1ZpUshqTTwzERqLIUDDVJITiT0EW-LIhascL4zFokIhYn64KyS4DHncE1TY6cRBQ1LwwAvyblzfQN4GjYqhwRTAUxG1pLhRjdq9GzP45i5aLdN16iL0-NGyuaubYK1WtrKtqFVTNRP9hqlbzixNjPMeUKh7s-k_Tc1FC0Q6s8YNLBUwlotEsAuR0Kkt51RGlNN3MrxPjYRsWmI-cSOAnVFK9CxIzR654TzgGOG5cB85wyJY1mMxQ6FPgJXJpbR9nGlOo76KlnEN3OhkJe4E_Kda1IdbWdYUmSS4ismAnpJuDSISbLQ5YKllYbMWTOHGfLdaxdXZhClHT8QbQnuija1uvsO5bGobULda4bi5oXC2fTJWsWeetPqfG9BhQTpN4ZDKZQrFQKGjLqwJ_bvgjRZDcDjBjF65H1gs7Ps5yixSKYwAyP4_FqjbHYrFi2fcGe_0yoh5T0gOY9ZimadkJaDksQmWDoTJ8VqLyvLxxCP0HUd3xOPYwP8KkJqD0jfKtMEUTDmMr6Av9mEV4vqfL9qc6s80nNlhWInLeZPQ5weJuNa2VxRcq3Siw4JN47Hh-HApf_GmJ_Rr10Tm_-jQ7qpwUL5klKVit4trSGeYULifgvMvq9x3EGpCN5xLAZAIajiDh_2XJdaGCzSJAHuEOwP6UlmiX1EaHCjw-dTzQRggm-UyFzWRBGt9hmE2piflvA8aSWLR5GUPm1ot8j9YMfeq6aUYy8W_jLKMyPKqVfvCxdSuXZhW9CK_7L28S9SzIpN1waQ9QJ3X3AH9yn2_FZlL5zF7O5yfJizuTqGuKFWvpRFQKFp704i0i3AcoWJFQ5fkSPPfAfiaHAm_8D94nKrLMovgFGpqEVDjCcyqJYXY9sFNc9RYOXRjRZbsUjcUA99HscuHMy4LtmUrRliVZskeJZCvgasN28pNFA5g29uttA2l_7WSutFB8MUj5-avsmYtdXC5jL6S5eLi5OsGTZPzyDzfX-btqxNnLekoYeDUCWYOFr28UcjC77_aBfPEFP5z1C32hrpB5508qekWVfPdqjTbyxF9em6Nur5K3EWV7lXlBUc1ecUVKdavk7zXKVTl_1VHNKpPhlmoPHntFUn7wZm9NqlknrvK-wyKF3gu-M3v21iVlFSMuztbuGX8_VbZj8zdW1e2X358K6X2KdbsnLXSvehjwvYkLw8AfrdFcph6ytkfUVWjykqxsGzPvzarZxiPqjtfy87bvR8twx3GV37GsBa11X8dUE3WN9VFXIuU8_ABvekK3BISJ9MtRWP8jUbiok0uYTMg_EZTL1ZzxASL_CRhNfjFGk18H0tKfAdLKvwxIq_8CIK2tCdJyEUhfB1Yf4BmvRtxRnCWE_P4Em2iw-_G-N3CGiZPyH8l1BsY_ezLDcv72vnzafOFaNsVFPhokbaO4Hpr8cc30rrwuzpRYwpD7UyAp2yqm2eQnvRk_u5svStKqCjN_kTNlU8t52FJAD0-ahEuvACivA568o2m4VPEONjbFnXMYSjn9ePbnRfEvaeJ6EetaBzcte9QdZOpVa_RxcdzU2gN3gfecUja5Ltfa9THrWlSpIpor2GZ3c2c6rVLqbOzWb16ylgkg-eTRMFy0M0msMQh1VRk6Q8c9H7BLjFARu4lZw6B7ts8uWa3nAcnflfJdl03bs4iwgjONMLOaJMNcxZP_a1Zrw8EimyzWGOy6amf7sSXq292ZgW0J9K5Io7NvK8F8nO3DMMiifbY_dUVttj-2ITz4vkstL0nKdpb5f8Q0jFp2JJ-xl7Nej3An1fPHQieYTjDqpK9MqXNpp6iCfAP5lluRrWd58IUt_F2TbM-xRjeC7DuNZsixTv87QFDR_U0iFm7pVMmUuE5vLdel03QX9doBvoxgUqTX5AAPOzyVvZtdolo26IkBlPT5r8j9V-T-K3L_Fbn_itx_WOROf_3e2N25sKLR-YDdlAe7l35v_D8toQJv\n```\n\n### Screenshots\n\n![Image](https://github.com/user-attachments/assets/8845fa49-4379-4fdd-aaaa-2cec0ed45e9f)\n\n![Image](https://github.com/user-attachments/assets/2a8b7b97-33db-4e25-8b1b-48d3fa590c5e)",
+              "closed": true,
+              "closedAt": "2025-01-21T21:39:34Z",
+              "closedByPullRequestsReferences": {
+                "edges": []
+              },
+              "createdAt": "2025-01-21T20:10:06Z",
+              "labels": {
+                "edges": []
+              },
+              "author": {
+                "login": "TannerBragg",
+                "url": "https://github.com/TannerBragg"
+              },
+              "assignees": {
+                "edges": []
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "I_kwDONXxB986nDj4K",
+              "title": "Scattershot dosnt calclate frost mages explotion shotgunning",
+              "comments": {
+                "edges": [
+                  {
+                    "node": {
+                      "id": "IC_kwDONXxB986bUY0g",
+                      "author": {
+                        "login": "LocalIdentity",
+                        "url": "https://github.com/LocalIdentity"
+                      },
+                      "body": "This is the purpose of the FullDPS setting in PoB. Scattershot does not guarantee that you will shotgun all the projectiles so we do not enable that by default. Use the FullDPS toggle and set the count to 3 to simulate 3 hits",
+                      "createdAt": "2025-01-21T21:51:23Z"
+                    }
+                  }
+                ]
+              },
+              "url": "https://github.com/PathOfBuildingCommunity/PathOfBuilding-PoE2/issues/516",
+              "body": "### Check version\n\n- [x] I'm running the latest version of Path of Building and I've verified this by checking the [changelog](https://github.com/PathOfBuildingCommunity/PathOfBuilding-PoE2/blob/master/CHANGELOG.md)\n\n### Check for duplicates\n\n- [x] I've checked for duplicate open **and closed** issues by using the search function of the [issue tracker](https://github.com/PathOfBuildingCommunity/PathOfBuilding-PoE2/issues?q=is%3Aissue)\n\n### Check for support\n\n- [x] I've checked that the calculation is supposed to be supported. If it isn't please open a feature request instead (Red text is a feature request).\n\n### What platform are you running Path of Building on?\n\nWindows\n\n### What is the value from the calculation in-game?\n\nIn game when using frost mages (minsions) with scattershot it dosnt calcluate the shotgunning of the explosion.\n\ni tested with only one minion with and without scattershot. and 1 single minion shooting 3 project does take far more health from mobs in one attack the if i remove scattershot. while pob dosnt calculate any damaged gained when using scattershot with this.\n\n### What is the value from the calculation in Path of Building?\n\nIn game when using frost mages (minsions) with scattershot it dosnt calcluate the shotgunning of the explosion.\n\ni tested with only one minion with and without scattershot. and 1 single minion shooting 3 project does take far more health from mobs in one attack the if i remove scattershot. while pob dosnt calculate any damaged gained when using scattershot with this.\n\n### How to reproduce the issue\n\nuse frost mages with scattershot\n\n### Character build code\n\n```shell\neNrtPWtz20aSn81fMcWqXN2WKAkYvHVStqi3Yr1CSlaSL6kRMSRhgQANgHp4a__7dc8AJEACICh7c5u9uFw0CXT3TD-mXzOA9__-OvHJM49iLwwO2uqO0iY8GISuF4wO2vd3p9t2--8_tvZvWTK-GR7OPB_v0B9bH_bFD-LzZ-4ftG2nTQY-i-NrNuEH7QcvGYzbhMUDHrhHi-sXwZBHAfO9OGmThEUjnnzKxlZ-V4HGmEVskPDoEul2Z0l4FbqAOGR-zNtkwrygHw6eeHIWhbPpQVtrk2ePv0igi6vbm95dGyb3Yf_WZ2886icsITF8HLS7wCQb8XMPRn5m_gzglfZuLezhLIqTYzaBr-tx-lPO3fVgR5GXXM38xJv6Ho_m8LQKHuZ7NGbBYDEDVakkfhcmzD--7a-fhoQMG8gCVDk-9IG3RnQR-mIUeAlvDH4benEYbDTrRsBHM98HW20E2-Mxj55Z4jWcyFE4efSChjK5YgE7CuOkGeQtj2DRJBsh9PkghHW26RgbYl56Q94cciM-UoRNZ_M-Pk76TeE2Jvy-CfXAwTSD7IczvyFksnAullVt91_ygGYl4DF_nUPpahXURbCYGVVrVtuXAqRiVA_7HOKibOgaTs5vF25Ssxxnhyq2Y2nUMavwbsdvsTdg_hV79SazCbjbO_bEFwPqNoS2ShMcjZMAfEwVsmoatNKzn3oRr0PUq52P775rRAgkYVyJqRiKWbfYFvqiul4TBQd7CH0RDBb2V0f2PoiE880FT1Wt5gFRerC2MEI_-rwxzmKYdI3OMQ2lfqwRD9IB3xYisHa0OqxLzgfjM0hWeizhzXzyHMpWlVrpInBeuttqLd0S-dpNMZZFVZN6IGK5rHRjR6_D2lBW_akX5XI43VwDWcK_Vu0OlnGWJWCbO4ptOgYsM9XSKj3DScCj0Vt_7HE_N6yiNELIJHjEpo1whVXkCeStQ6NqszHLVKc0Qd1QfxjsNh3tmcX5IEA1s14WEj4vhmq75ZDbAoLLl9LsSozbKPzMB4nnb4bWjSbhLJfwG1otDxI8z4Jur4thslTpcXc2KATNSmmdDIfIyTM_9KGoWuLE0NeiwUx9vwy3WgpJwgZPx6E7aiw4MchGGMX59WfTKSxntIimBDA0Q0ng5RIty1gPfAPmnF-01K4L4Y0HWAAvD2CszUwaD7KEsTyS6tQmFc15WUCvDLFWnVfgLybgjUWpDSX_AnVH1SuN_BTqwHydRlVb26GGYTgOtaoXlUBbKjV3IPNxIKW0LcWm82Q5HaD_5Pk-ifHzlkVouE_gWyArJacRpOzkCtbmHrkYcNIfswgmH8MCHwDZdmboq_DkygsKnk81nB3LUDVHseia4bNeCzkPZ4G7Rw7BKQ6IXICrg9NX0p9NJmFAing5pwtCc6htmaZlOmvGXtCvICoHPeTAp2wXkAaCXnV84QvY0Bj7SHEDx52Dhix4ESIrTSDiwde3xvQL4I0GOAncWYQuqfEYyxhlw0ibWW1nLXWyjB3b0XRFMRxVtwyzCrnY11J3oJxa_PmuSCvdK1XdMaF00zVb02zdqMcr6WWtQJb2shqOUtLVKrfS0lFXsWFY29INU7eo4swjRSnyaodsQ8m8Z9Y17bMV2DXts1XaJe2zhvIoVKKqatTB1aeZpSj1yewKSmme3wh6w7k1T7gPZ8NhTAYgYZZcQphFZ_wI17Lvg1kU8_SHxLjzJhB44viYJYy4acflE4s8FiQU4zKJOYsGY0Q6Zb7_CAFEuPj5VenwsS1_6vkJj47hGjopnNUyRTWL9Pu7YgcBv11MpmGUEP6K_2AEecs6_gJQXAE6ceIFwsjApfl-G-Jo-NJ1n3GkuzD04_k2AZtOeeAWaNxFnBOWZYUDnIRgHn-QCYth1m8y0YiRm9zOxYUrZBCEMAE0OdOiHc22NNqBREK3O4au61ZHdwxH62ga1ZWOrlBFgbtU65iwwuCmaep6R4eCsQMph6N2VItSp2NYFNGhlOxolmPpHdPQ4IqtGVZH1R3dADjD6FBY4QCn4iDUMHEolXYMw7ZtwDMcvWNZMLahqjYMojqm0dE1A2hoYgYK1ZSOqcINmIeimh3bNmAoCg6gY0AaoXRg5ibtWI4JXxUbIDRd1zrU0YFHSjVV71DNAb4004HBbMeGm9TAqzBCx9Ip8qaadkeFORkwM9VGIZgqUFZgZiAT4Fw1NGCDmjDBjmE6GnCnahYMplDA0cGbAVUbZQFTdTrwm8K0bfgE-WoaDAFwqmLhBcWCOai6Bt9hZhbwR5FLRAR8zdRgaJy3Cow4QEWhMA5U7agKA2YO-ZMGMgaHYwKfUFujkC2QG7XUjm4bKEITPCuoyFIV5A70AFIBZnTBI-SbJqBqMBEYD7TZMTUDFWbb-KmoMANdRZlRHRSr26YqJgaKU9FcQBQoBkVVkGsN6KqWBRNTFY0iEkgaAA0wL812INWDxYb9ZBa9dYuWGXiwEBIw7qV9tOy-Jsz8w_5971J8-TBOkmm8t7v78vKyM2XJOBzyV6hld8Bj7E4BCRbItsjktpHqbhf-HI6uDtkb_dVXXs-jqzNj5HruUXcwdK4f6PXhx2NGr4_ver-N1NvJ_adn--Xi473568-Pj49v4dHh4DB8efjM7n-6ZOfB-bn98Tb54t3fWNvJmbU9-_py9PHBYcOzi5uhd_76-WzUVb8Onse_fPTpydPFxefTl883D-qvbvdy3L0dab987v7uGskn1_j6vP2bf8d_e3t9OXLOH5LTJ3_828D_8nzWjyKl7_YDGii2fjgNZ_YrezrUr4enVxf6b9uGNwm3VTodO_276ev9g22dfNx2ksf7F_3B1K905sRfFaPvh5ORFek39xP3J-Pq58tziz3zm-O77kPw-fjz8ezUNXqfwvD--PP95PgFpHRwIAS9m0l6X25UxlLs6S_hRlAvuNraBHKCifAvaTK_CifsMgdoVALiwsoBqlWAwhXkAPUqQLGOcoBp4gYs5jnbxzou8sA5plSgwoi8x1nCsxvguV-vpfcEakFynfekcj3KNSgXm_St0kOki026FeGlUocqXKB0OnKFyUUoPYVcVqmTEEsxXW7C1UqvJb0O-gi5TNEhYFkSpbMTnmvOcIFH4B-ChohgGFXwy3WYyHt4MfuxL8qiGCJjlJzxSXz4BvnOKUbwXFGahiSE7PNERts8_EE7iWYco-iQzXy8_vOM-R5GSCV_9VLuwwdhNJlvZgApiJDY_5AU796myFr38jKNfemoxHOzeJheFBvt3cXUjpg_iMXkvGDgz8A-gpSDecz12SNOAI8PYGPezSa-RGk-0Id9mJHIbmAGFwHYSOrMJP6ZHz4yn2ZU0mMGaLj5-2p2_1kmF2inZ5E3OeUM2xHCjxWuyYKqTb5kQoS1NZL2fQW1twsp0O4FGHy8C7PbFTOGLzmSAZukCQReJOnVJZ4HUORiTa20CwymUkQu5ysJR3in4FPJ_EvlLiSYZqPF-eTupBd7zIu5K7sYYSCaGFei4EyVR5X1yst6IDnsuRJlK2EFIs50ujxXMc25onH0Sk3Hc1WXTGCh8pIOTZXu1UrV5-dZLTSpq3klIGSAhC7D8Gk2JaMIBMZdmbGuFU1KbJXaFZsumQLNBC5_zqMI2Gr5VOonKvj-N5qtmE-6DlDxuSVR63fWWy52aW95wJNIlCip1y2Yr7iyBLfikNaY6dyZL9HJmyneIoV7VTa6-_34P-Ucj4bJJlgl9wWod_NeoJLnPL1Bsjt_BN-idjyCz2qm5yDv5rgbDVjA7zgUynl-5WWSXv8DuE2PrvHFJlhcyXYJ7Lv57w9YAjKEfKYQgwuX69n_jrE27WGP8AjiURrqFx1vzAn3RDX33WNymmpVB-U1ilwKpVlTXvDTLIoqBemX9_a_LSBKotw9574_FgQ31J8guapBcTlV4E1APiKBqzDAlUlOXqd-KLeYMy2KSy5fr0KkW72-5KhVWllwj0o5CfjkbT5uucirpFuaU6ZfQeSiWJHlCH6dR8H9i2A6SwT9gzYWC9l-02MY-pwF6Si7q7BI6_dgNnlEm5H_Lk6x5iEnXjz4HRuQV4ItqLDE0eKT09OTo7uLTycpSp-LPWsSzx5j-fWg_cnjL2LSx-AbPD9Gbn2fTWM-7-2J0iXl0ge8GmoC6tybH-gtp7UAqKZ08sqjBLh4YNEg8njlvOb310xKDoidYGzFVlHDHY5qQnJfD2OM7ApXSErsy1RTwdPJlezgzRrci8mU-ZUjp3fXSCLBChUM3Rt6A-x-16sc61kJVSOXwWAWscFbjb7TUwHVNMSWURUBebMaWW7eVGGnd2ukKjaOKqUq71ajH_MBq-Rd3qxGnm80hIE4Nl9OZQ5VQ-k6DISRw6Lpej7u4Vdq9sTnc5BqgjfJmEdpv76K0hV4ngykduHIdlUlnRxEjazEvlSFhPBeNao8_VfBA96rWTTpYbiq1e7VL9ni9lWFPvIw1aTkmY5KGaYHRGrUkB6PqlCBvFvDSXZErIKJ9HbNQhE-uPsceq48I1SxZJbA6pxGiOcsvpWMOPj07WSWT0J9O8VTn8VPlfpO71aj30M9AOlNCRWZ1zQiggvr2yjg-vo2CngQY_Ju7N5yKrLA7dUnIfMjI6XI2d26tZ-eJHk3hazIfie6OI7zbmwRAI75kAMHtRFgDlOzOJJZcDzLeiXfREpMq9yLLLjbiJaMhaWcbkxRru703H-dA5AgawhBMD-vSRebUZof7jvnzMejLqH_bQRXnm_4FmJ4QGM2ZYGbkbspS9IXemgovTCJgaY4_nCM50C-VYZYOJYQqp7X_m5WAoqDEVhopcc5-kmEVebXMJz8etA2bX3HtvDwuaWrpiWvp1tNdrq9BAn4sQdajIT1ZaMi4C8H7W1txzAUqpuOTVUzPVK8L1o86dYXfp_vfFXTm8VcPlL1wNk0DASGFJSsOIFKfhurxyDzedsjvW7vpPUpjBL-Snps0oLiKMFjTaQ_4NMk4i2ZI-0RlSotQURwt0dspZVutO0RuCWu9viXPWLZLahlfG8Apr9HlNaWalCShGQi7Y5gRGl1fR_qPuIF5A3yFnKLjxMAN8QFIyeG9gP2JyLOQEtEqqYeQzVxBE0lzHU91DlckwUfEb3eNTTG7JkT6uRHxVoOj4wTMGwiC6DWlo6jCE5JOCQMGySiHUBk56C1ZSHARZBALuGNkLRoOEBh32PBiJMIP_GEmdFOdZG2JCoh6FoIbS2EvhbCWAuRnX4UzceiQdGiQd1fX_x8f9K6YU_xSxgFrb438nwQJ55klUlySyare0QzWjJ5Tm-AkVkFG7PMhY0prXRTfY_0W71ZgEeFgxiMU0QlglfyRpi3QbX1D9AF6DD55z8igPunauRVjQZJxHEznhFjCW-ZSh5IZKv49DUqVVXs_D3JDwGPRQr8tLYMBQ1CLiFYCNYP-FMc8SYy4RfkjsIomk0T7v6prKXMFrQy58IBHfkkeCZnCmr0WUS6k5nPk6K29ZwCDZrXIF1oENZwOAD9xOSKi2ftQa5qTsqpwZD_nlelBDjxhh6P4r_tkS2q_NDacvIOaUlnqnQm2V1MoVtbmplXJF3nB1RbgIP_DEbJGNCF5zjmrwlHyfzr9fwd13wNhLUWwl4L4VRbk15iTYd4nkC6k9bJ65RHCR4xwEQQFuKdxyK27FMo1SqdCi3zKlGJOzFq_QlVVt1Bh6Q1dYlfMPU8_JL9aZYwlqwvh84otXJr1S4bWKL0ORgFcy5nS5PX50-1_Pn90few5DIrNEqsMJUQCvoUhMejVnfCk_EbmGYPlVWwt3xypNtFQ9pSaXlM6LpuTFQRPsC9CfW5IokRtiFSG9AuFZ4vM7SFpegllkKXXJJWahjqji4QigER1ll6wPIvkxDIqybxMcLigXwMwqTOGJycMZjKsjEo5cYwj2n4KF0xnEEq0zLz3mSxotOkt5jsSNrprS2drhiKVvBlkkX0LbIkGeKGI-CZYqJiOrl5YpMbzVUYENqMKLzEVuK3OxPtzxb0yizHKrGcqzB69FzyEyzpLKSd81ce_RfUcfH_gCGEj3wlqOlWZTWWj2nzqHaMT6AkMq6tXsnZZH2k26J6qea3TK0mpbKNVX9k6LmMCgNohI_lYvic520woRmMI7Y6Wpi4lS4Oauw49S7rr3iWN0G7LKuKvEmchAEnt8yfZFZ4BrFhINItfGRmXraplrpsjmaxN2BZ9SkWvqUFIg-YEDiWOwbpvNc82dqqqKKsZjWZCKwik4I8P3swPHWIhdiq6lpZHVBu_lpFmkWN6jTrL2PE7L-yGwV1Is8s8SHCJ5Zc0gd9Mkhrl9sG1FqOsvX2l4TRZFPPl2ZqpaosFgDZY9hEnCaAaFnnG1VNf18M1qwKU1T_Mrk6k1OVEps7DTk58yIXTO6cs-c3csj9pCW2rkjfD6VF5E3MtPLNiqVErmgOuHtC7sZQso5DEQ3tVb_i6CstUmcpbYOZyL0Akm3FoHtZSurVCjdk_2UTtTZR1hW_YtyPkyickDN8HyMPWrixsX2JJ9v74I_GsPKWk7Aec70Z2MAlbs8V--D301HEXA4xS8AIfQio6zDBE2sQesXDZWnpjl3qFBI8XiiPiJNCjDuNOP_KidgmmU03oqMVG6B4SmbminCcnS3BFjnADIGBZCPSsgERp031QkyWHXmMyXgOK3WPf5T9leqdluj9dhzywIMAlLCoVapofWmLQy2wKY4SZCVWJg25TUFLNjaKzj7V6cJdFMVplO5RpNnLYRjM4n-j9Vwqca00_WQTNK-jCA1izSqD4P6eVdafYHesiQEXlJTfPnr3AivbTHr3klq7TfV_uqBKe7ZRGLrkwYvdcFK-oAyrqEWrSgW0qJwxHlLOwiGBv9hw8HjcMoq1AGfo2mT4LK6oLZnQo22c-CJrA2EuomNchFbXCv8_Zy9HLWt8nr9NgxCYJreRF1cok9KiMovZUCH9BUkPxEkWueUGiwbUlNViop8mDxgAHotlqlR0qGU7xf9pHtOsXFK9ECLUDRjt99utr91mN-1NN-ZFf9Es2ZZfqrzXbO-LNrdqldAR5U-T7X1VX7d069HNkkwmre_U_2fb_vhEdPVxk-LD0lA7iQfkbx_ve5d4cEY-9HDmQ40cL56dn-8TViHIYUj-cXtzHY44XJhHUdZhyF3pBYK2DkHWZdoGQ0iM0kmJNsWFC-DLbzeQqD_xFw5LavHCg4x0IznQDSaZSjuHQutmmb4xIT_L3EsUGs4SK-6cduvFIt_lUBDL4vUODQfMTIr0X_Ate42Fg5s6edGYdTOVr7HIT3TxYoumggndN5Id_84GtZqq8F3c5czTaGbQtKFBp-_MyAsk9xqNhhI551Cj5oxFXy_CMMl5m8KZA_n0F57zg7qhL874PXBslMTyIKBouomHwsJg6I3SU3nyR3ouT-DPr5DES3yOT4-Id08UHWL-ya8vMx4n3UGiXYuXUtyNOfnEg3AC0eltivPNngWjDc4rZSLID8Bx--0iPgzjHDHxa7dmNkfRjNdMpmqXso4mlRx-gjSbi05mAuTvPMDLES49lSXf_0WG2IbJHxYXr_4bcCyReZRnN32zXvbEnaUoaxAK7-fM0NYhzTtp2cNyGaJBzXXjRYv_sWKOVY3TH8Mq6os9iQW8um4MuLL5zDCX2ghrMv9_OvAtfHgER0xUPPLb5_4wN2GjwYyXlaA11sLGmELpy7xSdR1a8UXCm2odMcEtPwU8jpc1SmuGjvEI5c1QPA8AeOKhhqaWkH9TbxPp9AehOOS8mb2lL1YOfV_kkfnltwYzi2sZgqPYRgNRLitgrcLnzz_NZ0b1ahTRWKgQwv7u3NPLg-Li14-t_d2V_wPofwH4kJ9i\n```\n\n### Screenshots\n\n_No response_",
+              "closed": true,
+              "closedAt": "2025-01-21T21:51:23Z",
+              "closedByPullRequestsReferences": {
+                "edges": []
+              },
+              "createdAt": "2025-01-21T20:17:29Z",
+              "labels": {
+                "edges": []
+              },
+              "author": null,
+              "assignees": {
+                "edges": []
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "I_kwDONXxB986nD1hE",
+              "title": "Goal-Based Passive Tree Search",
+              "comments": {
+                "edges": [
+                  {
+                    "node": {
+                      "id": "IC_kwDONXxB986bUZ1y",
+                      "author": {
+                        "login": "LocalIdentity",
+                        "url": "https://github.com/LocalIdentity"
+                      },
+                      "body": "This kind of feature would be extremely complex to achieve and is not something we are interested in handling. I would also feel like it is against the spirit of the game to automate this kind of process",
+                      "createdAt": "2025-01-21T21:54:06Z"
+                    }
+                  }
+                ]
+              },
+              "url": "https://github.com/PathOfBuildingCommunity/PathOfBuilding-PoE2/issues/517",
+              "body": "### Check for duplicates\n\n- [x] I've checked for duplicate open **and closed** issues by using the search function of the [issue tracker](https://github.com/PathOfBuildingCommunity/PathOfBuilding-PoE2/issues?q=is%3Aissue)\n\n### What I’m Asking For\n\nA “goal-based” search function on the Passive Tree, where you can specify a desired target value (for example, 100k DPS with Spark).\nThe program would then suggest which passive nodes (or node paths) could help you reach that target. (only one node, not the full path, this is useful for amulet crafting or jewel with allocation) \n\n### Why It’s Useful\n\nIt cuts down on manual trial and error when trying to hit specific DPS or defensive thresholds.\nIt would make build optimization smoother for users who know their goal (e.g., “I want 100k DPS on Spark”) but aren’t sure which nodes or sockets are best to get there.\n\n\nFirst, thank you for all the amazing work on this fork.",
+              "closed": true,
+              "closedAt": "2025-01-21T21:54:06Z",
+              "closedByPullRequestsReferences": {
+                "edges": []
+              },
+              "createdAt": "2025-01-21T20:59:32Z",
+              "labels": {
+                "edges": [
+                  {
+                    "node": {
+                      "id": "LA_kwDONXxB988AAAAB0pbFBQ",
+                      "color": "ffffff",
+                      "name": "wontfix"
+                    }
+                  }
+                ]
+              },
+              "author": {
+                "login": "prologikus",
+                "url": "https://github.com/prologikus"
+              },
+              "assignees": {
+                "edges": []
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "I_kwDONXxB986nD8mO",
+              "title": "Error tring to import Gear",
+              "comments": {
+                "edges": [
+                  {
+                    "node": {
+                      "id": "IC_kwDONXxB986bUUVv",
+                      "author": {
+                        "login": "Wires77",
+                        "url": "https://github.com/Wires77"
+                      },
+                      "body": "I'm assuming you're playing on GeForce now, which doesn't support copy/paste features.  This is not something we're able to support, but perhaps our error messaging can be cleaned up here.  See https://github.com/PathOfBuildingCommunity/PathOfBuilding-PoE2/issues/365 for a similar issue.",
+                      "createdAt": "2025-01-21T21:40:11Z"
+                    }
+                  },
+                  {
+                    "node": {
+                      "id": "IC_kwDONXxB986bVBBw",
+                      "author": {
+                        "login": "doodaz",
+                        "url": "https://github.com/doodaz"
+                      },
+                      "body": "BTW, there is a way to integrate Exiled Exchange 2 with GeForce Now. I have that working and to copy items in GeForce Now, I just hit the F6 button (Price Check) and then paste normally in PoB2 which works perfectly for now until PoE2 stops crashing on my PC and I can stop using GeForce Now.",
+                      "createdAt": "2025-01-21T23:53:26Z"
+                    }
+                  }
+                ]
+              },
+              "url": "https://github.com/PathOfBuildingCommunity/PathOfBuilding-PoE2/issues/518",
+              "body": "### Check version\n\n- [x] I'm running the latest version of Path of Building and I've verified this by checking the [changelog](https://github.com/PathOfBuildingCommunity/PathOfBuilding-PoE2/blob/master/CHANGELOG.md)\n\n### Check for duplicates\n\n- [x] I've checked for duplicate open **and closed** issues by using the search function of the [issue tracker](https://github.com/PathOfBuildingCommunity/PathOfBuilding-PoE2/issues?q=is%3Aissue)\n\n### What platform are you running Path of Building on?\n\nWindows\n\n### How is Path of Building expected to behave?\n\n![Image](https://github.com/user-attachments/assets/0bc7612c-9a81-4ed4-bd3a-efd3452fe81a)\n\n### How does Path of Building behave?\n\nNormal but dont import\n\n### How to reproduce the issue\n\n_No response_\n\n### Character build code\n\n```shell\n\n```\n\n### Screenshots\n\n![Image](https://github.com/user-attachments/assets/bd7d60ac-85ec-4b15-b513-f39d93719c3f)",
+              "closed": true,
+              "closedAt": "2025-01-21T21:40:29Z",
+              "closedByPullRequestsReferences": {
+                "edges": []
+              },
+              "createdAt": "2025-01-21T21:17:15Z",
+              "labels": {
+                "edges": [
+                  {
+                    "node": {
+                      "id": "LA_kwDONXxB988AAAAB0pbE1g",
+                      "color": "d73a4a",
+                      "name": "bug"
+                    }
+                  }
+                ]
+              },
+              "author": {
+                "login": "juniorpasini",
+                "url": "https://github.com/juniorpasini"
+              },
+              "assignees": {
+                "edges": []
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "I_kwDONXxB986nEqqz",
+              "title": "Import From mobalytics.gg",
+              "comments": {
+                "edges": [
+                  {
+                    "node": {
+                      "id": "IC_kwDONXxB986bU5wk",
+                      "author": {
+                        "login": "LocalIdentity",
+                        "url": "https://github.com/LocalIdentity"
+                      },
+                      "body": "We do not support importing formats other that our own format so will not be implementing this. Build on Mobalytics should include a PoB link with the build already configured if they want it to work in our program",
+                      "createdAt": "2025-01-21T23:27:16Z"
+                    }
+                  }
+                ]
+              },
+              "url": "https://github.com/PathOfBuildingCommunity/PathOfBuilding-PoE2/issues/520",
+              "body": "### Check for duplicates\n\n- [x] I've checked for duplicate open **and closed** issues by using the search function of the [issue tracker](https://github.com/PathOfBuildingCommunity/PathOfBuilding-PoE2/issues?q=is%3Aissue)\n\n### What platform are you running Path of Building on?\n\nWindows\n\n### Is your feature request related to a problem?\n\nThere are a lot of build and such on various videos that are using **https://mobalytics.gg/**, I would like to see if the program could parse and read the items from these builds that way we can see what  true DPS and also start modifying and making our own based of some of the many published variants\n\n### Describe the solution you'd like\n\nI would like to see the import URL to let us paste a build link and it import the items and skills and passives \n\n### Describe alternatives you've considered\n\n_No response_\n\n### Additional context\n\n_No response_",
+              "closed": true,
+              "closedAt": "2025-01-21T23:27:16Z",
+              "closedByPullRequestsReferences": {
+                "edges": []
+              },
+              "createdAt": "2025-01-21T23:23:23Z",
+              "labels": {
+                "edges": [
+                  {
+                    "node": {
+                      "id": "LA_kwDONXxB988AAAAB0pbFBQ",
+                      "color": "ffffff",
+                      "name": "wontfix"
+                    }
+                  }
+                ]
+              },
+              "author": {
+                "login": "f3rr311",
+                "url": "https://github.com/f3rr311"
+              },
+              "assignees": {
+                "edges": []
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "I_kwDONXxB986nFmpM",
+              "title": "Total spirit ignoring Morior Invictus +spirit mods",
+              "comments": {
+                "edges": [
+                  {
+                    "node": {
+                      "id": "IC_kwDONXxB986bV5Sa",
+                      "author": {
+                        "login": "etojuice",
+                        "url": "https://github.com/etojuice"
+                      },
+                      "body": "should be fixed in the next update\n\n![Image](https://github.com/user-attachments/assets/38a1b755-f821-4002-a8dd-bbbd2f02b3b0)",
+                      "createdAt": "2025-01-22T03:27:28Z"
+                    }
+                  },
+                  {
+                    "node": {
+                      "id": "IC_kwDONXxB986bXMAn",
+                      "author": {
+                        "login": "QuickStick123",
+                        "url": "https://github.com/QuickStick123"
+                      },
+                      "body": "You are probably using an old version it works in 0.3.0\n\n![Image](https://github.com/user-attachments/assets/d889a2bb-75b6-4b39-a432-4bd8b90a88f3)",
+                      "createdAt": "2025-01-22T08:08:38Z"
+                    }
+                  }
+                ]
+              },
+              "url": "https://github.com/PathOfBuildingCommunity/PathOfBuilding-PoE2/issues/523",
+              "body": "### Check version\n\n- [x] I'm running the latest version of Path of Building and I've verified this by checking the [changelog](https://github.com/PathOfBuildingCommunity/PathOfBuilding-PoE2/blob/master/CHANGELOG.md)\n\n### Check for duplicates\n\n- [x] I've checked for duplicate open **and closed** issues by using the search function of the [issue tracker](https://github.com/PathOfBuildingCommunity/PathOfBuilding-PoE2/issues?q=is%3Aissue)\n\n### Check for support\n\n- [x] I've checked that the calculation is supposed to be supported. If it isn't please open a feature request instead (Red text is a feature request).\n\n### What platform are you running Path of Building on?\n\nWindows\n\n### What is the value from the calculation in-game?\n\nIn game I go from 100 to 214 spirit when I put on my Morior Invictus. \n\n### What is the value from the calculation in Path of Building?\n\nPoB only shows me going from 100 to 178 when I put it on, so it's missing 36 spirit. \n\n### How to reproduce the issue\n\nI have \"Lead me through grace\" allocated on my Invoker, and a Morior Invictus chest piece with 4 socketed runes to boost defensive values, and my Invictus ALSO happens to have the mod: +9 to Spirit per Socketed Rune or Soul Core\n\nIt looks like PoB isn't including the \"per Socketed Rune or Soul Core\" mods on my chest armor. \n\nMy Invictus is as follows:\n\nItem Class: Body Armours\nRarity: Unique\nMorior Invictus\nGrand Regalia\n--------\nQuality: +20% (augmented)\nArmour: 671 (augmented)\nEvasion Rating: 611 (augmented)\nEnergy Shield: 229 (augmented)\n--------\nRequirements:\nLevel: 65\nStr: 51\nDex: 51\nInt: 51\n--------\nSockets: S S S S \n--------\nItem Level: 82\n--------\n80% increased Armour, Evasion and Energy Shield (rune)\n--------\n234% increased Armour, Evasion and Energy Shield\n10% increased Rarity of Items found per Socketed Rune or Soul Core\n+9 to Spirit per Socketed Rune or Soul Core\n--------\nThe Unblinking Eye did not cower and wail.\nThey stood against the end.\n--------\nCorrupted\n\n\nI've got 4 socketed runes in there, so the +9 * 4 would seem to provide the missing 36.\n\n### Character build code\n\n```shell\neNrtPVlz20bSz-GvQKkqT6Zk3IdLzhZ1WXQkSyYlO85LCiKHIiIQoHFIorb2v3_dMzgGJAaEyITl_TapikzOdPdM9_Q1Jw__9TzzpUcSxV4YvN9TDuQ9iQSjcOwF9-_3bm_O9u29f_3SObx2k-nV5Cj1fKxRf-n8dEi_SD55JP77Pdvak0a-G8ef3Bl5v3cZBg97khuPSDA-Lov7wWP4QKI9KXGje5J8yZuV_1AAfepG7igh0QWS7KVJeBmOASmJUrInzVwvGIajB5J8iMJ0_n5P3ZMePfLEYPqX11eDmz3o1k-H1767INEwcRMphj_v93rAnntPTtwZ_AUs108BxdQM5UAxTUtWLdlR9942Ih-lUZxsRmE4J2RcIBkHqu1YItjriJxOJmSUeI_kOPKS46kbjMoWdetAcUS4m8Bfpn7izX0PxyTDUQ8MEcb5SgOKLIuAb8LE9U-uhwWsphmOcWCZpiFbmqo044VJgSds4auXTI98EO4GrfTvAy8hPKJiH6iqYZuKbBqaZjc1uoqsaaaiHTiOqpm2ZptNyNehF4fBFoLZoNPHqe-D2fKYQqkOSEyiRzfxqp0Uwh-HszsvWB6EVuK4dAP3OIzLodasJtBrEoE_SSoY8hqEIRmF4IJ4FAWFrdhOi6bqCQjbvPAmpD3kq9jJEF7bm834OB22hXs14c06NAC32w5yGKZ-S8ik9HmWI7aG7zygIbTOE_JcalgjvSqk0Gb7AaeychPBKqQu7uFjiFa9XjTU05yeXxeQtiZrB4ptqYap6bYwPlxPF7E3cv1L99mbpTMIFzfuAykb1BSlQVvvp0kATkqErMi2LHQPZ15ENkI8Dv3xZohTN4xFmKra5PS84NwNxr3RKIV8Z8H5ctNpsuUS0NCNhmRj9A6h-8GoHL4msrdBRD0-l6M0NYAoAzBdTIvufNIap2wmcwFtcgjW2D0JshY5YRkHjc1dEDKafgBRD9yE66QO2Y1uK4qjy4ZsNEUATvetRmEjMC_sfaUxJtWI224OextJDhHrJWfYB1oTlkBysnxgWY4G5q9rui6WiAdZZWkHyhrIGmk4bTGWpaEfqLJhypYOmZRmCAf3NCDR_WI49YjPaTwoRRuEXJrH7rwVLtUQngCvKYrVss26YZTboNaPZWOYbQf12j49ujEfeWzZ0ZpFxhAq0lLFaktgFgAoY7I0PbE08UQr_BOnWf4r8XrRLEzLfABCYiMfDJxnQ14XPNkkc0DG6agSrYVOvJgwHvkwP17iRF6LBf30_Veh9pLEHT2chON70haFNvIqjGr_hul8DnaPOtGWAKYEMJfxuFzQMtYDX4FG89at6k2pQ-sGSuDlBjRnbUrUupUljOWmFLsxm1lqRm4BvNzC-uG8BJcxA7dNV0UuQ84FH6i6sH9nMIGtTDBtA-IY-HvbEGdaFKnNfDmjPnzwfF-K8e-1GwGBPSkG6x0R-okl5SMiwXzAeyBrZu_tSYI0o3syloZTMMEn95FbvXF0iGmKpjsy_LVaU-Y7ydo4InEisVULaYPlg-vwCYaZ9jNu4cg4aEiQS3aE4xSR4GXRmn4FnG9AE4fEMaTa4DVat7GMUdfMUTqZxNIonN25yQXYAg7BHZSxz8duEHh3ru_Fs6507LuQuizgA4WWGAtd6RySaH8shRMJxoz_ejNNgzGJulI5lvA5COjKDHy8jsjIQ2_Ylb54MFmjxL96wVg6wV5DgILJRUyybrH-3ngziJNxfOImrjTOJoNfoGNukKigC6AsxI1GU0Q6c33_Dpw8VauilCkZrsGeeX5CohMow-ZQkMsUFaSIDR--pQvF-Kk_m4dRIpFn_Ae1dvF-b-L6MWGAtAToxIkX0PUnCDW-v4eW8dQbP2JLN2HoxzmS5M7nJBhXaNxEhEhuHjhG2AnKPH6RZm4MvV4wXxQjN9wKdX9MZRCE0AFw-5qpdHXbsrSuaSlG11Q0TeuCGWpmVzfgD0xl9a4ia6behf8tBwpMS-0ajqXKXU3XZLmrW4pldR3FNrqK7hh2V1dtw-qaqo5ENNXuaqquq13VMADHVnRowJZ1IKibqtI1bE11uipMVRDQMqEW0m8AsTUgaOtKV7NMR-mCl4BS2VHMrqY4BrRuWpbdhVRYh37rFvQESDnQsGLKCvCgAE8wBTK7wIeDtGUHumYBpqoZtgWcGFCsm5atQjexCVVXTKClOrYO3Fuy2gUHrFldHdwSfFZ03YHOGIoO7ckaCA4YwB6ApLq2YToIDv1VVEeFrhuWZXQdxwFawD70zkB2dVkxTZAFTC9AXKppdS3DAjlZDvyFFnT4rBvApGpZsgFygbEADhRsWtNhMAzTBkjNgR53DRgFEIpiIZaqwfDojopNmbZuQa2N8oVa6JOmKzB4lmzbIBUbGjc1RVNxqFULZGPi_7YGHOiOhoOMLTmGhgJSQKi6bJkw1LqFvaRDYAMl0AXso2xDmyBN4Bf6D1QM3YG_OPsEsqBW4HSBaU22YYwtFUVpOioOFPYAegZClxXZggGAgUS1ghZ0W9ZgkBULhkSxYDqLJopraW606FX1OfDAfBIwiaWdlrzeoMbx0-Ht4IJ--GmaJPP43du3T09PB3M3mYYT8gw58gF4ubdzQAKz2qcxZx-pvu3Bf0f3t0fj3oPxGN66V_v7X26V-0HaG3z-9XxxNVmo38xb7-yPi-nH_v6pefd9PLf3P382z03zm9WbvKjq5fRF-1P97eJ-8kf88Tw4_vPo5cPN1eLm4fZuYL-E-9_VVLMfrz6P7V9P-5-JfSmP-peee7f_2_FlchO5-9-_J-T3ybd-HLpfPffDiCSzofcYTiL_ZjQdnhl-KC8mN-ok-nbz--D3l9k3JdTSZ_Vbqt7rd9-1h7sT__lltD--D17Ixcfgo6YNbu3vXy-eTm_Iyf75eDGVZVe-6NnfIjU4-3Tdu_39j-_G7-OLLzfhQzRQghcvNXtH8uTj0dHnL2e317PJ1-fF0DkBhofB9Fsv-Wi9XJ_0vmqT7wv16Hx6v7CC4OnLoP8E0nv_ng7A23wEDtkeV8yGI_tGnRKOF1XQPQnC-Iy6qyykrgJSf8EBGiJAquwcYBbcoEd8Rw4xz4s88IwZFZgCRN5dmpC8Atz28yfmOpm9MRth9sLcBzNqZhlMe5kXYhaO2s-sPLNL6iWYBTP7oB6TGQLzStTDQd-DJG-Z-mtm3dRLYP4TZZXMPzMPSX0Sc8_My1L7L1ivcAuSgNhBAxkGF_zwKUxYHRbmXw5pRhZDgIySD2QWHy0g0zrDWfjSHkkWnRB6SBIWeHmcfMdzTCZu6mP555RG-CzM5qUXbOc1CKNZseQKpCBY4myJUbxZzJH33sVFFgazViVvnIfGrJBusPbKrh27_iimnfOCkZ-CtgRZ5lmEX9-9ww6UiSfK5x2NALiJjMuDRXBeJl-0_tMhdJNmXdCtPiQ9z5nbYgQ--CEkUWrZJmNaqdYrucyob0JFvg3uQkihepAuuRFL7_ak75wcA3eWZQgZqMRguZ4zkiOozEaJ62QmHuxpYTDY9oYSZU0VAl3qwrayy6hnonMEsntkiRtKD7LOYgKRS7QoW5GmCuK8Z_7jkiTuGMT4tg8OJX6LOs3kAp84oqXw-bnKawXPZADS5qqle0jbEzJmOV5Nrz0mJqVwiNjJLaS5XphnNOtkiyaZZXJizUp4oDp1bZJvYe2XkEB7rn9DIM_mhZyVS1nFZgr-d4nnOAxwGTdyi1ETCmkVdGNRrZLiBcbXSnn1jyW2r8Sdh8GpTxdT8lVDoeRqoTcW3nXkQcjpQdyZ0QX4UnCsRiqrfiyhgTc4glRHKKasfmPBZPjLDo6V_WBmFxE6VwjF1pZDbG5kOYWKbZWFf3OkpWLaOtaWkYaOxLahlc3Q3GC0qKQor0ldhLIvQq2wkddnPW_b8r6e9cswIidpRJd2VrWupnZzB4XTXQiodKOA80588Q4YZqcS6JqTOPCXMBuzy9Hg2cViqSjfAb_sMEUzvxzMFsG7oFGN2v54p_xyZ1aamV4G3JjzZUI8-0VdWxlsN2Wh3vVv8aJ2C8vyvdEDrtgvTVIq5ZtOVJaIcwbFKtZOWP5CFQOXNScJMMA2IlZVawlgG5dZbajiNlmVlNftwpf4YUzYdonYl5Qwm_uSkkbFl2CxlJfvJDhiwpzOhMzmAJvPDjMClZlhUbaLIU39WbazIx7SEuaVqU85oiWJyojyxX-RY9x9htnCN7JdxKtJtofIyXipZlP_uNJAKeSVHcydKFZvPCZjjP5rZsFLcFvlH_1gksbLKoYJSFmxA84_-O7Ia7aoEmRjfksSPLd86S6SaTdaEw4KiM3TqzC4j6dhJRKUZbvQ5NldGk_FCkyrN2aPofPM5SX_C_6wPyI1vhBKXyvPJTfYr04yK2c6duf-iuy_jQ9cAt5-OlLnDcv5yE5dYj8YRcSNybgH_1xN1iwp10JvsQB_H3gTr25Juahau578l8oiOzHUwH8GsWm2VRCoLHqWhbvIK6cevd6Gez3CvLKE2XyZJQrj5BN5TuPKpBBLpaz4_7MfzQ4qDhN3MuEEzBdv6EmrlLl8Kj8aySp2oEo4s5_3nlzxUk4BsanBFAR4TmmhxEp3YjHsMB09c9pgMxzUNjttxVH2yg5bUbqjlcnT53kYpxFpXJrMgbaaG-REVuYGZcVOeE6jGFzecRpFeOBazHYFbgvOK3SqzLMqqaj7ex3l37c2KbeYk0Xe7AxyCl7URdnr5tyFh-RochMwKJSy0l3oU3miWaxLJczmelTSqOgQX7yLldf8iLWQ2QJii430jEJ1D70o_G-1Er3F-QUvGOdn1QvBloWb7XvyREuBVs7F70BzjiDRHAu1htZurDEUm2cuK9jFCnV-OVS8RJ1DbMweXt-_mXqkkgZioZSV7oRPr2EVHiq3mB561dV3-v2_1ci1NikILsex2y78lIEr3szQq4T5RIO7X7MbbWEv6OQXhcSKU4XbImSEq0stXOFOtubobaaGbTlav8WWHMWvbsdlRTtgL79QJeQvB9iYwZwAz2FZ1tofZB-HJKGn09n5c_xIPQKF6AfzNKGtvN-befHoD7yghk9m0ZPx9I2vo9uzs9OT7I4YD0_Z_iNIZ3c0nNJ_8dktBjkkdPYmxeldzD4iD-SJ9uIE2Pf8GDvv--485s6B48HzrNs-LoOJqVGoc694daueVgkgpnT6TKIEmP3qRqPII8J-FfVrOsUaxLvveKdORA3fsBITYkd9jyF5Z3fzBZKib4eJqeAbXkJ2sLIBtz-bu76w5ax2jSQSvF8A-utNvBEew24ecryNwKAa5FI8iyIc7-wGuJgGfRRMRIBVipHZ-1wi7Ky2Qar0lq1QqqxWjH5CRq6Qd1YpRi6eewiDc3yFo55KAdVA6VMYUCUHo-l5Pp4REI7sqU8KEDHBq2RKouzipYjSJTioHKTRcNjVIyEdDqJBVvRFHYGEsE6Myp6HEfCAdQ1Gk72PIrJ2r9lkq2-XCMaDhxGTYvf3hTLM3gJoGIbsIQzBELDaBk7yF0EETGTVDYZCfXDvMfTG7D0IgcksgTU5jXD0sD0Z-sjF9mSWX73YnuKZ78YPwvHOasXot4mH6UkNFZamtCKChrUdBbSv7ShgAj7bGHuwnIqUuIPmJKR4e6AWOa9tsv3sSYKNKeSzog3R6bsOG2PTAHBCJnj4ujECFDANxpGkQX5UfEtStFv1XqTk7lW0WCys5fTVFJl1Z2_LNTkABrKGEATz84Z0sR2l4iGXc-L6-Jpp6G9HcOUNvW2I4ZNU6dwNxjm5q7okvRyHltILkxho0ncsTvDlq21lGJDZooaQuF-Hb_M5HX3hAida2bscwyTChZ2XMJx9o2-RmQe25mi2peJtFCzO7gkranY5GBLwEw9GMaLal7eKkL_h63WOrByY-CqCYSo2u2B-SGex2cVl_FzcWxbTS2PCXvhkV88oBhMUm2gCFf4S8oDO799Jg97gtPMh9KH2OoyTzunzHOZuUnZpKJE-p26UkCjGHeEOJULZeydZRie7Jv1OUuVOdnv9nTSUhp1BGpB3Uj-CYcCPK98piQH5DlTUDkx8fG_kIa7a-TfwBLON5D__jgDwP7r8My6xsRMjUv5il8RGqwTujcexpBhSEkqqIdGdvwyE-_wOIPZVo4OzNEoFVFZiUxuokg9k-ecOmyTG0hwPnVNpQtWB6XQUR2vqCe2AKtMOOCu1bwwNa_KZlgQTUHANHaVCkjUt0Qlo541qIUY_SCAr8e5xoDt0GkFiyTiwrZ_xuNNSM5IbSxjvgecoSucJkMHli8twPHADqI7w7_s9-cDYyxQhW-AQQqhrIcy1ENZaCHsthLMWIn8CsgkkfymKLhFVbUKtsQlUVDwIEeUmcRPhbhje9XjoZOnyO0kz9A6bAEhsBgD6opkVQ7FlgaFkZjFMwmi2YhcGbxfKsl28UdSfUUHKI19s_oDK3Hlj2liX9THXtkylZsz7S5VOdzSbV8UcE1zwEtwbzeGJUHV7oxg2X4gZY0et6HaNyQEpjbJAL03xvVdsWk4tlyv_23VZWwuhr4UwfiyLqdN1rarrt5_6n29PO5dh5IUROJxHb5SkcedDhIM_IPeguG6HzS7fSaallKpvKsqy6quqU1V9VRgjWsWJ9nHEbLYXuxJHGDvdBj1XNf11CEqlASZceiSVBvIJvflJgwoVAYKgewmxIPVB1yNQfGpabEliHewOXXxrs6hTNr3GsZ4GSRTOFxKoWDzvXEdePAMPNZIG6KUqGYbJDbChVAf4DUoc5OX6vlRcs-f8RcxiskIjr2quBEuMxyzYM0AdSxzmjcYrIIq5dnixRysx-42m1DqzN6op9t__a56uTnGMGsU5DwOwQunXIB09-KRzE87dlxqtsXm3IC9pjWqJ5c5nkVqTwrwx9NoAK6-GQbuN3jDDTyCfv0-mQEf9JwAK1MKs8yfuvU-kC-osO0d-GI7jJASH2ZulPpQspWKcR1GXdEMzV3IbTa7Li_IBN6zVAW_hKFAH1-RGqlZVCU2uzZX-UQmsWlWJIzIlszCZYrAcd66iwE2IdET8pEMXI6WhH7Ix55XDVDjl0O2qcmC0ifCJaBwxSiNbgcN5N9iwra7mxY6zoh6YtpdDTxc_aYWUP-0t4RM4MN56fW6clS-7BsVeJZv3797Fh9D-URWaN6-qCs2pPuHmeT7PuwB5BdLXyJ3HZbKrmCvzPLOqPrayyTRP3nyap8h6u0kbi2tm_eJEJa6pyooWK7p4kUJTa7WULlRI-oFiVJcpMuRytYKaxD-KidO1mvUHb5KAoNNi_eEschfs2WrCKyao0LJiVtcfLGcDxTS3WH-oBs38_fFMaQyz5UoDS8SqHlU1ajJspz7DzlzlPxm2QOcUuap0l70P_WOaP81QWjdT94leIKDBDsw4mUIIxaNR3iT1KwqmcwrGJ1iaVdWhWxzxpyk410WYSncQ8WYEtDp8IUHnwo2TWNKyRdcYJrhBnM4gfNkyNq4odhHQQF0g5naymw3-QpqCK-EA6NoFEOvPZmmA6Re6qIiQF9LJoqyk6FShWGewWx29EkFzSm1WYWplq9TJtvLI3a2feDNMS2hHWMjOpHyNv8ro4c4FiaoZSnU5RTTNkXM-QSy2nrFK-a6TL7ZqGc3SLes7ZiV57c1QI_LsBeSoONU8CUniWgbS_GvsoVbeap28e3cpvsmVlLKmqVZF1sfh3AvTeEsxG7bNaIukrFAthoSwUcxlfcewG8Wsaa9W1-0ErNVl2T76VvDrbvTQOZ3Ra9gVQapWVV52TSqRbZEIswzpyYM8vtyFeiTLqzFZPkHhcLtVcjHljROcfREaWW4D73tKMMDMPECHtkZ0noWegR7nz6twWHAaRmnlWdGPvcKm1C2xffEevTHbvBikd4vKoGhqw6DQVC4bkksvABcUg2Y-EqkCVQnKDl_zawDZxR0d1zzW4sE3SZHwsAaKl_50EAr5R5dr3QrUSQqeY-h7YISdoTufT0Fcy5uiFeEaFTPl9iWLSERTZOahA-lXz_erA1IubdaNirJ2l-WHFTK-iS3esq4-lw2zdfpg-vXd7eACN9_ZeekPPogwLt9SL7ZFRAisGUnhnl9fh8KCBY9RotBEuj8G-OX34hnuR_JEfIl7Qj6nvaZNtnBVNmmuQ2A5Gvf8vNwOg2dLbicJ_ul6taW81Vd0DBdpSnCr7YhKwyf8UaTWzeCqMd8vY22_wvFCyo9g5lhaWwEIu1enQuwHAioqVP5mQEsVovxxw6u3U4jXjNQ58We8lqpNTGU_j8Azxf1iQkumjsIw4cy9ssfJ7mTgYR13DE4FD-p8JZiexOw0D11_pVc1wmDi3WdHa9iX7HANxS9KJMjAfYJHwOnz_1WPxN_aGKVxEs7A-8XlFQ9cSo65s8VVjKfi0uSQZhjlXY9Coa59d0SmEC8gRDAkgkeYsl82z8EtWV6DUPmZsRxtHdLSYzUloiKr6roGud9Ez9EMMQ57D2FJCsq6NooHxV7VNcxtNkCjkb3EsHUx_Kz4cXf83XFM1Clrx5i8D4k_4do1WvC4PG5G64G7xmN9bZVq5VfvWrdHtWtZpLrstBiIV7eFSK9iK8-GwAc_BCSOl7VMbWgx9u49_2pCD-ACHj1F_BrtbNvR4SikJwpfp__ZD1aGvk8TLt4frMHMA1jRkmo763CqP5P5amewjKata6-4qFBYXJPJ0WeGBAI8fFt4c3aik377pXP49tpNplcTerwU9F79pfN_tsEgjA==\n```\n\n### Screenshots\n\n![Image](https://github.com/user-attachments/assets/ce06ba9b-bd36-4c29-8c43-22abab82d5ad)",
+              "closed": true,
+              "closedAt": "2025-01-22T08:08:38Z",
+              "closedByPullRequestsReferences": {
+                "edges": []
+              },
+              "createdAt": "2025-01-22T03:13:43Z",
+              "labels": {
+                "edges": []
+              },
+              "author": {
+                "login": "freeaxes",
+                "url": "https://github.com/freeaxes"
+              },
+              "assignees": {
+                "edges": []
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "I_kwDONXxB986nF33e",
+              "title": "More damage of arc for each chain remaining not calculating correctly when supported by chain support",
+              "comments": {
+                "edges": [
+                  {
+                    "node": {
+                      "id": "IC_kwDONXxB986bWk4e",
+                      "author": {
+                        "login": "PJacek",
+                        "url": "https://github.com/PJacek"
+                      },
+                      "body": "More and less modifiers are multiplicative. \n`(1+1.2) x (1-0.5) = 2.2 x 0.5 = 1.1`\n10% more",
+                      "createdAt": "2025-01-22T06:16:34Z"
+                    }
+                  }
+                ]
+              },
+              "url": "https://github.com/PathOfBuildingCommunity/PathOfBuilding-PoE2/issues/525",
+              "body": "### Check version\n\n- [x] I'm running the latest version of Path of Building and I've verified this by checking the [changelog](https://github.com/PathOfBuildingCommunity/PathOfBuilding-PoE2/blob/master/CHANGELOG.md)\n\n### Check for duplicates\n\n- [x] I've checked for duplicate open **and closed** issues by using the search function of the [issue tracker](https://github.com/PathOfBuildingCommunity/PathOfBuilding-PoE2/issues?q=is%3Aissue)\n\n### Check for support\n\n- [x] I've checked that the behaviour is supposed to be supported. If it isn't please open a feature request instead (Red text is a feature request).\n\n### What platform are you running Path of Building on?\n\nWindows\n\n### What is the behaviour in-game?\n\nA level 20 arc chains 5 times, the initial hit does +50% more damage because of this. With the chain support, which gives it +1 chain and 100% more chains, it chains 12 times ((5+1) + 100%). Chain gives -50% less damage, so at the end of the day this equals 70% more damage.\n\n### What is the behaviour in Path of Building?\n\n![Image](https://github.com/user-attachments/assets/e4c0090f-cb72-460b-ad6a-4d94966dd75b)\n\nWhen calculated in in the calcs portion of PoB the negative effects of the chain support are calculated properly but the extra chains don't apply to arc. With no gear and just a level 20 arc gem without chain support, PoB accurately reports 50% more damage. With a chain support added, PoB calculates this as 120% - 50% = 10% more damage. This should be 70% more damage.\n\n### How to reproduce the issue\n\n1. Add arc skill\n2. add chain support to arc\n3. check calcs tab\n\n### Character build code\n\n```shell\neNqlWltz4rgSfp75FS6_T7iHZIvMFoFkkqpkwkJm5pynLcUWoBPZYm2ZhP31p1uSjWGQkclO1ca2-uub1C11i8Gf7xH31jRJmYiv_NZZ0_doHIiQxYsr_8fz7ZcL_8-vnwcTIpdP8-uMcRxpf_38aaBePE7XlAPQ9wJO0vQ7ieiVPxNJQBOapr5H0oDG4Wg79l3E1PckSRZU_szlNv9GBkuSkEDS5AF5DjMpHkUICJlkgIgIi2cieKXyWyKylRK5ZvRN09w_Tp6mzz7o9Wkw4WRDk5kk0kvhf1f-EOwjC3rHJEAIz4C-fd4_uzjv9_xGJeQ6S1I5JhE8OkNnK0rDgrp5dtks_WvZUJOE3sznNJBsTUcJk6MliYOt0Esbri7tY8YlW3FGk61BNvq731i3mk0b8bOQhI8nsy3bbues1-odM1zjxHZqrBJ-Mbm85uDcE6Qg9n4RM0lPBE8ES0X8AfvKUKuJo4xziC8n2ilNabImku2qZectohcWn-S9RxKTkUi3c3TZqSKdUAj_WO4gmkcAMxoIyBNlyEX3rNct_vUcJB7mYxX9wObUnbKWVQZQV5vT7LiZudLVZnyaQlPIl26UM5FxR0q5zVh9G9GYvh8nuo-34lo9e3j9UyZsN3t2oWuBUXjcBpULbu4mBWWvBVtJr9O_aPWbzUurhMlyk7KA8EfyzqIsgrz8TF7pVuB5376oFksZQ0qxQbsXNugtS2h91Ejw8ATUkoj0FOvm1IEMduTgD6S9j4Ntdqli-iNOVHYtbeTVWkwhOvDI8MKpI2IrwsSYyyarRS1obORt3NLKA6XB8hscoKZEUreUvLWiW-lWpC27tZLpIbd23QA1nITAw05qn51XgWq6abZiCXPSSFMesL4GpoYDbmKaLDazJaM8dEjyJercYyOycrEf5r-MdloHu-JqLeUytOZc4Y5UV9qapOWs3jniCE3uFgsUjrEACOne-bppLw_E_7A44PVgwyQSWeI4lZrYyYB8Q9Kl0ZSGWeC2AxY1zjWHWs7VjAIFenJeCzqUkgSvYxEunJ2mhNRC7Oo3y1YrLH7BIa4McK-F8zwrHYS-dB2on2ApO8UqbsvuArbUzgKKg4a7lD2Iuy14WNgT40LsLKCYzkdIFREkXVXSP4pS3rZODRRwTtWYInSsCifiDTRfYsskrUcNR6pt_rKqktD4340z_x1yJwE3cZglGAjOMvYRh8RcZ_N56gVQ1RL5ANN75fveC3zLn4MsSal50YhnFkHiTdMxkcQLzan9J0kYiWVbNZRSSpJgiaBbwvkLZA7ktP2Kb3vAVr4aBg3VEcOn-2glEunRd_wzIYncXPlzwlOqCdUX4JNKFqv6HdIU5743W4q3YbhGu5-F4GkO8shqReNwh8dzQqlH8qQToBLKRnzxIpJK2OP0Ok5R6VIb7j5Ex3uxAAWgAul2u300Eas7kmyGu4QxA70kyNpr1eXjXSX10-DH9EE9fFpKuUr_aDTe3t7OVkQuxZy-w651BvPUWAEI9P2SvjLOvyDXxhD-u178hX-GilEj5zTQzb60od8weBMGKmsxA8jrCXvJJM0HwJ_v37VNvsdiWTynMsmfDa_GDrNBA32mJhCdig_fhdRj-DF_GcxQ7dRLYU6_0Si93kDw3uJZZK-3YmYFqWdU6nVVxuQdzZDOScbx-18Z4QwXSbP89UG3VmORREXpB6xgkeAOozk-b1Zo2fDhwUy_keqxMF8S5qNqoA63qo0ID1KlHIsDnoVQHJnkZWadkxcUj_1gLGvCciO2xKcQ82kA-hjib1y8EN7OIaZJ3G76O-OtfHytQwkX1DCB44daIOZN5wbf-6fkowWNcPSRShJCLDfuJfi2gQ5uKJ3gSfGJSWSiQ73uGRKILJZFLnfQv3VcfchXLDbTU7LDfFGjdQ0q5lqhy0aZD4VZJlvs2TXQPjFL3awPtdz1gsZHtRgUxX28yqSSceVHLA3-xpSKPXYVSOpW4Ob29mb0fP_zxqTVMkRZ_HecRS9oov673S5nVB0TvTR7SfXjlf-T0TelyBiMZzxF_Tknq7RkES5mozkHXAU3RXXHip79YV5bAjunm3eaQH5e_ILcnzBq1asYP6KUFoi1B25DNm7YCLcz0ofZEWR3XfVYPKUuIOxc8BrAag4OVmBhZyPcKtmMHvGExJwFC5jNWYB7fvWUY4bTVBV-CWCzJ8GmYr7NSdzOQ90s2BjoQTtY3w7Y0Ga0wqvqZsLqVT1qh49pQKy260E7uCikRawuyA5zKagqOH0XsVrkEDRDxvHcbJ3ZG04LEjvDJ7mkiTnE2Dg9Qo7KSSoDR58WrHxKFBW-Uv1Gi4dwzA7VPTWLDThWETSmz2SLdlYdsrvdIMt8lGnsrHQdZfWhqckqpsG0IyxToEcrLMk7MhYjzHBFoKgcPFwLFuq63BIye2RVSQMOqR9no5oNH2ez3334OMdbOOe_WufbjNrhPyTDI84BLvrg5MQEA-tjHDC-PsYBy9DoZPR0_yiyxU6rDyFFwXwQnI9Wxb6po0_moKv9k-GqGXEyWm0AYzqnYEHlDlDQVASHzOIxOENWBIYjK6XW4Syyta4WL70XHrS0Nkcd3eYKrSoBaJIjjGAzv6s4LrpxKhpqd5Rw_C2F4B9j-NtV4UeY4ZVAtiJxmLN7OnRI386Do_eETIGn6gmN8ebhoz6MabQ5wMiu16CRl3WqW4SFlmllzWSChf2_QkT_vfLPO72z5vllp9vpX5yf9_V303xotUzHAU7gYwbTmKjll4tFyv9c-V_al-2zVqvT6rSbvU5Hd-gGqog13RB8Lpohdn5ZSvXvDH5RshKxQmAzQteZmoeVaLfnwYX04NgcTV5-TB_QWl2gQum-xgjDId0Ja1QDtBCvVQOiNoRaiGGUcSprANSG5HVqI-qb0a7vqzqQa8rlCbPhzd6wk--Mm0Ieq6eXCDdefl6t7YCT1GvVns06Bt1R2GNkLQ8I-XugDBomDFWCUSGuGkginrOFCXb9YsJdgYovOzE64SSgS8FDmhiZFJOc-QFl3jzqNwtVLYCdC6EcdgxU3D7lraKiWdVst48JLP3oMof1jmDKV3wF5qhl8OUE_VDWCTCV87eIi66dPip-Roo_joQsHs5UawpbjzPK5yW5PQcbazummL0J7v45rOOKqj8RuMT2XdptXh6BFRVr4dMqp86WUE0qP6a_9U4r1yJexUPqeY2h7tvHt4-ZtnuXXy8O4IvrBMwCoU4e9awzPzCA486UxGXt-sfMynN3Ial9cVmBSdmC8ae5qldASVV01ZmCfe91mg4x6uq70RJ734ddB6e8PLnqM596-_p50PjtN_v_B-yyi2Y=\n```\n\n### Screenshots\n\n_No response_",
+              "closed": true,
+              "closedAt": "2025-01-22T06:16:34Z",
+              "closedByPullRequestsReferences": {
+                "edges": []
+              },
+              "createdAt": "2025-01-22T04:20:44Z",
+              "labels": {
+                "edges": []
+              },
+              "author": {
+                "login": "Anyloss",
+                "url": "https://github.com/Anyloss"
+              },
+              "assignees": {
+                "edges": []
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}
