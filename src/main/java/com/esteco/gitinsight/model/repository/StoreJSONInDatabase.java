@@ -20,6 +20,7 @@ public class StoreJSONInDatabase {
                                PullRequestRepository pullRequestRepository, AuthorRepository authorRepository, LabelRepository labelRepository) {
         this.persistResponse = new PersistResponse(gitRepository, languageRepository, commentRepository, issueRepository, pullRequestRepository, authorRepository,labelRepository);
     }
+
     public void persistFileInDB(File file) throws IOException {
         persistResponse.storeLanguages(file);
         persistResponse.storePullRequestCommits(file);
