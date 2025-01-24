@@ -9,7 +9,7 @@ public class GraphqlUtils {
     private String urlString = "https://api.github.com/graphql";
 
 //    @Value("${github.token}")
-    private String token = "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";
+    private String token = "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";
 
 
 
