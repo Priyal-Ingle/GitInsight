@@ -19,17 +19,14 @@ public class GitRepo {
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
     private boolean privateRepository;
-//    @OneToMany(
-//            cascade = CascadeType.ALL,
-//            orphanRemoval = true,
-//            fetch = FetchType.LAZY
-//    )
-//    private List<Label> labels = new ArrayList<>();
+    private String endCursor = "";
+
     @ManyToMany(
             cascade = CascadeType.ALL,
             fetch = FetchType.LAZY
     )
     private List<Language> languages = new ArrayList<>();
+
     @OneToMany(
             cascade = CascadeType.ALL,
 //            orphanRemoval = true,
@@ -37,12 +34,11 @@ public class GitRepo {
     )
     private List<Issue> issues = new ArrayList<>();
 
-
 //    *********************getter setter start ********************
+
     public GitRepo() {
         this(UUID.randomUUID().toString());
     }
-
     public GitRepo(String id) {
         this.id = id;
     }
@@ -101,6 +97,14 @@ public class GitRepo {
 
     public void setPrivateRepository(boolean privateRepository) {
         this.privateRepository = privateRepository;
+    }
+
+    public String getEndCursor() {
+        return endCursor;
+    }
+
+    public void setEndCursor(String endCursor) {
+        this.endCursor = endCursor;
     }
 
 //    public List<Label> getLabels() {
