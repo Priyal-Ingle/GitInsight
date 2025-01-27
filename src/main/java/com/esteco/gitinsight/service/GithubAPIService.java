@@ -58,7 +58,7 @@ public class GithubAPIService {
 
 //            reading file to extract hasNextPage and nextCursor
             ObjectMapper mapper = new ObjectMapper();
-            File file = new File("/home/pingle/IdeaProjects/GitInsight/src/main/resources/com/esteco/gitinsight/graphqlResponse.json");
+            File file = new File("./src/main/resources/com/esteco/gitinsight/graphqlResponse.json");
 
 
 //            writing in database from json file

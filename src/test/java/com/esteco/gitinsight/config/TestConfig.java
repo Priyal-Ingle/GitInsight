@@ -2,7 +2,7 @@ package com.esteco.gitinsight.config;
 
 public class TestConfig {
     public static final String GITHUB_URL = "https://api.github.com/graphql";
-    public static final String GITHUB_TOKEN = "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";
+    public static final String GITHUB_TOKEN = "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";
     public static final String GITHUB_TEST_QUERY= """
                 query {
                     repository(owner: "carbon-name", name: "carbon-lang") {
