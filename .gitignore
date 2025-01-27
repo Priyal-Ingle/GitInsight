@@ -27,8 +27,8 @@ Thumbs.db
 **/*.class
 
 # Ignore local application properties
-src/main/resources/application.properties
-!src/main/resources/application.properties.example
+/src/main/resources/application.properties
+
 
 # Ignore test output
 /out/test/
