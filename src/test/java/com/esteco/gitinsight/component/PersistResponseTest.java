@@ -1,5 +1,6 @@
 package com.esteco.gitinsight.component;
 
+import com.esteco.gitinsight.config.ConfigProperties;
 import com.esteco.gitinsight.model.repository.*;
 import component.PersistResponse;
 import jakarta.transaction.Transactional;
@@ -44,12 +45,15 @@ public class PersistResponseTest {
 
     @Mock
     private IssueRepository issueRepository;
+
+    @Mock
+    private ConfigProperties configProperties;
     private File file;
 
     @BeforeEach
     void setUp() throws Exception {
         MockitoAnnotations.openMocks(this);
-        persistResponse = new PersistResponse(gitRepository, languageRepository, commentRepository, issueRepository, pullRequestRepository, authorRepository, labelRepository);
+        persistResponse = new PersistResponse(gitRepository, languageRepository, commentRepository, issueRepository, pullRequestRepository, authorRepository, labelRepository, configProperties);
         URL queryUrl = PersistResponseTest.class.getResource("../GraphQLResponse.json");
         file = new File(queryUrl.toURI());
     }

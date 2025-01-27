@@ -1,5 +1,6 @@
 package com.esteco.gitinsight.model.repository;
 
+import com.esteco.gitinsight.config.ConfigProperties;
 import com.esteco.gitinsight.model.entity.GitRepo;
 import com.esteco.gitinsight.model.entity.Language;
 import component.PersistResponse;
@@ -43,10 +44,12 @@ public class RelationshipInDatabaseTest {
     @Autowired
     private LabelRepository labelRepository;
 
+    @Autowired
+    private ConfigProperties configProperties;
     @Test
     void testGitLanguageRelationDatabase() throws Exception {
         PersistResponse persistResponse = new PersistResponse(gitRepository, languageRepository, commentRepository,
-                issueRepository, pullRequestRepository, authorRepository, labelRepository );
+                issueRepository, pullRequestRepository, authorRepository, labelRepository, configProperties );
         URL queryUrl = RelationshipInDatabaseTest.class.getResource("../../GraphQLResponse.json");
         File file = new File(queryUrl.toURI());
 

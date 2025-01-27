@@ -1,5 +1,6 @@
 package component;
 
+import com.esteco.gitinsight.config.ConfigProperties;
 import com.esteco.gitinsight.dto.Comment;
 import com.esteco.gitinsight.dto.GitUser;
 import com.esteco.gitinsight.dto.*;
@@ -41,12 +42,11 @@ public class PersistResponse {
     private final GitRepository gitRepository;
     private final AuthorRepository authorRepository;
     private final LabelRepository labelRepository;
+    private final ConfigProperties configProperties;
 
-    @PersistenceContext
-    private EntityManager entityManager;
 
     @Autowired
-    public PersistResponse(GitRepository gitRepository, LanguageRepository languageRepository, CommentRepository commentRepository, IssueRepository issueRepository, PullRequestRepository pullRequestRepository, AuthorRepository authorRepository, LabelRepository labelRepository) {
+    public PersistResponse(GitRepository gitRepository, LanguageRepository languageRepository, CommentRepository commentRepository, IssueRepository issueRepository, PullRequestRepository pullRequestRepository, AuthorRepository authorRepository, LabelRepository labelRepository, ConfigProperties configProperties) {
         this.gitRepository = gitRepository;
         this.languageRepository = languageRepository;
         this.commentRepository = commentRepository;
@@ -54,6 +54,7 @@ public class PersistResponse {
         this.pullRequestRepository = pullRequestRepository;
         this.authorRepository = authorRepository;
         this.labelRepository = labelRepository;
+        this.configProperties = configProperties;
     }
 
     public void storeLanguages(File file) throws IOException {
@@ -175,7 +176,7 @@ public class PersistResponse {
             List<Commit> commits = new ArrayList<>();
             value.forEach(commit -> {
                 Commit entityCommit = new Commit(commit.id());
-//                entityCommit.setFileChanges(getFileChanges(commit.url()));
+                entityCommit.setFileChanges(getFileChanges(commit.url()));
                 entityCommit.setUrl(commit.url());
                 commits.add(entityCommit);
             });
@@ -192,10 +193,11 @@ public class PersistResponse {
         List<FileChanges> fileChanges = new ArrayList<>();
         String apiUrl = url.replace("https://github.com/", "https://api.github.com/repos/")
                 .replace("/commit/", "/commits/");
+        String token = configProperties.getToken();
         try {
             HttpURLConnection connection = (HttpURLConnection) new URL(apiUrl).openConnection();
             connection.setRequestMethod("GET");
-            connection.setRequestProperty("Authorization", "Bearer " + "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");
+            connection.setRequestProperty("Authorization", "Bearer " + token);
             connection.setRequestProperty("Accept", "application/json");
 
             BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));

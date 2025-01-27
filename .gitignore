@@ -1,39 +1,40 @@
-HELP.md
-.gradle
-build/
+# Ignore Gradle build output
+/build/
+.gradle/
+!gradle/wrapper/gradle-wrapper.properties
 !gradle/wrapper/gradle-wrapper.jar
-!**/src/main/**/build/
-!**/src/test/**/build/
-!**/src/main/resources/application.properties
 
-
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
-
-### IntelliJ IDEA ###
-.idea
-*.iws
+# Ignore build artifacts and IDE specific files
+/out/
+.idea/
 *.iml
-*.ipr
-out/
-!**/src/main/**/out/
-!**/src/test/**/out/
-
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-
-### VS Code ###
 .vscode/
+*.class
+
+# Ignore log files and temporary files
+*.log
+*.tmp
+*.swp
+*.DS_Store
+*.bak
+*.~*
+
+# Ignore system-specific files
+Thumbs.db
+*.~lock.*
+
+# Ignore compiled Java class files
+**/*.class
+
+# Ignore local application properties
+src/main/resources/application.properties
+!src/main/resources/application.properties.example
+
+# Ignore test output
+/out/test/
+
+# Exclude IntelliJ run/debug configs
+.idea/runConfigurations/
+.idea/workspace.xml
+.idea/gradle.xml
+.idea/modules.xml

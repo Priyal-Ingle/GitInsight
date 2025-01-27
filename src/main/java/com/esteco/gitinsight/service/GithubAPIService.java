@@ -29,9 +29,9 @@ public class GithubAPIService {
     @Autowired
     public GithubAPIService(GitRepository gitRepository, LanguageRepository languageRepository, CommentRepository commentRepository,
                             IssueRepository issueRepository, PullRequestRepository pullRequestRepository,
-                            AuthorRepository authorRepository, LabelRepository labelRepository) {
+                            AuthorRepository authorRepository, LabelRepository labelRepository, ConfigProperties configProperties) {
 
-        this.storeJSONInDatabase = new StoreJSONInDatabase(gitRepository, languageRepository, commentRepository, issueRepository, pullRequestRepository, authorRepository, labelRepository);
+        this.storeJSONInDatabase = new StoreJSONInDatabase(gitRepository, languageRepository, commentRepository, issueRepository, pullRequestRepository, authorRepository, labelRepository, configProperties);
         this.gitRepository = gitRepository;
     }
 
