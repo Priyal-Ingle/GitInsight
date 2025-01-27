@@ -40,8 +40,8 @@ public class LanguageRepositoryTest {
         Language entityLanguage = new Language("id_1");
         entityLanguage.setName("Java");
         entityLanguage.setColor("Black");
-
         languageRepository.save(entityLanguage);
+
         languageRepository.deleteById("id_1");
 
         Optional<Language> dbLanguage = languageRepository.findById("id_1");

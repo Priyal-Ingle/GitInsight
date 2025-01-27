@@ -90,7 +90,7 @@ public class ResponseJson {
         JsonNode updatedAt = jsonNode.findPath("updatedAt");
         JsonNode isPrivate = jsonNode.findPath("isPrivate");
         DateTimeFormatter formatter = DateTimeFormatter.ISO_DATE_TIME;
-        return new GitRepositoryData(id.asText(), url.asText(), LocalDateTime.parse(createdAt.asText(), formatter), LocalDateTime.parse(updatedAt.asText(), formatter), isPrivate.asBoolean());
+        return new GitRepositoryData(id.asText(), url.asText(), createdAt == null ? null : LocalDateTime.parse(createdAt.asText(), formatter), LocalDateTime.parse(updatedAt.asText(), formatter), isPrivate.asBoolean());
     }
 
     private JsonNode getIssueJsonNode(File file) throws IOException {

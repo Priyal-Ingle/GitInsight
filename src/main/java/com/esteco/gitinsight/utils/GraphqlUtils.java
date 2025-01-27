@@ -1,17 +1,21 @@
 package com.esteco.gitinsight.utils;
+
+import com.esteco.gitinsight.config.ConfigProperties;
 import net.minidev.json.JSONObject;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
+
 import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
 public class GraphqlUtils {
-//    @Value("${github.graphql.url}")
-    private String urlString = "https://api.github.com/graphql";
 
-//    @Value("${github.token}")
-    private String token = "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";
+    private ConfigProperties configProperties;
 
 
+    public GraphqlUtils(ConfigProperties configProperties) {
+        this.configProperties = configProperties;
+    }
 
     public void writeStringBuilderToJsonFile(StringBuilder stringBuilder, String filePath) {
         try {
@@ -28,10 +32,13 @@ public class GraphqlUtils {
     }
 
     public void executeGraphQLQuery(String graphqlQuery, String outputFilePath) throws IOException {
+        String token = configProperties.getToken();
+        String urlString = configProperties.getGraphqlUrl();
+
         URL url = new URL(urlString);
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();
         connection.setRequestMethod("POST");
-        connection.setRequestProperty("Authorization", "Bearer "+token);
+        connection.setRequestProperty("Authorization", "Bearer " + token);
         connection.setRequestProperty("Content-Type", "application/json");
         connection.setDoOutput(true);
 

@@ -13,16 +13,16 @@ import java.net.URL;
 @SpringBootTest
 @Transactional
 @Rollback(false)
-class GithubAPIServiceTest {
+class RepoDataUpdateTest {
 
     @Autowired
     private GithubAPIService githubAPIService;
 
+
     @Test
-    void testGetRepoDataService() throws Exception {
-        String owner = "Priyal-Ingle";
-        String repoName = "test-repo";
-        githubAPIService.getRepoData(owner, repoName);
+    void testRepoUpdateService() throws Exception {
+        String repoId = "R_kgDONucNCw";
+        githubAPIService.updateRepoData(repoId);
     }
 
 
