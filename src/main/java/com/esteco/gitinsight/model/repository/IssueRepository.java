@@ -12,7 +12,10 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface IssueRepository extends CrudRepository<Issue, String>, JpaSpecificationExecutor<Issue>, PagingAndSortingRepository<Issue, String> {
+public interface IssueRepository extends
+        CrudRepository<Issue, String>,
+        JpaSpecificationExecutor<Issue>,
+        PagingAndSortingRepository<Issue, String> {
 
     List<Issue> findByAuthor_Id(String authorId);
 

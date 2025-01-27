@@ -195,7 +195,7 @@ public class PersistResponse {
         try {
             HttpURLConnection connection = (HttpURLConnection) new URL(apiUrl).openConnection();
             connection.setRequestMethod("GET");
-            connection.setRequestProperty("Authorization", "Bearer " + "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");
+            connection.setRequestProperty("Authorization", "Bearer " + "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");
             connection.setRequestProperty("Accept", "application/json");
 
             BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));

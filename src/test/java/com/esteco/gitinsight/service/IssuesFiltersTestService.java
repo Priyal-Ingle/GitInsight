@@ -56,6 +56,7 @@ public class IssuesFiltersTestService {
     @Test
     void getFilteredIssuesBYMultipleParamsTest(){
         Specification<Issue> spec=null;
+//        spec = Specification.where(UserSp)
         List<Issue> getIssuesByMultipleParams = issuesFilterService.getFilteredIssuesBYMultipleParams(spec);
 
         assertNull(getIssuesByMultipleParams);
