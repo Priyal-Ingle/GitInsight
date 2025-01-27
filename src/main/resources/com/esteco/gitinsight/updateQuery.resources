@@ -26,7 +26,7 @@
         node {
           id
           title
-          comments(first: 100, orderBy:{direction:ASC, field:UPDATED_AT}) {
+          comments(first: 100, after: "@end-cursor", orderBy:{direction:ASC, field:UPDATED_AT}) {
             edges {
               node {
                 id
@@ -43,7 +43,7 @@
           body
           closed
           closedAt
-          closedByPullRequestsReferences(first: 15) {
+          closedByPullRequestsReferences(first: 15, after: "@end-cursor") {
             edges {
               node {
                 id
@@ -54,7 +54,7 @@
                 }
                 body
                 url
-                commits(first: 50) {
+                commits(first: 50, after: "@end-cursor") {
                   edges {
                     node {
                       commit {
@@ -72,7 +72,7 @@
             }
           }
           createdAt
-          labels(first: 15, orderBy:{direction:ASC, field:CREATED_AT}) {
+          labels(first: 15, after: "@end-cursor", orderBy:{direction:ASC, field:CREATED_AT}) {
             edges {
               node {
                 id
@@ -85,7 +85,7 @@
             login
             url
           }
-          assignees(first: 15) {
+          assignees(first: 15, after: "@end-cursor") {
             edges {
               node {
                 login

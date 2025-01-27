@@ -1,14 +1,20 @@
 package component;
 
-import com.esteco.gitinsight.dto.*;
 import com.esteco.gitinsight.dto.Comment;
 import com.esteco.gitinsight.dto.GitUser;
+import com.esteco.gitinsight.dto.*;
 import com.esteco.gitinsight.model.entity.*;
 import com.esteco.gitinsight.model.repository.*;
 import com.esteco.gitinsight.service.ResponseJson;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.EntityManagerFactory;
+import jakarta.persistence.EntityTransaction;
+import jakarta.persistence.PersistenceContext;
 import jakarta.transaction.Transactional;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -36,6 +42,9 @@ public class PersistResponse {
     private final AuthorRepository authorRepository;
     private final LabelRepository labelRepository;
 
+    @PersistenceContext
+    private EntityManager entityManager;
+
     @Autowired
     public PersistResponse(GitRepository gitRepository, LanguageRepository languageRepository, CommentRepository commentRepository, IssueRepository issueRepository, PullRequestRepository pullRequestRepository, AuthorRepository authorRepository, LabelRepository labelRepository) {
         this.gitRepository = gitRepository;
@@ -52,7 +61,7 @@ public class PersistResponse {
         GitRepositoryData repositoryData = responseJson.getRepositoryData(file);
         Optional<GitRepo> getGitRepo = gitRepository.findById(repositoryData.id());
 
-        if(getGitRepo.isPresent()) {
+        if (getGitRepo.isPresent()) {
             return;
         }
         GitRepo gitRepo = new GitRepo(repositoryData.id());
@@ -87,7 +96,6 @@ public class PersistResponse {
         return entityLanguage;
     }
 
-    @Transactional
     public void storeComments(File file) throws IOException {
         ResponseJson responseJson = new ResponseJson();
         Map<String, List<Comment>> commentData = responseJson.getCommentData(file);
@@ -187,7 +195,7 @@ public class PersistResponse {
         try {
             HttpURLConnection connection = (HttpURLConnection) new URL(apiUrl).openConnection();
             connection.setRequestMethod("GET");
-            connection.setRequestProperty("Authorization", "Bearer "+"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");
+            connection.setRequestProperty("Authorization", "Bearer " + "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");
             connection.setRequestProperty("Accept", "application/json");
 
             BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
@@ -216,7 +224,7 @@ public class PersistResponse {
         System.out.println("JSON File Response from RESTAPI");
         return fileChanges;
     }
-    @Transactional
+
     public void storePullRequests(File file) throws IOException {
         Map<String, List<GitPullRequest>> closedPullRequests = new ResponseJson().getClosedPullRequests(file);
         closedPullRequests.forEach((issueId, value) -> {
@@ -285,26 +293,39 @@ public class PersistResponse {
 
     }
 
-    @Transactional
+        @Transactional
     public void storeIssues(File file) throws IOException {
+//        EntityManagerFactory entityManagerFactory = entityManager.unwrap(Session.class).getEntityManagerFactory();
+////        EntityManager entityManager = entityManagerFactory.createEntityManager();
+//        EntityTransaction transaction = entityManager.getTransaction();
         Map<String, List<GitIssue>> issues = new ResponseJson().getIssues(file);
-        issues.forEach((repoId, value) -> {
-            GitRepo gitRepo = gitRepository.findById(repoId).isPresent() ? gitRepository.findById(repoId).get() : new GitRepo(repoId);
-            List<Issue> entityIssues = new ArrayList<>();
-            value.forEach(entityIssue -> {
-                Issue issue = issueRepository.findById(entityIssue.id()).isPresent() ? issueRepository.findById(entityIssue.id()).get() : new Issue(entityIssue.id());
-                issue.setUrl(entityIssue.url());
-                issue.setCreatedAt(entityIssue.createdAt());
-                issue.setBody(entityIssue.body());
-                issue.setClosedAt(entityIssue.closedAt());
-                issue.setTitle(entityIssue.title());
-                if (!gitRepo.getIssues().contains(issue)) {
-                    entityIssues.add(issue);
+//        try {
+            for (Map.Entry<String, List<GitIssue>> entry : issues.entrySet()) {
+                String repoId = entry.getKey();
+                List<GitIssue> value = entry.getValue();
+//                transaction.begin();
+                GitRepo gitRepo = gitRepository.findById(repoId).isPresent() ? gitRepository.findById(repoId).get() : new GitRepo(repoId);
+                List<Issue> entityIssues = new ArrayList<>();
+                for (GitIssue entityIssue : value) {
+                    Issue issue = issueRepository.findById(entityIssue.id()).isPresent() ? issueRepository.findById(entityIssue.id()).get() : new Issue(entityIssue.id());
+                    issue.setUrl(entityIssue.url());
+                    issue.setCreatedAt(entityIssue.createdAt());
+                    issue.setBody(entityIssue.body());
+                    issue.setClosedAt(entityIssue.closedAt());
+                    issue.setTitle(entityIssue.title());
+                    if (!gitRepo.getIssues().contains(issue)) {
+                        entityIssues.add(issue);
+                    }
                 }
-            });
-            gitRepo.setIssues(entityIssues);
-            gitRepository.save(gitRepo);
-        });
+                gitRepo.setIssues(entityIssues);
+                gitRepository.save(gitRepo);
+//                transaction.commit();
+            }
+//        } catch (Exception e) {
+////            if (transaction != null && transaction.isActive()) {
+////                transaction.commit();
+////            }
+//        }
     }
 
 //    public void storeIssues(File file) throws IOException {
